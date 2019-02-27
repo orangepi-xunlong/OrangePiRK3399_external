@@ -1,0 +1,53 @@
+09:47:06 	Error: failed to stat config.ini, err=2
+09:47:09 	Error: failed to stat config.ini, err=2
+09:49:35 	Error: failed to stat config.ini, err=2
+09:55:17 	Error: failed to stat config.ini, err=2
+09:55:49 	Error: failed to stat config.ini, err=2
+09:55:52 	Error: failed to stat config.ini, err=2
+09:58:19 	Error: failed to stat config.ini, err=2
+12:01:13 	Error: failed to stat config.ini, err=2
+12:01:16 	Error: failed to stat config.ini, err=2
+12:01:22 	Error: failed to stat config.ini, err=2
+14:22:30 	Error: failed to stat config.ini, err=2
+14:22:30 	Error:RKU_DeviceRequest-->DeviceRequest vendor=0x471 failed, err=-1
+14:22:30 	<LAYER 1-1> ERROR:DownloadBoot-->Boot_VendorRequest471 failed,index(0)
+14:22:52 	Error: failed to stat config.ini, err=2
+14:22:55 	Error: failed to stat config.ini, err=2
+14:25:21 	Error: failed to stat config.ini, err=2
+14:40:31 	Error: failed to stat config.ini, err=2
+14:40:31 	Error:RKU_DeviceRequest-->DeviceRequest vendor=0x471 failed, err=-1
+14:40:31 	<LAYER 1-1> ERROR:DownloadBoot-->Boot_VendorRequest471 failed,index(0)
+14:40:51 	Error: failed to stat config.ini, err=2
+14:41:16 	Error: failed to stat config.ini, err=2
+14:41:18 	Error: failed to stat config.ini, err=2
+14:41:25 	Error: failed to stat config.ini, err=2
+14:47:46 	Error: failed to stat config.ini, err=2
+14:48:08 	Error: failed to stat config.ini, err=2
+14:48:09 	Error: failed to stat config.ini, err=2
+14:48:14 	Error: failed to stat config.ini, err=2
+14:48:16 	Error: failed to stat config.ini, err=2
+14:50:43 	Error: failed to stat config.ini, err=2
+15:18:08 	Error: failed to stat config.ini, err=2
+15:18:32 	Error: failed to stat config.ini, err=2
+15:18:33 	Error: failed to stat config.ini, err=2
+15:19:10 	Error: failed to stat config.ini, err=2
+15:19:13 	Error: failed to stat config.ini, err=2
+15:19:57 	Error:RKU_Write failed, err=-1
+15:19:57 	Error: RKU_WriteLBA failed, err=-3
+15:21:33 	Error: failed to stat config.ini, err=2
+15:21:36 	Error: failed to stat config.ini, err=2
+15:23:58 	Error: failed to stat config.ini, err=2
+16:34:58 	Error: failed to stat config.ini, err=2
+16:41:44 	Error: failed to stat config.ini, err=2
+16:41:47 	Error: failed to stat config.ini, err=2
+16:46:02 	Error: failed to stat config.ini, err=2
+17:51:14 	Error: failed to stat config.ini, err=2
+17:51:16 	Error: failed to stat config.ini, err=2
+17:54:06 	Error: failed to stat config.ini, err=2
+18:00:09 	Error: failed to stat config.ini, err=2
+18:01:36 	Error: failed to stat config.ini, err=2
+18:01:38 	Error: failed to stat config.ini, err=2
+18:04:02 	Error: failed to stat config.ini, err=2
+18:05:59 	Error: failed to stat config.ini, err=2
+18:06:02 	Error: failed to stat config.ini, err=2
+18:10:06 	Error: failed to stat config.ini, err=2

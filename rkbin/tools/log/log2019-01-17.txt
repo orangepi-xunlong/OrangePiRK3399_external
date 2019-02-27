@@ -1,0 +1,23 @@
+15:01:09 	Error: failed to stat config.ini, err=2
+15:01:24 	Error: failed to stat config.ini, err=2
+15:01:40 	Error: failed to stat config.ini, err=2
+15:01:42 	Error: failed to stat config.ini, err=2
+15:01:50 	Error: failed to stat config.ini, err=2
+16:09:43 	Error: failed to stat config.ini, err=2
+16:10:04 	Error: failed to stat config.ini, err=2
+16:10:07 	Error: failed to stat config.ini, err=2
+16:10:15 	Error: failed to stat config.ini, err=2
+16:14:00 	Error: failed to stat config.ini, err=2
+16:14:06 	Error: failed to stat config.ini, err=2
+16:14:24 	Error: failed to stat config.ini, err=2
+16:14:24 	Error:RKU_DeviceRequest-->DeviceRequest vendor=0x471 failed, err=-1
+16:14:24 	<LAYER 1-1> ERROR:DownloadBoot-->Boot_VendorRequest471 failed,index(0)
+16:14:25 	Error: failed to stat config.ini, err=2
+16:14:25 	Error:RKU_DeviceRequest-->DeviceRequest vendor=0x471 failed, err=-1
+16:14:25 	<LAYER 1-1> ERROR:DownloadBoot-->Boot_VendorRequest471 failed,index(0)
+16:14:42 	Error: failed to stat config.ini, err=2
+16:14:45 	Error: failed to stat config.ini, err=2
+16:14:52 	Error: failed to stat config.ini, err=2
+20:29:29 	Error: failed to stat config.ini, err=2
+20:29:31 	Error: failed to stat config.ini, err=2
+20:38:01 	Error: failed to stat config.ini, err=2

@@ -1,0 +1,8 @@
+11:05:47 	Error: failed to stat config.ini, err=2
+11:05:53 	Error: failed to stat config.ini, err=2
+11:05:56 	Error: failed to stat config.ini, err=2
+11:06:03 	Error:RKU_Write failed, err=-1
+11:06:03 	Error: RKU_WriteLBA failed, err=-3
+11:06:24 	Error: failed to stat config.ini, err=2
+11:06:27 	Error: failed to stat config.ini, err=2
+11:10:35 	Error: failed to stat config.ini, err=2
