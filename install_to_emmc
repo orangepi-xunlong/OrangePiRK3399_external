@@ -1,0 +1,156 @@
+#!/bin/bash -e
+
+
+if [ "$(id -u)" != "0" ]; then
+   echo "Script must be run as root !"
+   exit 0
+fi
+
+
+echo ""
+date
+echo -e "\033[36m==============================="
+echo "Installing Linux system to emmc"
+echo -e "===============================\033[37m"
+setterm -default
+echo ""
+
+odir="/tmp/_extdir"
+bootdir="/boot"
+emmc="/dev/mmcblk1"
+
+
+[ ! -f $bootdir/boot.img ] && echo "boot image not found!" && exit
+[ ! -f $bootdir/uboot.img ] && echo "uboot image not found!" && exit
+[ ! -f $bootdir/idbloader.img ] && echo "idbloader image not found!" && exit
+[ ! -f $bootdir/trust.img ] && echo "trust image not found!" && exit
+
+if [ ! -b ${emmc}boot0 ]; then
+    echo "Error: EMMC not found."
+    exit 1
+fi
+
+#umount ${emmc}* > /dev/null 2>&1
+
+
+#----------------------------------------------------------
+echo ""
+echo -n "WARNING: EMMC WILL BE ERASED !, Continue (y/N)?  "
+read -n 1 ANSWER
+
+if [ ! "${ANSWER}" = "y" ] ; then
+    echo "."
+    echo "Canceled.."
+    exit 0
+fi
+echo ""
+#----------------------------------------------------------
+
+UBOOT_START=24576
+UBOOT_END=32767
+TRUST_START=32768
+TRUST_END=40959
+BOOT_START=49152
+BOOT_END=114687
+ROOTFS_START=376832
+LOADER1_START=64
+
+[ ! -d ${bootdir} ] && exit
+
+echo "Erasing EMMC ..."
+dd if=/dev/zero of=${emmc} bs=1M count=100 > /dev/null 2>&1
+sync
+sleep 1
+
+echo "Formating partition, please wait ..."
+parted -s $emmc mklabel gpt
+parted -s $emmc unit s mkpart uboot ${UBOOT_START} ${UBOOT_END}
+parted -s $emmc unit s mkpart trust ${TRUST_START} ${TRUST_END}
+parted -s $emmc unit s mkpart boot ${BOOT_START} ${BOOT_END}
+parted -s $emmc -- unit s mkpart rootfs ${ROOTFS_START} -34s
+
+ROOT_UUID="615e0000-0000-4b53-8000-1d28000054a9"
+
+gdisk $emmc <<EOF 
+x
+c
+4
+${ROOT_UUID}
+w
+y
+EOF
+
+mkfs.ext4 -F -b 4096 -E stride=2,stripe-width=1024 -L rootfs ${emmc}p4  > /dev/null 2>&1
+
+echo "  linux partition formated."
+
+echo "Instaling u-boot to EMMC ..."
+
+dd if=$bootdir/idbloader.img of=$emmc seek=$LOADER1_START conv=notrunc > /dev/null 2>&1 
+dd if=$bootdir/uboot.img of=$emmc seek=$UBOOT_START conv=notrunc,fsync > /dev/null 2>&1
+dd if=$bootdir/trust.img of=$emmc seek=$TRUST_START conv=notrunc,fsync > /dev/null 2>&1
+
+echo "Instaling boot.img to EMMC ..."
+dd if=$bootdir/boot.img of=$emmc seek=$BOOT_START conv=notrunc,fsync > /dev/null 2>&1
+
+
+
+
+[ ! -d ${odir} ] && mkdir -p ${odir}
+
+echo ""
+echo "Mounting EMMC partitions..."
+
+if ! mount  ${emmc}p4 ${odir}; then
+    echo "ERROR mounting linux partitions..."
+    umount  ${odir}
+    exit 1
+fi
+
+
+echo ""
+echo "Copying file system to EMMC ..."
+echo ""
+#-----------------------------------------------------------------------------------------
+#rsync -r -t -p -o -g -x --delete -l -H -D --numeric-ids -s --stats / $odir/ > /dev/null 2>&1
+
+
+cat > $bootdir/exclude.list << _EOF_
+var/log/*
+var/backup/*
+var/lib/apt/lists/*
+var/cache/*
+var/tmp/*
+boot/*
+_EOF_
+
+rsync -a -x --delete --exclude-from=$bootdir/exclude.list / ${odir}
+
+if [ $? -ne 0 ]; then
+    echo "  ERROR."
+fi
+
+sync
+
+if ! umount $odir; then
+    echo "ERROR unmounting linux partitions."
+    exit 0
+fi
+
+
+echo ""
+echo -e "\033[36m*******************************"
+echo "Linux system installed to EMMC."
+echo -e "*******************************\033[37m"
+setterm -default
+echo ""
+
+exit 0
+
+
+
+
+
+
+
+

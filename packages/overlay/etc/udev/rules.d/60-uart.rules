@@ -1,0 +1,1 @@
+KERNEL=="ttyS0", MODE="0666"
