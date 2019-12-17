@@ -1,0 +1,403 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>rtprtxreceive: GStreamer Good Plugins 1.0 Plugins Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="GStreamer Good Plugins 1.0 Plugins Reference Manual">
+<link rel="up" href="ch01.html" title="gst-plugins-good Elements">
+<link rel="prev" href="gst-plugins-good-plugins-rtprtxqueue.html" title="rtprtxqueue">
+<link rel="next" href="gst-plugins-good-plugins-rtprtxsend.html" title="rtprtxsend">
+<meta name="generator" content="GTK-Doc V1.25 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#gst-plugins-good-plugins-rtprtxreceive.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#gst-plugins-good-plugins-rtprtxreceive.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#gst-plugins-good-plugins-rtprtxreceive.properties" class="shortcut">Properties</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch01.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="gst-plugins-good-plugins-rtprtxqueue.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="gst-plugins-good-plugins-rtprtxsend.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="gst-plugins-good-plugins-rtprtxreceive"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="gst-plugins-good-plugins-rtprtxreceive.top_of_page"></a>rtprtxreceive</span></h2>
+<p>rtprtxreceive</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="gst-plugins-good-plugins-rtprtxreceive.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#guint"><span class="type">guint</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-good-plugins-rtprtxreceive.html#GstRtpRtxReceive--num-rtx-requests" title="The “num-rtx-requests” property">num-rtx-requests</a></td>
+<td class="property_flags">Read</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#guint"><span class="type">guint</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-good-plugins-rtprtxreceive.html#GstRtpRtxReceive--num-rtx-packets" title="The “num-rtx-packets” property">num-rtx-packets</a></td>
+<td class="property_flags">Read</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#guint"><span class="type">guint</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-good-plugins-rtprtxreceive.html#GstRtpRtxReceive--num-rtx-assoc-packets" title="The “num-rtx-assoc-packets” property">num-rtx-assoc-packets</a></td>
+<td class="property_flags">Read</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="/usr/share/gtk-doc/html/gstreamer-1.0GstStructure.html#GstStructure-struct"><span class="type">GstStructure</span></a> *</td>
+<td class="property_name"><a class="link" href="gst-plugins-good-plugins-rtprtxreceive.html#GstRtpRtxReceive--payload-type-map" title="The “payload-type-map” property">payload-type-map</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<a name="GstRtpRtxReceive"></a><div class="refsect1">
+<a name="gst-plugins-good-plugins-rtprtxreceive.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody><tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="gst-plugins-good-plugins-rtprtxreceive.html#GstRtpRtxReceive-struct" title="struct GstRtpRtxReceive">GstRtpRtxReceive</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-good-plugins-rtprtxreceive.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="/usr/share/gtk-doc/html/gobjectgobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+    <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gobjectgobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
+        <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gstreamer-1.0GstObject.html#GstObject-struct">GstObject</a>
+            <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gstreamer-1.0GstElement.html#GstElement-struct">GstElement</a>
+                <span class="lineart">╰──</span> GstRtpRtxReceive
+</pre>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-good-plugins-rtprtxreceive.description"></a><h2>Description</h2>
+<p>rtprtxreceive listens to the retransmission events from the
+downstream rtpjitterbuffer and remembers the SSRC (ssrc1) of the stream and
+the sequence number that was requested. When it receives a packet with
+a sequence number equal to one of the ones stored and with a different SSRC,
+it identifies the new SSRC (ssrc2) as the retransmission stream of ssrc1.
+From this point on, it replaces ssrc2 with ssrc1 in all packets of the
+ssrc2 stream and flags them as retransmissions, so that rtpjitterbuffer
+can reconstruct the original stream.</p>
+<p>This algorithm is implemented as specified in RFC 4588.</p>
+<p>This element is meant to be used with rtprtxsend on the sender side.
+See <a class="link" href="gst-plugins-good-plugins-rtprtxsend.html#GstRtpRtxSend"><span class="type">GstRtpRtxSend</span></a></p>
+<p>Below you can see some examples that illustrate how rtprtxreceive and
+rtprtxsend fit among the other rtp elements and how they work internally.
+Normally, hoewever, you should avoid using such pipelines and use
+rtpbin instead, with its <a class="link" href="gst-plugins-good-plugins-rtpbin.html#GstRtpBin-request-aux-sender" title="The “request-aux-sender” signal"><span class="type">“request-aux-sender”</span></a> and
+<a class="link" href="gst-plugins-good-plugins-rtpbin.html#GstRtpBin-request-aux-receiver" title="The “request-aux-receiver” signal"><span class="type">“request-aux-receiver”</span></a> signals. See <a class="link" href="gst-plugins-good-plugins-rtpbin.html#GstRtpBin"><span class="type">GstRtpBin</span></a>.</p>
+<div class="refsect2">
+<a name="id-1.2.201.7.6"></a><h3>Example pipelines</h3>
+<div class="informalexample">
+  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td class="listing_lines" align="right"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9</pre></td>
+        <td class="listing_code"><pre class="programlisting">gst<span class="gtkdoc opt">-</span>launch<span class="gtkdoc opt">-</span><span class="number">1.0</span> rtpsession name<span class="gtkdoc opt">=</span>rtpsession rtp<span class="gtkdoc opt">-</span>profile<span class="gtkdoc opt">=</span>avpf \
+    audiotestsrc is<span class="gtkdoc opt">-</span>live<span class="gtkdoc opt">=</span><span class="keyword">true</span> <span class="gtkdoc opt">!</span> opusenc <span class="gtkdoc opt">!</span> rtpopuspay pt<span class="gtkdoc opt">=</span><span class="number">96</span> <span class="gtkdoc opt">!</span> \
+        rtprtxsend payload<span class="gtkdoc opt">-</span>type<span class="gtkdoc opt">-</span>map<span class="gtkdoc opt">=</span><span class="string">&quot;application/x-rtp-pt-map,96=(uint)97&quot;</span> <span class="gtkdoc opt">!</span> \
+        rtpsession<span class="gtkdoc opt">.</span>send_rtp_sink \
+    rtpsession<span class="gtkdoc opt">.</span>send_rtp_src <span class="gtkdoc opt">!</span> identity drop<span class="gtkdoc opt">-</span>probability<span class="gtkdoc opt">=</span><span class="number">0.01</span> <span class="gtkdoc opt">!</span> \
+        udpsink host<span class="gtkdoc opt">=</span><span class="string">&quot;127.0.0.1&quot;</span> port<span class="gtkdoc opt">=</span><span class="number">5000</span> \
+    udpsrc port<span class="gtkdoc opt">=</span><span class="number">5001</span> <span class="gtkdoc opt">!</span> rtpsession<span class="gtkdoc opt">.</span>recv_rtcp_sink \
+    rtpsession<span class="gtkdoc opt">.</span>send_rtcp_src <span class="gtkdoc opt">!</span> udpsink host<span class="gtkdoc opt">=</span><span class="string">&quot;127.0.0.1&quot;</span> port<span class="gtkdoc opt">=</span><span class="number">5002</span> \
+        sync<span class="gtkdoc opt">=</span><span class="keyword">false</span> async<span class="gtkdoc opt">=</span><span class="keyword">false</span></pre></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p> Send audio stream through port 5000 (5001 and 5002 are just the rtcp
+link with the receiver)</p>
+<div class="informalexample">
+  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td class="listing_lines" align="right"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+10</pre></td>
+        <td class="listing_code"><pre class="programlisting">gst<span class="gtkdoc opt">-</span>launch<span class="gtkdoc opt">-</span><span class="number">1.0</span> rtpsession name<span class="gtkdoc opt">=</span>rtpsession rtp<span class="gtkdoc opt">-</span>profile<span class="gtkdoc opt">=</span>avpf \
+    udpsrc port<span class="gtkdoc opt">=</span><span class="number">5000</span> caps<span class="gtkdoc opt">=</span><span class="string">&quot;application/x-rtp,media=(string)audio,clock-rate=(int)48000,encoding-name=(string)OPUS,payload=(int)96&quot;</span> <span class="gtkdoc opt">!</span> \
+        rtpsession<span class="gtkdoc opt">.</span>recv_rtp_sink \
+    rtpsession<span class="gtkdoc opt">.</span>recv_rtp_src <span class="gtkdoc opt">!</span> \
+        rtprtxreceive payload<span class="gtkdoc opt">-</span>type<span class="gtkdoc opt">-</span>map<span class="gtkdoc opt">=</span><span class="string">&quot;application/x-rtp-pt-map,96=(uint)97&quot;</span> <span class="gtkdoc opt">!</span> \
+        rtpssrcdemux <span class="gtkdoc opt">!</span> rtpjitterbuffer <span class="keyword">do</span><span class="gtkdoc opt">-</span>retransmission<span class="gtkdoc opt">=</span><span class="keyword">true</span> <span class="gtkdoc opt">!</span> \
+        rtpopusdepay <span class="gtkdoc opt">!</span> opusdec <span class="gtkdoc opt">!</span> audioconvert <span class="gtkdoc opt">!</span> audioresample <span class="gtkdoc opt">!</span> autoaudiosink \
+    rtpsession<span class="gtkdoc opt">.</span>send_rtcp_src <span class="gtkdoc opt">!</span> \
+        udpsink host<span class="gtkdoc opt">=</span><span class="string">&quot;127.0.0.1&quot;</span> port<span class="gtkdoc opt">=</span><span class="number">5001</span> sync<span class="gtkdoc opt">=</span><span class="keyword">false</span> async<span class="gtkdoc opt">=</span><span class="keyword">false</span> \
+    udpsrc port<span class="gtkdoc opt">=</span><span class="number">5002</span> <span class="gtkdoc opt">!</span> rtpsession<span class="gtkdoc opt">.</span>recv_rtcp_sink</pre></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p> Receive audio stream from port 5000 (5001 and 5002 are just the rtcp
+link with the sender)</p>
+<p>In this example we can see a simple streaming of an OPUS stream with some
+of the packets being artificially dropped by the identity element.
+Thanks to retransmission, you should still hear a clear sound when setting
+drop-probability to something greater than 0.</p>
+<p>Internally, the rtpjitterbuffer will generate a custom upstream event,
+GstRTPRetransmissionRequest, when it detects that one packet is missing.
+Then this request is translated to a FB NACK in the rtcp link by rtpsession.
+Finally the rtpsession of the sender side will re-convert it in a
+GstRTPRetransmissionRequest that will be handled by rtprtxsend. rtprtxsend
+will then re-send the missing packet with a new srrc and a different payload
+type (here, 97), but with the same original sequence number. On the receiver
+side, rtprtxreceive will associate this new stream with the original and
+forward the retransmission packets to rtpjitterbuffer with the original
+ssrc and payload type.</p>
+<div class="informalexample">
+  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td class="listing_lines" align="right"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13</pre></td>
+        <td class="listing_code"><pre class="programlisting">gst<span class="gtkdoc opt">-</span>launch<span class="gtkdoc opt">-</span><span class="number">1.0</span> rtpsession name<span class="gtkdoc opt">=</span>rtpsession rtp<span class="gtkdoc opt">-</span>profile<span class="gtkdoc opt">=</span>avpf \
+    audiotestsrc is<span class="gtkdoc opt">-</span>live<span class="gtkdoc opt">=</span><span class="keyword">true</span> <span class="gtkdoc opt">!</span> opusenc <span class="gtkdoc opt">!</span> rtpopuspay pt<span class="gtkdoc opt">=</span><span class="number">97</span> seqnum<span class="gtkdoc opt">-</span>offset<span class="gtkdoc opt">=</span><span class="number">1</span> <span class="gtkdoc opt">!</span> \
+        rtprtxsend payload<span class="gtkdoc opt">-</span>type<span class="gtkdoc opt">-</span>map<span class="gtkdoc opt">=</span><span class="string">&quot;application/x-rtp-pt-map,97=(uint)99&quot;</span> <span class="gtkdoc opt">!</span> \
+        funnel name<span class="gtkdoc opt">=</span>f <span class="gtkdoc opt">!</span> rtpsession<span class="gtkdoc opt">.</span>send_rtp_sink \
+    audiotestsrc freq<span class="gtkdoc opt">=</span><span class="number">660.0</span> is<span class="gtkdoc opt">-</span>live<span class="gtkdoc opt">=</span><span class="keyword">true</span> <span class="gtkdoc opt">!</span> opusenc <span class="gtkdoc opt">!</span> \
+        rtpopuspay pt<span class="gtkdoc opt">=</span><span class="number">97</span> seqnum<span class="gtkdoc opt">-</span>offset<span class="gtkdoc opt">=</span><span class="number">100</span> <span class="gtkdoc opt">!</span> \
+        rtprtxsend payload<span class="gtkdoc opt">-</span>type<span class="gtkdoc opt">-</span>map<span class="gtkdoc opt">=</span><span class="string">&quot;application/x-rtp-pt-map,97=(uint)99&quot;</span> <span class="gtkdoc opt">!</span> \
+        f<span class="gtkdoc opt">.</span> \
+    rtpsession<span class="gtkdoc opt">.</span>send_rtp_src <span class="gtkdoc opt">!</span> identity drop<span class="gtkdoc opt">-</span>probability<span class="gtkdoc opt">=</span><span class="number">0.01</span> <span class="gtkdoc opt">!</span> \
+        udpsink host<span class="gtkdoc opt">=</span><span class="string">&quot;127.0.0.1&quot;</span> port<span class="gtkdoc opt">=</span><span class="number">5000</span> \
+    udpsrc port<span class="gtkdoc opt">=</span><span class="number">5001</span> <span class="gtkdoc opt">!</span> rtpsession<span class="gtkdoc opt">.</span>recv_rtcp_sink \
+    rtpsession<span class="gtkdoc opt">.</span>send_rtcp_src <span class="gtkdoc opt">!</span> udpsink host<span class="gtkdoc opt">=</span><span class="string">&quot;127.0.0.1&quot;</span> port<span class="gtkdoc opt">=</span><span class="number">5002</span> \
+        sync<span class="gtkdoc opt">=</span><span class="keyword">false</span> async<span class="gtkdoc opt">=</span><span class="keyword">false</span></pre></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p> Send two audio streams to port 5000.</p>
+<div class="informalexample">
+  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td class="listing_lines" align="right"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13</pre></td>
+        <td class="listing_code"><pre class="programlisting">gst<span class="gtkdoc opt">-</span>launch<span class="gtkdoc opt">-</span><span class="number">1.0</span> rtpsession name<span class="gtkdoc opt">=</span>rtpsession rtp<span class="gtkdoc opt">-</span>profile<span class="gtkdoc opt">=</span>avpf \
+    udpsrc port<span class="gtkdoc opt">=</span><span class="number">5000</span> caps<span class="gtkdoc opt">=</span><span class="string">&quot;application/x-rtp,media=(string)audio,clock-rate=(int)48000,encoding-name=(string)OPUS,payload=(int)97&quot;</span> <span class="gtkdoc opt">!</span> \
+        rtpsession<span class="gtkdoc opt">.</span>recv_rtp_sink \
+    rtpsession<span class="gtkdoc opt">.</span>recv_rtp_src <span class="gtkdoc opt">!</span> \
+        rtprtxreceive payload<span class="gtkdoc opt">-</span>type<span class="gtkdoc opt">-</span>map<span class="gtkdoc opt">=</span><span class="string">&quot;application/x-rtp-pt-map,97=(uint)99&quot;</span> <span class="gtkdoc opt">!</span> \
+        rtpssrcdemux name<span class="gtkdoc opt">=</span>demux \
+    demux<span class="gtkdoc opt">. !</span> queue <span class="gtkdoc opt">!</span> rtpjitterbuffer <span class="keyword">do</span><span class="gtkdoc opt">-</span>retransmission<span class="gtkdoc opt">=</span><span class="keyword">true</span> <span class="gtkdoc opt">!</span> rtpopusdepay <span class="gtkdoc opt">!</span> \
+        opusdec <span class="gtkdoc opt">!</span> audioconvert <span class="gtkdoc opt">!</span> autoaudiosink \
+    demux<span class="gtkdoc opt">. !</span> queue <span class="gtkdoc opt">!</span> rtpjitterbuffer <span class="keyword">do</span><span class="gtkdoc opt">-</span>retransmission<span class="gtkdoc opt">=</span><span class="keyword">true</span> <span class="gtkdoc opt">!</span> rtpopusdepay <span class="gtkdoc opt">!</span> \
+        opusdec <span class="gtkdoc opt">!</span> audioconvert <span class="gtkdoc opt">!</span> autoaudiosink \
+    udpsrc port<span class="gtkdoc opt">=</span><span class="number">5002</span> <span class="gtkdoc opt">!</span> rtpsession<span class="gtkdoc opt">.</span>recv_rtcp_sink \
+    rtpsession<span class="gtkdoc opt">.</span>send_rtcp_src <span class="gtkdoc opt">!</span> udpsink host<span class="gtkdoc opt">=</span><span class="string">&quot;127.0.0.1&quot;</span> port<span class="gtkdoc opt">=</span><span class="number">5001</span> \
+        sync<span class="gtkdoc opt">=</span><span class="keyword">false</span> async<span class="gtkdoc opt">=</span><span class="keyword">false</span></pre></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p> Receive two audio streams from port 5000.</p>
+<p>In this example we are streaming two streams of the same type through the
+same port. They, however, are using a different SSRC (ssrc is randomly
+generated on each payloader - rtpopuspay in this example), so they can be
+identified and demultiplexed by rtpssrcdemux on the receiver side. This is
+an example of SSRC-multiplexing.</p>
+<p>It is important here to use a different starting sequence number
+(seqnum-offset), since this is the only means of identification that
+rtprtxreceive uses the very first time to identify retransmission streams.
+It is an error, according to RFC4588 to have two retransmission requests for
+packets belonging to two different streams but with the same sequence number.
+Note that the default seqnum-offset value (-1, which means random) would
+work just fine, but it is overriden here for illustration purposes.</p>
+</div>
+<div class="refsynopsisdiv">
+<h2>Synopsis</h2>
+<div class="refsect2">
+<a name="id-1.2.201.7.7.1"></a><h3>Element Information</h3>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term">plugin</span></p></td>
+<td>
+            <a class="link" href="gst-plugins-good-plugins-plugin-rtpmanager.html#plugin-rtpmanager">rtpmanager</a>
+          </td>
+</tr>
+<tr>
+<td><p><span class="term">author</span></p></td>
+<td>Julien Isorce &lt;julien.isorce@collabora.co.uk&gt;</td>
+</tr>
+<tr>
+<td><p><span class="term">class</span></p></td>
+<td>Codec</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="id-1.2.201.7.7.2"></a><h3>Element Pads</h3>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term">name</span></p></td>
+<td>sink</td>
+</tr>
+<tr>
+<td><p><span class="term">direction</span></p></td>
+<td>sink</td>
+</tr>
+<tr>
+<td><p><span class="term">presence</span></p></td>
+<td>always</td>
+</tr>
+<tr>
+<td><p><span class="term">details</span></p></td>
+<td>application/x-rtp</td>
+</tr>
+</tbody>
+</table></div>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term">name</span></p></td>
+<td>src</td>
+</tr>
+<tr>
+<td><p><span class="term">direction</span></p></td>
+<td>source</td>
+</tr>
+<tr>
+<td><p><span class="term">presence</span></p></td>
+<td>always</td>
+</tr>
+<tr>
+<td><p><span class="term">details</span></p></td>
+<td>application/x-rtp</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-good-plugins-rtprtxreceive.functions_details"></a><h2>Functions</h2>
+<p></p>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-good-plugins-rtprtxreceive.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GstRtpRtxReceive-struct"></a><h3>struct GstRtpRtxReceive</h3>
+<pre class="programlisting">struct GstRtpRtxReceive;</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-good-plugins-rtprtxreceive.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="GstRtpRtxReceive--num-rtx-requests"></a><h3>The <code class="literal">“num-rtx-requests”</code> property</h3>
+<pre class="programlisting">  “num-rtx-requests”         <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#guint"><span class="type">guint</span></a></pre>
+<p>Number of retransmission events received.</p>
+<p>Flags: Read</p>
+<p>Default value: 0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstRtpRtxReceive--num-rtx-packets"></a><h3>The <code class="literal">“num-rtx-packets”</code> property</h3>
+<pre class="programlisting">  “num-rtx-packets”          <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#guint"><span class="type">guint</span></a></pre>
+<p> Number of retransmission packets received.</p>
+<p>Flags: Read</p>
+<p>Default value: 0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstRtpRtxReceive--num-rtx-assoc-packets"></a><h3>The <code class="literal">“num-rtx-assoc-packets”</code> property</h3>
+<pre class="programlisting">  “num-rtx-assoc-packets”    <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#guint"><span class="type">guint</span></a></pre>
+<p>Number of retransmission packets correctly associated with retransmission requests.</p>
+<p>Flags: Read</p>
+<p>Default value: 0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstRtpRtxReceive--payload-type-map"></a><h3>The <code class="literal">“payload-type-map”</code> property</h3>
+<pre class="programlisting">  “payload-type-map”         <a href="/usr/share/gtk-doc/html/gstreamer-1.0GstStructure.html#GstStructure-struct"><span class="type">GstStructure</span></a> *</pre>
+<p>Map of original payload types to their retransmission payload types.</p>
+<p>Flags: Read / Write</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-good-plugins-rtprtxreceive.see-also"></a><h2>See Also</h2>
+<p>rtprtxsend, rtpsession, rtpjitterbuffer</p>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.25</div>
+</body>
+</html>

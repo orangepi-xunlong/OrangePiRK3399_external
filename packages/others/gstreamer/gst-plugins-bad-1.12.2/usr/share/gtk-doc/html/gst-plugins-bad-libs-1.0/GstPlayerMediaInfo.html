@@ -1,0 +1,1269 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>GstPlayerMediaInfo: GStreamer Bad Plugins 1.0 Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="GStreamer Bad Plugins 1.0 Library Reference Manual">
+<link rel="up" href="player.html" title="Player Library">
+<link rel="prev" href="GstPlayer.html" title="GstPlayer">
+<link rel="next" href="gst-plugins-bad-libs-GstPlayerGMainContextSignalDispatcher.html" title="GstPlayerGMainContextSignalDispatcher">
+<meta name="generator" content="GTK-Doc V1.25 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#GstPlayerMediaInfo.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#GstPlayerMediaInfo.object-hierarchy" class="shortcut">Object Hierarchy</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="player.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="GstPlayer.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="gst-plugins-bad-libs-GstPlayerGMainContextSignalDispatcher.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="GstPlayerMediaInfo"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="GstPlayerMediaInfo.top_of_page"></a>GstPlayerMediaInfo</span></h2>
+<p>GstPlayerMediaInfo — Player Media Information</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="GstPlayerMediaInfo.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GstPlayerMediaInfo.html#gst-player-media-info-get-uri" title="gst_player_media_info_get_uri ()">gst_player_media_info_get_uri</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/gstreamer-1.0GstClock.html#GstClockTime"><span class="returnvalue">GstClockTime</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GstPlayerMediaInfo.html#gst-player-media-info-get-duration" title="gst_player_media_info_get_duration ()">gst_player_media_info_get_duration</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GstPlayerMediaInfo.html#gst-player-media-info-get-title" title="gst_player_media_info_get_title ()">gst_player_media_info_get_title</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GstPlayerMediaInfo.html#gst-player-media-info-get-container-format" title="gst_player_media_info_get_container_format ()">gst_player_media_info_get_container_format</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GstPlayerMediaInfo.html#gst-player-media-info-is-seekable" title="gst_player_media_info_is_seekable ()">gst_player_media_info_is_seekable</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GstPlayerMediaInfo.html#gst-player-media-info-is-live" title="gst_player_media_info_is_live ()">gst_player_media_info_is_live</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/gstreamer-1.0GstSample.html#GstSample-struct"><span class="returnvalue">GstSample</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GstPlayerMediaInfo.html#gst-player-media-info-get-image-sample" title="gst_player_media_info_get_image_sample ()">gst_player_media_info_get_image_sample</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/gstreamer-1.0GstTagList.html#GstTagList-struct"><span class="returnvalue">GstTagList</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GstPlayerMediaInfo.html#gst-player-media-info-get-tags" title="gst_player_media_info_get_tags ()">gst_player_media_info_get_tags</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GstPlayerMediaInfo.html#gst-player-media-info-get-stream-list" title="gst_player_media_info_get_stream_list ()">gst_player_media_info_get_stream_list</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#guint"><span class="returnvalue">guint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GstPlayerMediaInfo.html#gst-player-media-info-get-number-of-streams" title="gst_player_media_info_get_number_of_streams ()">gst_player_media_info_get_number_of_streams</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GstPlayerMediaInfo.html#gst-player-media-info-get-audio-streams" title="gst_player_media_info_get_audio_streams ()">gst_player_media_info_get_audio_streams</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#guint"><span class="returnvalue">guint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GstPlayerMediaInfo.html#gst-player-media-info-get-number-of-audio-streams" title="gst_player_media_info_get_number_of_audio_streams ()">gst_player_media_info_get_number_of_audio_streams</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GstPlayerMediaInfo.html#gst-player-media-info-get-video-streams" title="gst_player_media_info_get_video_streams ()">gst_player_media_info_get_video_streams</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#guint"><span class="returnvalue">guint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GstPlayerMediaInfo.html#gst-player-media-info-get-number-of-video-streams" title="gst_player_media_info_get_number_of_video_streams ()">gst_player_media_info_get_number_of_video_streams</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GstPlayerMediaInfo.html#gst-player-media-info-get-subtitle-streams" title="gst_player_media_info_get_subtitle_streams ()">gst_player_media_info_get_subtitle_streams</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#guint"><span class="returnvalue">guint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GstPlayerMediaInfo.html#gst-player-media-info-get-number-of-subtitle-streams" title="gst_player_media_info_get_number_of_subtitle_streams ()">gst_player_media_info_get_number_of_subtitle_streams</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GstPlayerMediaInfo.html#gst-player-stream-info-get-index" title="gst_player_stream_info_get_index ()">gst_player_stream_info_get_index</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/gstreamer-1.0GstCaps.html#GstCaps-struct"><span class="returnvalue">GstCaps</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GstPlayerMediaInfo.html#gst-player-stream-info-get-caps" title="gst_player_stream_info_get_caps ()">gst_player_stream_info_get_caps</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/gstreamer-1.0GstTagList.html#GstTagList-struct"><span class="returnvalue">GstTagList</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GstPlayerMediaInfo.html#gst-player-stream-info-get-tags" title="gst_player_stream_info_get_tags ()">gst_player_stream_info_get_tags</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GstPlayerMediaInfo.html#gst-player-stream-info-get-codec" title="gst_player_stream_info_get_codec ()">gst_player_stream_info_get_codec</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GstPlayerMediaInfo.html#gst-player-stream-info-get-stream-type" title="gst_player_stream_info_get_stream_type ()">gst_player_stream_info_get_stream_type</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GstPlayerMediaInfo.html#gst-player-audio-info-get-bitrate" title="gst_player_audio_info_get_bitrate ()">gst_player_audio_info_get_bitrate</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GstPlayerMediaInfo.html#gst-player-audio-info-get-channels" title="gst_player_audio_info_get_channels ()">gst_player_audio_info_get_channels</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GstPlayerMediaInfo.html#gst-player-audio-info-get-language" title="gst_player_audio_info_get_language ()">gst_player_audio_info_get_language</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GstPlayerMediaInfo.html#gst-player-audio-info-get-max-bitrate" title="gst_player_audio_info_get_max_bitrate ()">gst_player_audio_info_get_max_bitrate</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GstPlayerMediaInfo.html#gst-player-audio-info-get-sample-rate" title="gst_player_audio_info_get_sample_rate ()">gst_player_audio_info_get_sample_rate</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GstPlayerMediaInfo.html#gst-player-video-info-get-bitrate" title="gst_player_video_info_get_bitrate ()">gst_player_video_info_get_bitrate</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GstPlayerMediaInfo.html#gst-player-video-info-get-height" title="gst_player_video_info_get_height ()">gst_player_video_info_get_height</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GstPlayerMediaInfo.html#gst-player-video-info-get-width" title="gst_player_video_info_get_width ()">gst_player_video_info_get_width</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GstPlayerMediaInfo.html#gst-player-video-info-get-framerate" title="gst_player_video_info_get_framerate ()">gst_player_video_info_get_framerate</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="GstPlayerMediaInfo.html#gst-player-video-info-get-max-bitrate" title="gst_player_video_info_get_max_bitrate ()">gst_player_video_info_get_max_bitrate</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="GstPlayerMediaInfo.html#gst-player-video-info-get-pixel-aspect-ratio" title="gst_player_video_info_get_pixel_aspect_ratio ()">gst_player_video_info_get_pixel_aspect_ratio</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="GstPlayerMediaInfo.html#gst-player-subtitle-info-get-language" title="gst_player_subtitle_info_get_language ()">gst_player_subtitle_info_get_language</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<a name="GstPlayerStreamInfo"></a><a name="GstPlayerAudioInfo"></a><a name="GstPlayerVideoInfo"></a><a name="GstPlayerSubtitleInfo"></a><div class="refsect1">
+<a name="GstPlayerMediaInfo.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="GstPlayerMediaInfo.html#GstPlayerMediaInfo-struct" title="GstPlayerMediaInfo">GstPlayerMediaInfo</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="GstPlayerMediaInfo.html#GstPlayerStreamInfo-struct" title="GstPlayerStreamInfo">GstPlayerStreamInfo</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="GstPlayerMediaInfo.html#GstPlayerAudioInfo-struct" title="GstPlayerAudioInfo">GstPlayerAudioInfo</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="GstPlayerMediaInfo.html#GstPlayerVideoInfo-struct" title="GstPlayerVideoInfo">GstPlayerVideoInfo</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="GstPlayerMediaInfo.html#GstPlayerSubtitleInfo-struct" title="GstPlayerSubtitleInfo">GstPlayerSubtitleInfo</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GstPlayerMediaInfo.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="/usr/share/gtk-doc/html/gobjectgobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+    <span class="lineart">├──</span> GstPlayerMediaInfo
+    <span class="lineart">╰──</span> GstPlayerStreamInfo
+        <span class="lineart">├──</span> GstPlayerAudioInfo
+        <span class="lineart">├──</span> GstPlayerSubtitleInfo
+        <span class="lineart">╰──</span> GstPlayerVideoInfo
+</pre>
+</div>
+<div class="refsect1">
+<a name="GstPlayerMediaInfo.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="GstPlayerMediaInfo.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="gst-player-media-info-get-uri"></a><h3>gst_player_media_info_get_uri ()</h3>
+<pre class="programlisting">const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gst_player_media_info_get_uri (<em class="parameter"><code>const <a class="link" href="GstPlayerMediaInfo.html" title="GstPlayerMediaInfo"><span class="type">GstPlayerMediaInfo</span></a> *info</code></em>);</pre>
+<div class="refsect3">
+<a name="gst-player-media-info-get-uri.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>info</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstPlayerMediaInfo.html" title="GstPlayerMediaInfo"><span class="type">GstPlayerMediaInfo</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gst-player-media-info-get-uri.returns"></a><h4>Returns</h4>
+<p> the URI associated with <a class="link" href="GstPlayerMediaInfo.html" title="GstPlayerMediaInfo"><span class="type">GstPlayerMediaInfo</span></a>.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-player-media-info-get-duration"></a><h3>gst_player_media_info_get_duration ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/gstreamer-1.0GstClock.html#GstClockTime"><span class="returnvalue">GstClockTime</span></a>
+gst_player_media_info_get_duration (<em class="parameter"><code>const <a class="link" href="GstPlayerMediaInfo.html" title="GstPlayerMediaInfo"><span class="type">GstPlayerMediaInfo</span></a> *info</code></em>);</pre>
+<div class="refsect3">
+<a name="gst-player-media-info-get-duration.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>info</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstPlayerMediaInfo.html" title="GstPlayerMediaInfo"><span class="type">GstPlayerMediaInfo</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gst-player-media-info-get-duration.returns"></a><h4>Returns</h4>
+<p> duration of the media.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-player-media-info-get-title"></a><h3>gst_player_media_info_get_title ()</h3>
+<pre class="programlisting">const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gst_player_media_info_get_title (<em class="parameter"><code>const <a class="link" href="GstPlayerMediaInfo.html" title="GstPlayerMediaInfo"><span class="type">GstPlayerMediaInfo</span></a> *info</code></em>);</pre>
+<div class="refsect3">
+<a name="gst-player-media-info-get-title.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>info</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstPlayerMediaInfo.html" title="GstPlayerMediaInfo"><span class="type">GstPlayerMediaInfo</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gst-player-media-info-get-title.returns"></a><h4>Returns</h4>
+<p> the media title.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-player-media-info-get-container-format"></a><h3>gst_player_media_info_get_container_format ()</h3>
+<pre class="programlisting">const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gst_player_media_info_get_container_format
+                               (<em class="parameter"><code>const <a class="link" href="GstPlayerMediaInfo.html" title="GstPlayerMediaInfo"><span class="type">GstPlayerMediaInfo</span></a> *info</code></em>);</pre>
+<div class="refsect3">
+<a name="gst-player-media-info-get-container-format.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>info</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstPlayerMediaInfo.html" title="GstPlayerMediaInfo"><span class="type">GstPlayerMediaInfo</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gst-player-media-info-get-container-format.returns"></a><h4>Returns</h4>
+<p> the container format.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-player-media-info-is-seekable"></a><h3>gst_player_media_info_is_seekable ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gst_player_media_info_is_seekable (<em class="parameter"><code>const <a class="link" href="GstPlayerMediaInfo.html" title="GstPlayerMediaInfo"><span class="type">GstPlayerMediaInfo</span></a> *info</code></em>);</pre>
+<div class="refsect3">
+<a name="gst-player-media-info-is-seekable.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>info</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstPlayerMediaInfo.html" title="GstPlayerMediaInfo"><span class="type">GstPlayerMediaInfo</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gst-player-media-info-is-seekable.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glibglib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the media is seekable.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-player-media-info-is-live"></a><h3>gst_player_media_info_is_live ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+gst_player_media_info_is_live (<em class="parameter"><code>const <a class="link" href="GstPlayerMediaInfo.html" title="GstPlayerMediaInfo"><span class="type">GstPlayerMediaInfo</span></a> *info</code></em>);</pre>
+<div class="refsect3">
+<a name="gst-player-media-info-is-live.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>info</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstPlayerMediaInfo.html" title="GstPlayerMediaInfo"><span class="type">GstPlayerMediaInfo</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gst-player-media-info-is-live.returns"></a><h4>Returns</h4>
+<p> <a href="/usr/share/gtk-doc/html/glibglib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the media is live.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-player-media-info-get-image-sample"></a><h3>gst_player_media_info_get_image_sample ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/gstreamer-1.0GstSample.html#GstSample-struct"><span class="returnvalue">GstSample</span></a> *
+gst_player_media_info_get_image_sample
+                               (<em class="parameter"><code>const <a class="link" href="GstPlayerMediaInfo.html" title="GstPlayerMediaInfo"><span class="type">GstPlayerMediaInfo</span></a> *info</code></em>);</pre>
+<p>Function to get the image (or preview-image) stored in taglist.
+Application can use gst_sample_*_() API's to get caps, buffer etc.</p>
+<div class="refsect3">
+<a name="gst-player-media-info-get-image-sample.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>info</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstPlayerMediaInfo.html" title="GstPlayerMediaInfo"><span class="type">GstPlayerMediaInfo</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gst-player-media-info-get-image-sample.returns"></a><h4>Returns</h4>
+<p> GstSample or NULL. </p>
+<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-player-media-info-get-tags"></a><h3>gst_player_media_info_get_tags ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/gstreamer-1.0GstTagList.html#GstTagList-struct"><span class="returnvalue">GstTagList</span></a> *
+gst_player_media_info_get_tags (<em class="parameter"><code>const <a class="link" href="GstPlayerMediaInfo.html" title="GstPlayerMediaInfo"><span class="type">GstPlayerMediaInfo</span></a> *info</code></em>);</pre>
+<div class="refsect3">
+<a name="gst-player-media-info-get-tags.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>info</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstPlayerMediaInfo.html" title="GstPlayerMediaInfo"><span class="type">GstPlayerMediaInfo</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gst-player-media-info-get-tags.returns"></a><h4>Returns</h4>
+<p> the tags contained in media info. </p>
+<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-player-media-info-get-stream-list"></a><h3>gst_player_media_info_get_stream_list ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+gst_player_media_info_get_stream_list (<em class="parameter"><code>const <a class="link" href="GstPlayerMediaInfo.html" title="GstPlayerMediaInfo"><span class="type">GstPlayerMediaInfo</span></a> *info</code></em>);</pre>
+<div class="refsect3">
+<a name="gst-player-media-info-get-stream-list.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>info</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstPlayerMediaInfo.html" title="GstPlayerMediaInfo"><span class="type">GstPlayerMediaInfo</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gst-player-media-info-get-stream-list.returns"></a><h4>Returns</h4>
+<p> A <a href="/usr/share/gtk-doc/html/glibglib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> of
+matching <a class="link" href="GstPlayerMediaInfo.html#GstPlayerStreamInfo"><span class="type">GstPlayerStreamInfo</span></a>. </p>
+<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>][<acronym title="Generics and defining elements of containers and arrays."><span class="acronym">element-type</span></acronym> GstPlayerStreamInfo]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-player-media-info-get-number-of-streams"></a><h3>gst_player_media_info_get_number_of_streams ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#guint"><span class="returnvalue">guint</span></a>
+gst_player_media_info_get_number_of_streams
+                               (<em class="parameter"><code>const <a class="link" href="GstPlayerMediaInfo.html" title="GstPlayerMediaInfo"><span class="type">GstPlayerMediaInfo</span></a> *info</code></em>);</pre>
+<div class="refsect3">
+<a name="gst-player-media-info-get-number-of-streams.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>info</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstPlayerMediaInfo.html" title="GstPlayerMediaInfo"><span class="type">GstPlayerMediaInfo</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gst-player-media-info-get-number-of-streams.returns"></a><h4>Returns</h4>
+<p> number of total streams.</p>
+</div>
+<p class="since">Since: 1.12</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-player-media-info-get-audio-streams"></a><h3>gst_player_media_info_get_audio_streams ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+gst_player_media_info_get_audio_streams
+                               (<em class="parameter"><code>const <a class="link" href="GstPlayerMediaInfo.html" title="GstPlayerMediaInfo"><span class="type">GstPlayerMediaInfo</span></a> *info</code></em>);</pre>
+<div class="refsect3">
+<a name="gst-player-media-info-get-audio-streams.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>info</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstPlayerMediaInfo.html" title="GstPlayerMediaInfo"><span class="type">GstPlayerMediaInfo</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gst-player-media-info-get-audio-streams.returns"></a><h4>Returns</h4>
+<p> A <a href="/usr/share/gtk-doc/html/glibglib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> of
+matching <a class="link" href="GstPlayerMediaInfo.html#GstPlayerAudioInfo"><span class="type">GstPlayerAudioInfo</span></a>. </p>
+<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>][<acronym title="Generics and defining elements of containers and arrays."><span class="acronym">element-type</span></acronym> GstPlayerAudioInfo]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-player-media-info-get-number-of-audio-streams"></a><h3>gst_player_media_info_get_number_of_audio_streams ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#guint"><span class="returnvalue">guint</span></a>
+gst_player_media_info_get_number_of_audio_streams
+                               (<em class="parameter"><code>const <a class="link" href="GstPlayerMediaInfo.html" title="GstPlayerMediaInfo"><span class="type">GstPlayerMediaInfo</span></a> *info</code></em>);</pre>
+<div class="refsect3">
+<a name="gst-player-media-info-get-number-of-audio-streams.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>info</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstPlayerMediaInfo.html" title="GstPlayerMediaInfo"><span class="type">GstPlayerMediaInfo</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gst-player-media-info-get-number-of-audio-streams.returns"></a><h4>Returns</h4>
+<p> number of audio streams.</p>
+</div>
+<p class="since">Since: 1.12</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-player-media-info-get-video-streams"></a><h3>gst_player_media_info_get_video_streams ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+gst_player_media_info_get_video_streams
+                               (<em class="parameter"><code>const <a class="link" href="GstPlayerMediaInfo.html" title="GstPlayerMediaInfo"><span class="type">GstPlayerMediaInfo</span></a> *info</code></em>);</pre>
+<div class="refsect3">
+<a name="gst-player-media-info-get-video-streams.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>info</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstPlayerMediaInfo.html" title="GstPlayerMediaInfo"><span class="type">GstPlayerMediaInfo</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gst-player-media-info-get-video-streams.returns"></a><h4>Returns</h4>
+<p> A <a href="/usr/share/gtk-doc/html/glibglib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> of
+matching <a class="link" href="GstPlayerMediaInfo.html#GstPlayerVideoInfo"><span class="type">GstPlayerVideoInfo</span></a>. </p>
+<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>][<acronym title="Generics and defining elements of containers and arrays."><span class="acronym">element-type</span></acronym> GstPlayerVideoInfo]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-player-media-info-get-number-of-video-streams"></a><h3>gst_player_media_info_get_number_of_video_streams ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#guint"><span class="returnvalue">guint</span></a>
+gst_player_media_info_get_number_of_video_streams
+                               (<em class="parameter"><code>const <a class="link" href="GstPlayerMediaInfo.html" title="GstPlayerMediaInfo"><span class="type">GstPlayerMediaInfo</span></a> *info</code></em>);</pre>
+<div class="refsect3">
+<a name="gst-player-media-info-get-number-of-video-streams.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>info</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstPlayerMediaInfo.html" title="GstPlayerMediaInfo"><span class="type">GstPlayerMediaInfo</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gst-player-media-info-get-number-of-video-streams.returns"></a><h4>Returns</h4>
+<p> number of video streams.</p>
+</div>
+<p class="since">Since: 1.12</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-player-media-info-get-subtitle-streams"></a><h3>gst_player_media_info_get_subtitle_streams ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *
+gst_player_media_info_get_subtitle_streams
+                               (<em class="parameter"><code>const <a class="link" href="GstPlayerMediaInfo.html" title="GstPlayerMediaInfo"><span class="type">GstPlayerMediaInfo</span></a> *info</code></em>);</pre>
+<div class="refsect3">
+<a name="gst-player-media-info-get-subtitle-streams.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>info</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstPlayerMediaInfo.html" title="GstPlayerMediaInfo"><span class="type">GstPlayerMediaInfo</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gst-player-media-info-get-subtitle-streams.returns"></a><h4>Returns</h4>
+<p> A <a href="/usr/share/gtk-doc/html/glibglib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a> of
+matching <a class="link" href="GstPlayerMediaInfo.html#GstPlayerSubtitleInfo"><span class="type">GstPlayerSubtitleInfo</span></a>. </p>
+<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>][<acronym title="Generics and defining elements of containers and arrays."><span class="acronym">element-type</span></acronym> GstPlayerSubtitleInfo]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-player-media-info-get-number-of-subtitle-streams"></a><h3>gst_player_media_info_get_number_of_subtitle_streams ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#guint"><span class="returnvalue">guint</span></a>
+gst_player_media_info_get_number_of_subtitle_streams
+                               (<em class="parameter"><code>const <a class="link" href="GstPlayerMediaInfo.html" title="GstPlayerMediaInfo"><span class="type">GstPlayerMediaInfo</span></a> *info</code></em>);</pre>
+<div class="refsect3">
+<a name="gst-player-media-info-get-number-of-subtitle-streams.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>info</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstPlayerMediaInfo.html" title="GstPlayerMediaInfo"><span class="type">GstPlayerMediaInfo</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gst-player-media-info-get-number-of-subtitle-streams.returns"></a><h4>Returns</h4>
+<p> number of subtitle streams.</p>
+</div>
+<p class="since">Since: 1.12</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-player-stream-info-get-index"></a><h3>gst_player_stream_info_get_index ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+gst_player_stream_info_get_index (<em class="parameter"><code>const <a class="link" href="GstPlayerMediaInfo.html#GstPlayerStreamInfo"><span class="type">GstPlayerStreamInfo</span></a> *info</code></em>);</pre>
+<p>Function to get stream index from <a class="link" href="GstPlayerMediaInfo.html#GstPlayerStreamInfo"><span class="type">GstPlayerStreamInfo</span></a> instance.</p>
+<div class="refsect3">
+<a name="gst-player-stream-info-get-index.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>info</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstPlayerMediaInfo.html#GstPlayerStreamInfo"><span class="type">GstPlayerStreamInfo</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gst-player-stream-info-get-index.returns"></a><h4>Returns</h4>
+<p> the stream index of this stream.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-player-stream-info-get-caps"></a><h3>gst_player_stream_info_get_caps ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/gstreamer-1.0GstCaps.html#GstCaps-struct"><span class="returnvalue">GstCaps</span></a> *
+gst_player_stream_info_get_caps (<em class="parameter"><code>const <a class="link" href="GstPlayerMediaInfo.html#GstPlayerStreamInfo"><span class="type">GstPlayerStreamInfo</span></a> *info</code></em>);</pre>
+<div class="refsect3">
+<a name="gst-player-stream-info-get-caps.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>info</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstPlayerMediaInfo.html#GstPlayerStreamInfo"><span class="type">GstPlayerStreamInfo</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gst-player-stream-info-get-caps.returns"></a><h4>Returns</h4>
+<p> the <a href="/usr/share/gtk-doc/html/gstreamer-1.0GstCaps.html#GstCaps-struct"><span class="type">GstCaps</span></a> of the stream. </p>
+<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-player-stream-info-get-tags"></a><h3>gst_player_stream_info_get_tags ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/gstreamer-1.0GstTagList.html#GstTagList-struct"><span class="returnvalue">GstTagList</span></a> *
+gst_player_stream_info_get_tags (<em class="parameter"><code>const <a class="link" href="GstPlayerMediaInfo.html#GstPlayerStreamInfo"><span class="type">GstPlayerStreamInfo</span></a> *info</code></em>);</pre>
+<div class="refsect3">
+<a name="gst-player-stream-info-get-tags.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>info</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstPlayerMediaInfo.html#GstPlayerStreamInfo"><span class="type">GstPlayerStreamInfo</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gst-player-stream-info-get-tags.returns"></a><h4>Returns</h4>
+<p> the tags contained in this stream. </p>
+<p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-player-stream-info-get-codec"></a><h3>gst_player_stream_info_get_codec ()</h3>
+<pre class="programlisting">const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gst_player_stream_info_get_codec (<em class="parameter"><code>const <a class="link" href="GstPlayerMediaInfo.html#GstPlayerStreamInfo"><span class="type">GstPlayerStreamInfo</span></a> *info</code></em>);</pre>
+<p>A string describing codec used in <a class="link" href="GstPlayerMediaInfo.html#GstPlayerStreamInfo"><span class="type">GstPlayerStreamInfo</span></a>.</p>
+<div class="refsect3">
+<a name="gst-player-stream-info-get-codec.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>info</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstPlayerMediaInfo.html#GstPlayerStreamInfo"><span class="type">GstPlayerStreamInfo</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gst-player-stream-info-get-codec.returns"></a><h4>Returns</h4>
+<p> codec string or NULL on unknown.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-player-stream-info-get-stream-type"></a><h3>gst_player_stream_info_get_stream_type ()</h3>
+<pre class="programlisting">const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gst_player_stream_info_get_stream_type
+                               (<em class="parameter"><code>const <a class="link" href="GstPlayerMediaInfo.html#GstPlayerStreamInfo"><span class="type">GstPlayerStreamInfo</span></a> *info</code></em>);</pre>
+<p>Function to return human readable name for the stream type
+of the given <em class="parameter"><code>info</code></em>
+ (ex: "audio", "video", "subtitle")</p>
+<div class="refsect3">
+<a name="gst-player-stream-info-get-stream-type.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>info</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstPlayerMediaInfo.html#GstPlayerStreamInfo"><span class="type">GstPlayerStreamInfo</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gst-player-stream-info-get-stream-type.returns"></a><h4>Returns</h4>
+<p> a human readable name</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-player-audio-info-get-bitrate"></a><h3>gst_player_audio_info_get_bitrate ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+gst_player_audio_info_get_bitrate (<em class="parameter"><code>const <a class="link" href="GstPlayerMediaInfo.html#GstPlayerAudioInfo"><span class="type">GstPlayerAudioInfo</span></a> *info</code></em>);</pre>
+<div class="refsect3">
+<a name="gst-player-audio-info-get-bitrate.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>info</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstPlayerMediaInfo.html#GstPlayerAudioInfo"><span class="type">GstPlayerAudioInfo</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gst-player-audio-info-get-bitrate.returns"></a><h4>Returns</h4>
+<p> the audio bitrate in <a class="link" href="GstPlayerMediaInfo.html#GstPlayerAudioInfo"><span class="type">GstPlayerAudioInfo</span></a>.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-player-audio-info-get-channels"></a><h3>gst_player_audio_info_get_channels ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+gst_player_audio_info_get_channels (<em class="parameter"><code>const <a class="link" href="GstPlayerMediaInfo.html#GstPlayerAudioInfo"><span class="type">GstPlayerAudioInfo</span></a> *info</code></em>);</pre>
+<div class="refsect3">
+<a name="gst-player-audio-info-get-channels.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>info</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstPlayerMediaInfo.html#GstPlayerAudioInfo"><span class="type">GstPlayerAudioInfo</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gst-player-audio-info-get-channels.returns"></a><h4>Returns</h4>
+<p> the number of audio channels in <a class="link" href="GstPlayerMediaInfo.html#GstPlayerAudioInfo"><span class="type">GstPlayerAudioInfo</span></a>.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-player-audio-info-get-language"></a><h3>gst_player_audio_info_get_language ()</h3>
+<pre class="programlisting">const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gst_player_audio_info_get_language (<em class="parameter"><code>const <a class="link" href="GstPlayerMediaInfo.html#GstPlayerAudioInfo"><span class="type">GstPlayerAudioInfo</span></a> *info</code></em>);</pre>
+<div class="refsect3">
+<a name="gst-player-audio-info-get-language.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>info</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstPlayerMediaInfo.html#GstPlayerAudioInfo"><span class="type">GstPlayerAudioInfo</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gst-player-audio-info-get-language.returns"></a><h4>Returns</h4>
+<p> the language of the stream, or NULL if unknown.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-player-audio-info-get-max-bitrate"></a><h3>gst_player_audio_info_get_max_bitrate ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+gst_player_audio_info_get_max_bitrate (<em class="parameter"><code>const <a class="link" href="GstPlayerMediaInfo.html#GstPlayerAudioInfo"><span class="type">GstPlayerAudioInfo</span></a> *info</code></em>);</pre>
+<div class="refsect3">
+<a name="gst-player-audio-info-get-max-bitrate.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>info</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstPlayerMediaInfo.html#GstPlayerAudioInfo"><span class="type">GstPlayerAudioInfo</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gst-player-audio-info-get-max-bitrate.returns"></a><h4>Returns</h4>
+<p> the audio maximum bitrate in <a class="link" href="GstPlayerMediaInfo.html#GstPlayerAudioInfo"><span class="type">GstPlayerAudioInfo</span></a>.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-player-audio-info-get-sample-rate"></a><h3>gst_player_audio_info_get_sample_rate ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+gst_player_audio_info_get_sample_rate (<em class="parameter"><code>const <a class="link" href="GstPlayerMediaInfo.html#GstPlayerAudioInfo"><span class="type">GstPlayerAudioInfo</span></a> *info</code></em>);</pre>
+<div class="refsect3">
+<a name="gst-player-audio-info-get-sample-rate.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>info</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstPlayerMediaInfo.html#GstPlayerAudioInfo"><span class="type">GstPlayerAudioInfo</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gst-player-audio-info-get-sample-rate.returns"></a><h4>Returns</h4>
+<p> the audio sample rate in <a class="link" href="GstPlayerMediaInfo.html#GstPlayerAudioInfo"><span class="type">GstPlayerAudioInfo</span></a>.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-player-video-info-get-bitrate"></a><h3>gst_player_video_info_get_bitrate ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+gst_player_video_info_get_bitrate (<em class="parameter"><code>const <a class="link" href="GstPlayerMediaInfo.html#GstPlayerVideoInfo"><span class="type">GstPlayerVideoInfo</span></a> *info</code></em>);</pre>
+<div class="refsect3">
+<a name="gst-player-video-info-get-bitrate.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>info</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstPlayerMediaInfo.html#GstPlayerVideoInfo"><span class="type">GstPlayerVideoInfo</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gst-player-video-info-get-bitrate.returns"></a><h4>Returns</h4>
+<p> the current bitrate of video in <a class="link" href="GstPlayerMediaInfo.html#GstPlayerVideoInfo"><span class="type">GstPlayerVideoInfo</span></a>.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-player-video-info-get-height"></a><h3>gst_player_video_info_get_height ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+gst_player_video_info_get_height (<em class="parameter"><code>const <a class="link" href="GstPlayerMediaInfo.html#GstPlayerVideoInfo"><span class="type">GstPlayerVideoInfo</span></a> *info</code></em>);</pre>
+<div class="refsect3">
+<a name="gst-player-video-info-get-height.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>info</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstPlayerMediaInfo.html#GstPlayerVideoInfo"><span class="type">GstPlayerVideoInfo</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gst-player-video-info-get-height.returns"></a><h4>Returns</h4>
+<p> the height of video in <a class="link" href="GstPlayerMediaInfo.html#GstPlayerVideoInfo"><span class="type">GstPlayerVideoInfo</span></a>.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-player-video-info-get-width"></a><h3>gst_player_video_info_get_width ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+gst_player_video_info_get_width (<em class="parameter"><code>const <a class="link" href="GstPlayerMediaInfo.html#GstPlayerVideoInfo"><span class="type">GstPlayerVideoInfo</span></a> *info</code></em>);</pre>
+<div class="refsect3">
+<a name="gst-player-video-info-get-width.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>info</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstPlayerMediaInfo.html#GstPlayerVideoInfo"><span class="type">GstPlayerVideoInfo</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gst-player-video-info-get-width.returns"></a><h4>Returns</h4>
+<p> the width of video in <a class="link" href="GstPlayerMediaInfo.html#GstPlayerVideoInfo"><span class="type">GstPlayerVideoInfo</span></a>.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-player-video-info-get-framerate"></a><h3>gst_player_video_info_get_framerate ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gst_player_video_info_get_framerate (<em class="parameter"><code>const <a class="link" href="GstPlayerMediaInfo.html#GstPlayerVideoInfo"><span class="type">GstPlayerVideoInfo</span></a> *info</code></em>,
+                                     <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a> *fps_n</code></em>,
+                                     <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a> *fps_d</code></em>);</pre>
+<div class="refsect3">
+<a name="gst-player-video-info-get-framerate.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>info</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstPlayerMediaInfo.html#GstPlayerVideoInfo"><span class="type">GstPlayerVideoInfo</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>fps_n</p></td>
+<td class="parameter_description"><p> Numerator of frame rate. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>fps_d</p></td>
+<td class="parameter_description"><p> Denominator of frame rate. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-player-video-info-get-max-bitrate"></a><h3>gst_player_video_info_get_max_bitrate ()</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="returnvalue">gint</span></a>
+gst_player_video_info_get_max_bitrate (<em class="parameter"><code>const <a class="link" href="GstPlayerMediaInfo.html#GstPlayerVideoInfo"><span class="type">GstPlayerVideoInfo</span></a> *info</code></em>);</pre>
+<div class="refsect3">
+<a name="gst-player-video-info-get-max-bitrate.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>info</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstPlayerMediaInfo.html#GstPlayerVideoInfo"><span class="type">GstPlayerVideoInfo</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gst-player-video-info-get-max-bitrate.returns"></a><h4>Returns</h4>
+<p> the maximum bitrate of video in <a class="link" href="GstPlayerMediaInfo.html#GstPlayerVideoInfo"><span class="type">GstPlayerVideoInfo</span></a>.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-player-video-info-get-pixel-aspect-ratio"></a><h3>gst_player_video_info_get_pixel_aspect_ratio ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+gst_player_video_info_get_pixel_aspect_ratio
+                               (<em class="parameter"><code>const <a class="link" href="GstPlayerMediaInfo.html#GstPlayerVideoInfo"><span class="type">GstPlayerVideoInfo</span></a> *info</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#guint"><span class="type">guint</span></a> *par_n</code></em>,
+                                <em class="parameter"><code><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#guint"><span class="type">guint</span></a> *par_d</code></em>);</pre>
+<p>Returns the pixel aspect ratio in <em class="parameter"><code>par_n</code></em>
+ and <em class="parameter"><code>par_d</code></em>
+</p>
+<div class="refsect3">
+<a name="gst-player-video-info-get-pixel-aspect-ratio.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>info</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstPlayerMediaInfo.html#GstPlayerVideoInfo"><span class="type">GstPlayerVideoInfo</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>par_n</p></td>
+<td class="parameter_description"><p> numerator. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>par_d</p></td>
+<td class="parameter_description"><p> denominator. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="gst-player-subtitle-info-get-language"></a><h3>gst_player_subtitle_info_get_language ()</h3>
+<pre class="programlisting">const <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *
+gst_player_subtitle_info_get_language (<em class="parameter"><code>const <a class="link" href="GstPlayerMediaInfo.html#GstPlayerSubtitleInfo"><span class="type">GstPlayerSubtitleInfo</span></a> *info</code></em>);</pre>
+<div class="refsect3">
+<a name="gst-player-subtitle-info-get-language.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>info</p></td>
+<td class="parameter_description"><p>a <a class="link" href="GstPlayerMediaInfo.html#GstPlayerSubtitleInfo"><span class="type">GstPlayerSubtitleInfo</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="gst-player-subtitle-info-get-language.returns"></a><h4>Returns</h4>
+<p> the language of the stream, or NULL if unknown.</p>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="GstPlayerMediaInfo.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GstPlayerMediaInfo-struct"></a><h3>GstPlayerMediaInfo</h3>
+<pre class="programlisting">typedef struct _GstPlayerMediaInfo GstPlayerMediaInfo;</pre>
+<p>Structure containing the media information of a URI.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstPlayerStreamInfo-struct"></a><h3>GstPlayerStreamInfo</h3>
+<pre class="programlisting">typedef struct _GstPlayerStreamInfo GstPlayerStreamInfo;</pre>
+<p>Base structure for information concering a media stream. Depending on
+the stream type, one can find more media-specific information in
+<a class="link" href="GstPlayerMediaInfo.html#GstPlayerVideoInfo"><span class="type">GstPlayerVideoInfo</span></a>, <a class="link" href="GstPlayerMediaInfo.html#GstPlayerAudioInfo"><span class="type">GstPlayerAudioInfo</span></a>, <a class="link" href="GstPlayerMediaInfo.html#GstPlayerSubtitleInfo"><span class="type">GstPlayerSubtitleInfo</span></a>.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstPlayerAudioInfo-struct"></a><h3>GstPlayerAudioInfo</h3>
+<pre class="programlisting">typedef struct _GstPlayerAudioInfo GstPlayerAudioInfo;</pre>
+<p><a class="link" href="GstPlayerMediaInfo.html#GstPlayerStreamInfo"><span class="type">GstPlayerStreamInfo</span></a> specific to audio streams.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstPlayerVideoInfo-struct"></a><h3>GstPlayerVideoInfo</h3>
+<pre class="programlisting">typedef struct _GstPlayerVideoInfo GstPlayerVideoInfo;</pre>
+<p><a class="link" href="GstPlayerMediaInfo.html#GstPlayerStreamInfo"><span class="type">GstPlayerStreamInfo</span></a> specific to video streams.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstPlayerSubtitleInfo-struct"></a><h3>GstPlayerSubtitleInfo</h3>
+<pre class="programlisting">typedef struct _GstPlayerSubtitleInfo GstPlayerSubtitleInfo;</pre>
+<p><a class="link" href="GstPlayerMediaInfo.html#GstPlayerStreamInfo"><span class="type">GstPlayerStreamInfo</span></a> specific to subtitle streams.</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.25</div>
+</body>
+</html>

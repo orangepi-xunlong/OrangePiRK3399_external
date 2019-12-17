@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>OpenGL Helper Library: GStreamer Bad Plugins 1.0 Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="GStreamer Bad Plugins 1.0 Library Reference Manual">
+<link rel="up" href="gstreamer-plugins-bad.html" title="Part I. GStreamer Bad Plugins Libraries">
+<link rel="prev" href="GstVideoAggregatorPad.html" title="GstVideoAggregatorPad">
+<link rel="next" href="gst-plugins-bad-libs-GstGLAPI.html" title="GstGlApi">
+<meta name="generator" content="GTK-Doc V1.25 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts"></td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="gstreamer-plugins-bad.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="GstVideoAggregatorPad.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="gst-plugins-bad-libs-GstGLAPI.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="chapter">
+<div class="titlepage"><div><div><h2 class="title">
+<a name="gl"></a>OpenGL Helper Library</h2></div></div></div>
+<div class="toc"><dl class="toc">
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-libs-GstGLAPI.html">GstGlApi</a></span><span class="refpurpose"> — OpenGL API specific functionality</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="GstGLBaseFilter.html">GstGLBaseFilter</a></span><span class="refpurpose"> — <span class="type">GstBaseTransform</span> subclass for transforming OpenGL resources</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-libs-GstGlBaseMemory.html">GstGlBaseMemory</a></span><span class="refpurpose"> — memory subclass for GL buffers</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-libs-GstGLBuffer.html">GstGlBuffer</a></span><span class="refpurpose"> — memory subclass for GL buffers</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="GstGLBufferPool.html">GstGlBufferPool</a></span><span class="refpurpose"> — buffer pool for <span class="type">GstGLBaseMemory</span> objects</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="GstGLColorConvert.html">GstGlColorConvert</a></span><span class="refpurpose"> — convert between video color spaces and formats</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="GstGLContext.html">GstGLContext</a></span><span class="refpurpose"> — OpenGL context abstraction</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="GstGLDisplay.html">GstGLDisplay</a></span><span class="refpurpose"> — window system display connection abstraction</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-libs-GstGLDisplayWayland.html">GstGLDisplayWayland</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-libs-GstGLDisplayX11.html">GstGLDisplayX11</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-libs-GstEGLImage.html">GstEGLImage</a></span><span class="refpurpose"> — EGLImage abstraction</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="GstGLFilter.html">GstGlFilter</a></span><span class="refpurpose"> — GstBaseTransform subclass for dealing with RGBA textures</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="GstGLFramebuffer.html">GstGLFramebuffer</a></span><span class="refpurpose"> — OpenGL framebuffer abstraction</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-libs-GstGLMemory.html">GstGlMemory</a></span><span class="refpurpose"> — memory subclass for GL textures</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-libs-gstglmemoryegl.html">GstGLMemoryEGL</a></span><span class="refpurpose"> — memory subclass for EGLImage's</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-libs-GstGLMemoryPBO.html">GstGLMemoryPBO</a></span><span class="refpurpose"> — memory subclass for GL textures</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-libs-GstGLOverlayCompositor.html">GstGLOverlayCompositor</a></span><span class="refpurpose"> — Composite multiple overlays using OpenGL</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-libs-GstGLQuery.html">GstGLQuery</a></span><span class="refpurpose"> — OpenGL query abstraction</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-libs-GstGLRenderbuffer.html">GstGLRenderBuffer</a></span><span class="refpurpose"> — memory subclass for GL renderbuffer objects</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="GstGLShader.html">GstGLShader</a></span><span class="refpurpose"> — object representing an OpenGL shader program</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-libs-GstGLSL.html">GstGLSL</a></span><span class="refpurpose"> — helpers for dealing with OpenGL shaders</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="GstGLSLStage.html">GstGLSLStage</a></span><span class="refpurpose"> — object for dealing with OpenGL shader stages</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-libs-GstGLSyncMeta.html">GstGLSyncMeta</a></span><span class="refpurpose"> — synchronization primitives</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="GstGLUpload.html">GstGLUpload</a></span><span class="refpurpose"> — an object that uploads to GL textures</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="GstGLViewConvert.html">GstGLViewConvert</a></span><span class="refpurpose"> — convert between steroscopic/multiview video formats</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="GstGLWindow.html">GstGLWindow</a></span><span class="refpurpose"> — window/surface abstraction</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-libs-OpenGL-debugging.html">OpenGL debugging</a></span><span class="refpurpose"> — helper routines for dealing with OpenGL debugging</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-libs-OpenGL-Formats.html">GstGlFormat</a></span><span class="refpurpose"> — utilities for dealing with OpenGL formats</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-libs-OpenGL-Miscellaneous-Utilities.html">GstGLUtils</a></span><span class="refpurpose"> — some miscellaneous utilities for OpenGL</span>
+</dt>
+</dl></div>
+<p>
+        This library should be linked to by getting cflags and libs from
+        <code class="filename">gstreamer-gl-1.0.pc</code>
+      </p>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.25</div>
+</body>
+</html>

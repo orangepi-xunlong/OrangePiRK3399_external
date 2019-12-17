@@ -1,0 +1,13 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include/gstreamer-1.0
+pluginsdir=${exec_prefix}/lib/gstreamer-1.0
+
+Name: GStreamer bad audio library, uninstalled
+Description: Bad audio library for GStreamer elements, Not Installed
+Version: 1.12.2
+Requires: gstreamer-1.0 gstreamer-bad-base-1.0
+
+Libs: -L${libdir} -gstbadaudio-1.0
+Cflags: -I${includedir}

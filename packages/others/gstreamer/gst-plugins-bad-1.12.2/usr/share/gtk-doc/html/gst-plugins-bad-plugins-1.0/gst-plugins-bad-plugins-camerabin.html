@@ -1,0 +1,166 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>camerabin: GStreamer Bad Plugins 1.0 Plugins Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="GStreamer Bad Plugins 1.0 Plugins Reference Manual">
+<link rel="up" href="ch01.html" title="gst-plugins-bad Elements">
+<link rel="prev" href="gst-plugins-bad-plugins-burn.html" title="burn">
+<link rel="next" href="gst-plugins-bad-plugins-chromium.html" title="chromium">
+<meta name="generator" content="GTK-Doc V1.25 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#gst-plugins-bad-plugins-camerabin.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch01.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="gst-plugins-bad-plugins-burn.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="gst-plugins-bad-plugins-chromium.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="gst-plugins-bad-plugins-camerabin"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="gst-plugins-bad-plugins-camerabin.top_of_page"></a>camerabin</span></h2>
+<p>camerabin</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="gst-plugins-bad-plugins-camerabin.description"></a><h2>Description</h2>
+<p>CameraBin is a high-level camera object that encapsulates gstreamer
+elements, providing an API for controlling a digital camera.</p>
+<div class="blockquote"><blockquote class="blockquote"><p>Note that camerabin is still UNSTABLE and under development.</p></blockquote></div>
+<p>CameraBin has the following main features:</p>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; ">
+<li class="listitem"><p>Record videos</p></li>
+<li class="listitem"><p>Capture pictures</p></li>
+<li class="listitem"><p>Display a viewfinder</p></li>
+<li class="listitem"><p>Post preview images for each capture (video and image)</p></li>
+</ul></div>
+<div class="refsect3">
+<a name="id-1.2.13.3.6"></a><h4>Usage</h4>
+<p>Camerabin can be created using <a href="/usr/share/gtk-doc/html/gstreamer-1.0GstElementFactory.html#gst-element-factory-make"><code class="function">gst_element_factory_make()</code></a> just like
+any other element. Video or image capture mode can be selected using
+the <span class="type">“mode”</span> property and the file to save the capture is
+selected using <span class="type">“location”</span> property.</p>
+<p>After creating camerabin, applications might want to do some
+customization (there's a section about this below), then select
+the desired mode and start capturing.</p>
+<p>In image capture mode, just send a <span class="type">“start-capture”</span> and a
+picture will be captured. When the picture is stored on the selected
+location, a <a href="/usr/share/gtk-doc/html/gstreamer-1.0GstMessage.html#GST-MESSAGE-ELEMENT:CAPS"><code class="literal">GST_MESSAGE_ELEMENT</code></a> named 'image-done' will be posted on
+the <a href="/usr/share/gtk-doc/html/gstreamer-1.0GstBus.html#GstBus-struct"><span class="type">GstBus</span></a>.</p>
+<p>In video capture mode, send a <span class="type">“start-capture”</span> to start
+recording, then send a <span class="type">“stop-capture”</span> to stop recording.
+Note that both signals are asynchronous, so, calling
+<span class="type">“stop-capture”</span> doesn't guarantee that the video has been
+properly finished yet. Applications should wait for the 'video-done'
+message to be posted on the bus.</p>
+<p>In both modes, if <span class="type">“post-previews”</span> is <a href="/usr/share/gtk-doc/html/glibglib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>, a <a href="/usr/share/gtk-doc/html/gstreamer-1.0GstBuffer.html#GstBuffer-struct"><span class="type">GstBuffer</span></a>
+will be post to the <a href="/usr/share/gtk-doc/html/gstreamer-1.0GstBus.html#GstBus-struct"><span class="type">GstBus</span></a> in a field named 'buffer', in a
+'preview-image' message of type <a href="/usr/share/gtk-doc/html/gstreamer-1.0GstMessage.html#GST-MESSAGE-ELEMENT:CAPS"><code class="literal">GST_MESSAGE_ELEMENT</code></a>.</p>
+</div>
+<div class="refsect3">
+<a name="id-1.2.13.3.7"></a><h4>Customization</h4>
+<p>Camerabin provides various customization properties, allowing the user
+to set custom filters, selecting the viewfinder sink and formats to
+use to encode the captured images/videos.</p>
+<p><a href="/usr/share/gtk-doc/html/gst-plugins-base-libs-1.0GstEncodingProfile.html#GstEncodingProfile-struct"><span class="type">GstEncodingProfile</span></a>s are used to tell camerabin which formats it
+should encode the captures to, those should be set to
+<span class="type">“image-profile”</span> and <span class="type">“video-profile”</span>. Default is
+jpeg for images, and ogg (theora and vorbis) for video. If a profile without
+an audio stream is set for video, audio will be disabled on recordings.</p>
+<p><span class="type">“preview-caps”</span> can be used to select which format preview
+images should be posted on the <a href="/usr/share/gtk-doc/html/gstreamer-1.0GstBus.html#GstBus-struct"><span class="type">GstBus</span></a>. It has to be a raw video format.</p>
+<p>Camerabin has a <span class="type">“camera-source”</span> property so applications can
+set their source that will provide buffers for the viewfinder and for
+captures. This camera source is a special type of source that has 3 pads.
+To use a 'regular' source with a single pad you should use
+<span class="type">GstWrapperCameraBinSource</span>, it will adapt your source and provide 3 pads.</p>
+<p>Applications can also select the desired viewfinder sink using
+<span class="type">“viewfinder-sink”</span>, it is also possible to select the audio
+source using <span class="type">“audio-source”</span>.</p>
+<p>The viewfinder resolution can be configured using
+<span class="type">“viewfinder-caps”</span>, these <a href="/usr/share/gtk-doc/html/gstreamer-1.0GstCaps.html#GstCaps-struct"><span class="type">GstCaps</span></a> should be a subset of
+<span class="type">“viewfinder-supported-caps”</span>.</p>
+<p>To select the desired resolution for captures, camerabin provides
+<span class="type">“image-capture-caps”</span> and <span class="type">“video-capture-caps”</span>,
+these caps must be a subset of what the source can produce. The allowed
+caps can be probed using <span class="type">“image-capture-supported-caps”</span> and
+<span class="type">“video-capture-supported-caps”</span>. In an analogous way, there
+are <span class="type">“audio-capture-caps”</span> and
+<span class="type">“audio-capture-supported-caps”</span>.</p>
+<p>Camerabin also allows applications to insert custom <a href="/usr/share/gtk-doc/html/gstreamer-1.0GstElement.html#GstElement-struct"><span class="type">GstElements</span></a> on any
+of its branches: video capture, image capture, viewfinder and preview.
+Check <span class="type">“video-filter”</span>, <span class="type">“image-filter”</span>,
+<span class="type">“viewfinder-filter”</span> and <span class="type">“preview-filter”</span>.</p>
+</div>
+<div class="refsect3">
+<a name="id-1.2.13.3.8"></a><h4>Example launch line</h4>
+<p>Unfortunately, camerabin can't be really used from gst-launch-1.0, as you
+need to send signals to control it. The following pipeline might be able
+to show the viewfinder using all the default elements.</p>
+<div class="informalexample">
+  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td class="listing_lines" align="right"><pre>1</pre></td>
+        <td class="listing_code"><pre class="programlisting">gst<span class="gtkdoc opt">-</span>launch<span class="gtkdoc opt">-</span><span class="number">1.0</span> <span class="gtkdoc opt">-</span>v <span class="gtkdoc opt">-</span>m camerabin</pre></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p></p>
+</div>
+<div class="refsynopsisdiv">
+<h2>Synopsis</h2>
+<div class="refsect2">
+<a name="id-1.2.13.3.9.1"></a><h3>Element Information</h3>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term">plugin</span></p></td>
+<td>
+            <a class="link" href="gst-plugins-bad-plugins-plugin-camerabin.html#plugin-camerabin">camerabin</a>
+          </td>
+</tr>
+<tr>
+<td><p><span class="term">author</span></p></td>
+<td>Thiago Santos &lt;thiago.sousa.santos@collabora.co.uk&gt;</td>
+</tr>
+<tr>
+<td><p><span class="term">class</span></p></td>
+<td>Generic/Bin/Camera</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="id-1.2.13.3.9.2"></a><h3>Element Pads</h3>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-bad-plugins-camerabin.functions_details"></a><h2>Functions</h2>
+<p></p>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-bad-plugins-camerabin.other_details"></a><h2>Types and Values</h2>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.25</div>
+</body>
+</html>

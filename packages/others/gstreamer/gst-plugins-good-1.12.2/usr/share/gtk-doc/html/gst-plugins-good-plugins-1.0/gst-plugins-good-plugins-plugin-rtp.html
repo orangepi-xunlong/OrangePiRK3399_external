@@ -1,0 +1,421 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>rtp: GStreamer Good Plugins 1.0 Plugins Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="GStreamer Good Plugins 1.0 Plugins Reference Manual">
+<link rel="up" href="ch02.html" title="gst-plugins-good Plugins">
+<link rel="prev" href="gst-plugins-good-plugins-plugin-rtpmanager.html" title="rtpmanager">
+<link rel="next" href="gst-plugins-good-plugins-plugin-rtsp.html" title="rtsp">
+<meta name="generator" content="GTK-Doc V1.25 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts"></td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch02.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="gst-plugins-good-plugins-plugin-rtpmanager.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="gst-plugins-good-plugins-plugin-rtsp.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="gst-plugins-good-plugins-plugin-rtp"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle">rtp</span></h2>
+<p>rtp — <a name="plugin-rtp"></a>Real-time protocol plugins</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="id-1.3.51.3"></a><h2>Plugin Information</h2>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term">filename</span></p></td>
+<td>libgstrtp.so</td>
+</tr>
+<tr>
+<td><p><span class="term">version</span></p></td>
+<td>1.12.2</td>
+</tr>
+<tr>
+<td><p><span class="term">run-time license</span></p></td>
+<td>LGPL</td>
+</tr>
+<tr>
+<td><p><span class="term">package</span></p></td>
+<td>GStreamer Good Plug-ins source release</td>
+</tr>
+<tr>
+<td><p><span class="term">origin</span></p></td>
+<td>Unknown package origin</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="id-1.3.51.4"></a><h2>Elements</h2>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><a class="link" href="gst-plugins-good-plugins-asteriskh263.html" title="asteriskh263">asteriskh263</a></span></p></td>
+<td>Extracts H263 video from RTP and encodes in Asterisk H263 format</td>
+</tr>
+<tr>
+<td><p><span class="term"><a class="link" href="gst-plugins-good-plugins-rtpL16depay.html" title="rtpL16depay">rtpL16depay</a></span></p></td>
+<td>Extracts raw audio from RTP packets</td>
+</tr>
+<tr>
+<td><p><span class="term"><a class="link" href="gst-plugins-good-plugins-rtpL16pay.html" title="rtpL16pay">rtpL16pay</a></span></p></td>
+<td>Payload-encode Raw audio into RTP packets (RFC 3551)</td>
+</tr>
+<tr>
+<td><p><span class="term"><a class="link" href="gst-plugins-good-plugins-rtpL24depay.html" title="rtpL24depay">rtpL24depay</a></span></p></td>
+<td>Extracts raw 24-bit audio from RTP packets</td>
+</tr>
+<tr>
+<td><p><span class="term"><a class="link" href="gst-plugins-good-plugins-rtpL24pay.html" title="rtpL24pay">rtpL24pay</a></span></p></td>
+<td>Payload-encode Raw 24-bit audio into RTP packets (RFC 3190)</td>
+</tr>
+<tr>
+<td><p><span class="term"><a class="link" href="gst-plugins-good-plugins-rtpac3depay.html" title="rtpac3depay">rtpac3depay</a></span></p></td>
+<td>Extracts AC3 audio from RTP packets (RFC 4184)</td>
+</tr>
+<tr>
+<td><p><span class="term"><a class="link" href="gst-plugins-good-plugins-rtpac3pay.html" title="rtpac3pay">rtpac3pay</a></span></p></td>
+<td>Payload AC3 audio as RTP packets (RFC 4184)</td>
+</tr>
+<tr>
+<td><p><span class="term"><a class="link" href="gst-plugins-good-plugins-rtpamrdepay.html" title="rtpamrdepay">rtpamrdepay</a></span></p></td>
+<td>Extracts AMR or AMR-WB audio from RTP packets (RFC 3267)</td>
+</tr>
+<tr>
+<td><p><span class="term"><a class="link" href="gst-plugins-good-plugins-rtpamrpay.html" title="rtpamrpay">rtpamrpay</a></span></p></td>
+<td>Payload-encode AMR or AMR-WB audio into RTP packets (RFC 3267)</td>
+</tr>
+<tr>
+<td><p><span class="term"><a class="link" href="gst-plugins-good-plugins-rtpbvdepay.html" title="rtpbvdepay">rtpbvdepay</a></span></p></td>
+<td>Extracts BroadcomVoice audio from RTP packets (RFC 4298)</td>
+</tr>
+<tr>
+<td><p><span class="term"><a class="link" href="gst-plugins-good-plugins-rtpbvpay.html" title="rtpbvpay">rtpbvpay</a></span></p></td>
+<td>Packetize BroadcomVoice audio streams into RTP packets (RFC 4298)</td>
+</tr>
+<tr>
+<td><p><span class="term"><a class="link" href="gst-plugins-good-plugins-rtpceltdepay.html" title="rtpceltdepay">rtpceltdepay</a></span></p></td>
+<td>Extracts CELT audio from RTP packets</td>
+</tr>
+<tr>
+<td><p><span class="term"><a class="link" href="gst-plugins-good-plugins-rtpceltpay.html" title="rtpceltpay">rtpceltpay</a></span></p></td>
+<td>Payload-encodes CELT audio into a RTP packet</td>
+</tr>
+<tr>
+<td><p><span class="term"><a class="link" href="gst-plugins-good-plugins-rtpdvdepay.html" title="rtpdvdepay">rtpdvdepay</a></span></p></td>
+<td>Depayloads DV from RTP packets (RFC 3189)</td>
+</tr>
+<tr>
+<td><p><span class="term"><a class="link" href="gst-plugins-good-plugins-rtpdvpay.html" title="rtpdvpay">rtpdvpay</a></span></p></td>
+<td>Payloads DV into RTP packets (RFC 3189)</td>
+</tr>
+<tr>
+<td><p><span class="term"><a class="link" href="gst-plugins-good-plugins-rtpg722depay.html" title="rtpg722depay">rtpg722depay</a></span></p></td>
+<td>Extracts G722 audio from RTP packets</td>
+</tr>
+<tr>
+<td><p><span class="term"><a class="link" href="gst-plugins-good-plugins-rtpg722pay.html" title="rtpg722pay">rtpg722pay</a></span></p></td>
+<td>Payload-encode Raw audio into RTP packets (RFC 3551)</td>
+</tr>
+<tr>
+<td><p><span class="term"><a class="link" href="gst-plugins-good-plugins-rtpg723depay.html" title="rtpg723depay">rtpg723depay</a></span></p></td>
+<td>Extracts G.723 audio from RTP packets (RFC 3551)</td>
+</tr>
+<tr>
+<td><p><span class="term"><a class="link" href="gst-plugins-good-plugins-rtpg723pay.html" title="rtpg723pay">rtpg723pay</a></span></p></td>
+<td>Packetize G.723 audio into RTP packets</td>
+</tr>
+<tr>
+<td><p><span class="term"><a class="link" href="gst-plugins-good-plugins-rtpg726depay.html" title="rtpg726depay">rtpg726depay</a></span></p></td>
+<td>Extracts G.726 audio from RTP packets</td>
+</tr>
+<tr>
+<td><p><span class="term"><a class="link" href="gst-plugins-good-plugins-rtpg726pay.html" title="rtpg726pay">rtpg726pay</a></span></p></td>
+<td>Payload-encodes G.726 audio into a RTP packet</td>
+</tr>
+<tr>
+<td><p><span class="term"><a class="link" href="gst-plugins-good-plugins-rtpg729depay.html" title="rtpg729depay">rtpg729depay</a></span></p></td>
+<td>Extracts G.729 audio from RTP packets (RFC 3551)</td>
+</tr>
+<tr>
+<td><p><span class="term"><a class="link" href="gst-plugins-good-plugins-rtpg729pay.html" title="rtpg729pay">rtpg729pay</a></span></p></td>
+<td>Packetize G.729 audio into RTP packets</td>
+</tr>
+<tr>
+<td><p><span class="term"><a class="link" href="gst-plugins-good-plugins-rtpgsmdepay.html" title="rtpgsmdepay">rtpgsmdepay</a></span></p></td>
+<td>Extracts GSM audio from RTP packets</td>
+</tr>
+<tr>
+<td><p><span class="term"><a class="link" href="gst-plugins-good-plugins-rtpgsmpay.html" title="rtpgsmpay">rtpgsmpay</a></span></p></td>
+<td>Payload-encodes GSM audio into a RTP packet</td>
+</tr>
+<tr>
+<td><p><span class="term"><a class="link" href="gst-plugins-good-plugins-rtpgstdepay.html" title="rtpgstdepay">rtpgstdepay</a></span></p></td>
+<td>Extracts GStreamer buffers from RTP packets</td>
+</tr>
+<tr>
+<td><p><span class="term"><a class="link" href="gst-plugins-good-plugins-rtpgstpay.html" title="rtpgstpay">rtpgstpay</a></span></p></td>
+<td>Payload GStreamer buffers as RTP packets</td>
+</tr>
+<tr>
+<td><p><span class="term"><a class="link" href="gst-plugins-good-plugins-rtph261depay.html" title="rtph261depay">rtph261depay</a></span></p></td>
+<td>Extracts H261 video from RTP packets (RFC 4587)</td>
+</tr>
+<tr>
+<td><p><span class="term"><a class="link" href="gst-plugins-good-plugins-rtph261pay.html" title="rtph261pay">rtph261pay</a></span></p></td>
+<td>Payload-encodes H261 video in RTP packets (RFC 4587)</td>
+</tr>
+<tr>
+<td><p><span class="term"><a class="link" href="gst-plugins-good-plugins-rtph263depay.html" title="rtph263depay">rtph263depay</a></span></p></td>
+<td>Extracts H263 video from RTP packets (RFC 2190)</td>
+</tr>
+<tr>
+<td><p><span class="term"><a class="link" href="gst-plugins-good-plugins-rtph263pay.html" title="rtph263pay">rtph263pay</a></span></p></td>
+<td>Payload-encodes H263 video in RTP packets (RFC 2190)</td>
+</tr>
+<tr>
+<td><p><span class="term"><a class="link" href="gst-plugins-good-plugins-rtph263pdepay.html" title="rtph263pdepay">rtph263pdepay</a></span></p></td>
+<td>Extracts H263/+/++ video from RTP packets (RFC 4629)</td>
+</tr>
+<tr>
+<td><p><span class="term"><a class="link" href="gst-plugins-good-plugins-rtph263ppay.html" title="rtph263ppay">rtph263ppay</a></span></p></td>
+<td>Payload-encodes H263/+/++ video in RTP packets (RFC 4629)</td>
+</tr>
+<tr>
+<td><p><span class="term"><a class="link" href="gst-plugins-good-plugins-rtph264depay.html" title="rtph264depay">rtph264depay</a></span></p></td>
+<td>Extracts H264 video from RTP packets (RFC 3984)</td>
+</tr>
+<tr>
+<td><p><span class="term"><a class="link" href="gst-plugins-good-plugins-rtph264pay.html" title="rtph264pay">rtph264pay</a></span></p></td>
+<td>Payload-encode H264 video into RTP packets (RFC 3984)</td>
+</tr>
+<tr>
+<td><p><span class="term"><a class="link" href="gst-plugins-good-plugins-rtph265depay.html" title="rtph265depay">rtph265depay</a></span></p></td>
+<td>Extracts H265 video from RTP packets (RFC 7798)</td>
+</tr>
+<tr>
+<td><p><span class="term"><a class="link" href="gst-plugins-good-plugins-rtph265pay.html" title="rtph265pay">rtph265pay</a></span></p></td>
+<td>Payload-encode H265 video into RTP packets (RFC 7798)</td>
+</tr>
+<tr>
+<td><p><span class="term"><a class="link" href="gst-plugins-good-plugins-rtpilbcdepay.html" title="rtpilbcdepay">rtpilbcdepay</a></span></p></td>
+<td>Extracts iLBC audio from RTP packets (RFC 3952)</td>
+</tr>
+<tr>
+<td><p><span class="term"><a class="link" href="gst-plugins-good-plugins-rtpilbcpay.html" title="rtpilbcpay">rtpilbcpay</a></span></p></td>
+<td>Packetize iLBC audio streams into RTP packets</td>
+</tr>
+<tr>
+<td><p><span class="term"><a class="link" href="gst-plugins-good-plugins-rtpj2kdepay.html" title="rtpj2kdepay">rtpj2kdepay</a></span></p></td>
+<td>Extracts JPEG 2000 video from RTP packets (RFC 5371)</td>
+</tr>
+<tr>
+<td><p><span class="term"><a class="link" href="gst-plugins-good-plugins-rtpj2kpay.html" title="rtpj2kpay">rtpj2kpay</a></span></p></td>
+<td>Payload-encodes JPEG 2000 pictures into RTP packets (RFC 5371)</td>
+</tr>
+<tr>
+<td><p><span class="term"><a class="link" href="gst-plugins-good-plugins-rtpjpegdepay.html" title="rtpjpegdepay">rtpjpegdepay</a></span></p></td>
+<td>Extracts JPEG video from RTP packets (RFC 2435)</td>
+</tr>
+<tr>
+<td><p><span class="term"><a class="link" href="gst-plugins-good-plugins-rtpjpegpay.html" title="rtpjpegpay">rtpjpegpay</a></span></p></td>
+<td>Payload-encodes JPEG pictures into RTP packets (RFC 2435)</td>
+</tr>
+<tr>
+<td><p><span class="term"><a class="link" href="gst-plugins-good-plugins-rtpklvdepay.html" title="rtpklvdepay">rtpklvdepay</a></span></p></td>
+<td>Extracts KLV (SMPTE ST 336) metadata from RTP packets</td>
+</tr>
+<tr>
+<td><p><span class="term"><a class="link" href="gst-plugins-good-plugins-rtpklvpay.html" title="rtpklvpay">rtpklvpay</a></span></p></td>
+<td>Payloads KLV (SMPTE ST 336) metadata as RTP packets</td>
+</tr>
+<tr>
+<td><p><span class="term"><a class="link" href="gst-plugins-good-plugins-rtpmp1sdepay.html" title="rtpmp1sdepay">rtpmp1sdepay</a></span></p></td>
+<td>Extracts MPEG1 System Streams from RTP packets (RFC 3555)</td>
+</tr>
+<tr>
+<td><p><span class="term"><a class="link" href="gst-plugins-good-plugins-rtpmp2tdepay.html" title="rtpmp2tdepay">rtpmp2tdepay</a></span></p></td>
+<td>Extracts MPEG2 TS from RTP packets (RFC 2250)</td>
+</tr>
+<tr>
+<td><p><span class="term"><a class="link" href="gst-plugins-good-plugins-rtpmp2tpay.html" title="rtpmp2tpay">rtpmp2tpay</a></span></p></td>
+<td>Payload-encodes MPEG2 TS into RTP packets (RFC 2250)</td>
+</tr>
+<tr>
+<td><p><span class="term"><a class="link" href="gst-plugins-good-plugins-rtpmp4adepay.html" title="rtpmp4adepay">rtpmp4adepay</a></span></p></td>
+<td>Extracts MPEG4 audio from RTP packets (RFC 3016)</td>
+</tr>
+<tr>
+<td><p><span class="term"><a class="link" href="gst-plugins-good-plugins-rtpmp4apay.html" title="rtpmp4apay">rtpmp4apay</a></span></p></td>
+<td>Payload MPEG4 audio as RTP packets (RFC 3016)</td>
+</tr>
+<tr>
+<td><p><span class="term"><a class="link" href="gst-plugins-good-plugins-rtpmp4gdepay.html" title="rtpmp4gdepay">rtpmp4gdepay</a></span></p></td>
+<td>Extracts MPEG4 elementary streams from RTP packets (RFC 3640)</td>
+</tr>
+<tr>
+<td><p><span class="term"><a class="link" href="gst-plugins-good-plugins-rtpmp4gpay.html" title="rtpmp4gpay">rtpmp4gpay</a></span></p></td>
+<td>Payload MPEG4 elementary streams as RTP packets (RFC 3640)</td>
+</tr>
+<tr>
+<td><p><span class="term"><a class="link" href="gst-plugins-good-plugins-rtpmp4vdepay.html" title="rtpmp4vdepay">rtpmp4vdepay</a></span></p></td>
+<td>Extracts MPEG4 video from RTP packets (RFC 3016)</td>
+</tr>
+<tr>
+<td><p><span class="term"><a class="link" href="gst-plugins-good-plugins-rtpmp4vpay.html" title="rtpmp4vpay">rtpmp4vpay</a></span></p></td>
+<td>Payload MPEG-4 video as RTP packets (RFC 3016)</td>
+</tr>
+<tr>
+<td><p><span class="term"><a class="link" href="gst-plugins-good-plugins-rtpmpadepay.html" title="rtpmpadepay">rtpmpadepay</a></span></p></td>
+<td>Extracts MPEG audio from RTP packets (RFC 2038)</td>
+</tr>
+<tr>
+<td><p><span class="term"><a class="link" href="gst-plugins-good-plugins-rtpmpapay.html" title="rtpmpapay">rtpmpapay</a></span></p></td>
+<td>Payload MPEG audio as RTP packets (RFC 2038)</td>
+</tr>
+<tr>
+<td><p><span class="term"><a class="link" href="gst-plugins-good-plugins-rtpmparobustdepay.html" title="rtpmparobustdepay">rtpmparobustdepay</a></span></p></td>
+<td>Extracts MPEG audio from RTP packets (RFC 5219)</td>
+</tr>
+<tr>
+<td><p><span class="term"><a class="link" href="gst-plugins-good-plugins-rtpmpvdepay.html" title="rtpmpvdepay">rtpmpvdepay</a></span></p></td>
+<td>Extracts MPEG video from RTP packets (RFC 2250)</td>
+</tr>
+<tr>
+<td><p><span class="term"><a class="link" href="gst-plugins-good-plugins-rtpmpvpay.html" title="rtpmpvpay">rtpmpvpay</a></span></p></td>
+<td>Payload-encodes MPEG2 ES into RTP packets (RFC 2250)</td>
+</tr>
+<tr>
+<td><p><span class="term"><a class="link" href="gst-plugins-good-plugins-rtpopusdepay.html" title="rtpopusdepay">rtpopusdepay</a></span></p></td>
+<td>Extracts Opus audio from RTP packets</td>
+</tr>
+<tr>
+<td><p><span class="term"><a class="link" href="gst-plugins-good-plugins-rtpopuspay.html" title="rtpopuspay">rtpopuspay</a></span></p></td>
+<td>Puts Opus audio in RTP packets</td>
+</tr>
+<tr>
+<td><p><span class="term"><a class="link" href="gst-plugins-good-plugins-rtppcmadepay.html" title="rtppcmadepay">rtppcmadepay</a></span></p></td>
+<td>Extracts PCMA audio from RTP packets</td>
+</tr>
+<tr>
+<td><p><span class="term"><a class="link" href="gst-plugins-good-plugins-rtppcmapay.html" title="rtppcmapay">rtppcmapay</a></span></p></td>
+<td>Payload-encodes PCMA audio into a RTP packet</td>
+</tr>
+<tr>
+<td><p><span class="term"><a class="link" href="gst-plugins-good-plugins-rtppcmudepay.html" title="rtppcmudepay">rtppcmudepay</a></span></p></td>
+<td>Extracts PCMU audio from RTP packets</td>
+</tr>
+<tr>
+<td><p><span class="term"><a class="link" href="gst-plugins-good-plugins-rtppcmupay.html" title="rtppcmupay">rtppcmupay</a></span></p></td>
+<td>Payload-encodes PCMU audio into a RTP packet</td>
+</tr>
+<tr>
+<td><p><span class="term"><a class="link" href="gst-plugins-good-plugins-rtpqcelpdepay.html" title="rtpqcelpdepay">rtpqcelpdepay</a></span></p></td>
+<td>Extracts QCELP (PureVoice) audio from RTP packets (RFC 2658)</td>
+</tr>
+<tr>
+<td><p><span class="term"><a class="link" href="gst-plugins-good-plugins-rtpqdm2depay.html" title="rtpqdm2depay">rtpqdm2depay</a></span></p></td>
+<td>Extracts QDM2 audio from RTP packets (no RFC)</td>
+</tr>
+<tr>
+<td><p><span class="term"><a class="link" href="gst-plugins-good-plugins-rtpsbcdepay.html" title="rtpsbcdepay">rtpsbcdepay</a></span></p></td>
+<td>Extracts SBC audio from RTP packets</td>
+</tr>
+<tr>
+<td><p><span class="term"><a class="link" href="gst-plugins-good-plugins-rtpsbcpay.html" title="rtpsbcpay">rtpsbcpay</a></span></p></td>
+<td>Payload SBC audio as RTP packets</td>
+</tr>
+<tr>
+<td><p><span class="term"><a class="link" href="gst-plugins-good-plugins-rtpsirendepay.html" title="rtpsirendepay">rtpsirendepay</a></span></p></td>
+<td>Extracts Siren audio from RTP packets</td>
+</tr>
+<tr>
+<td><p><span class="term"><a class="link" href="gst-plugins-good-plugins-rtpsirenpay.html" title="rtpsirenpay">rtpsirenpay</a></span></p></td>
+<td>Packetize Siren audio streams into RTP packets</td>
+</tr>
+<tr>
+<td><p><span class="term"><a class="link" href="gst-plugins-good-plugins-rtpspeexdepay.html" title="rtpspeexdepay">rtpspeexdepay</a></span></p></td>
+<td>Extracts Speex audio from RTP packets</td>
+</tr>
+<tr>
+<td><p><span class="term"><a class="link" href="gst-plugins-good-plugins-rtpspeexpay.html" title="rtpspeexpay">rtpspeexpay</a></span></p></td>
+<td>Payload-encodes Speex audio into a RTP packet</td>
+</tr>
+<tr>
+<td><p><span class="term"><a class="link" href="gst-plugins-good-plugins-rtpstreamdepay.html" title="rtpstreamdepay">rtpstreamdepay</a></span></p></td>
+<td>Depayloads RTP/RTCP packets for streaming protocols according to RFC4571</td>
+</tr>
+<tr>
+<td><p><span class="term"><a class="link" href="gst-plugins-good-plugins-rtpstreampay.html" title="rtpstreampay">rtpstreampay</a></span></p></td>
+<td>Payloads RTP/RTCP packets for streaming protocols according to RFC4571</td>
+</tr>
+<tr>
+<td><p><span class="term"><a class="link" href="gst-plugins-good-plugins-rtpsv3vdepay.html" title="rtpsv3vdepay">rtpsv3vdepay</a></span></p></td>
+<td>Extracts SVQ3 video from RTP packets (no RFC)</td>
+</tr>
+<tr>
+<td><p><span class="term"><a class="link" href="gst-plugins-good-plugins-rtptheoradepay.html" title="rtptheoradepay">rtptheoradepay</a></span></p></td>
+<td>Extracts Theora video from RTP packets (draft-01 of RFC XXXX)</td>
+</tr>
+<tr>
+<td><p><span class="term"><a class="link" href="gst-plugins-good-plugins-rtptheorapay.html" title="rtptheorapay">rtptheorapay</a></span></p></td>
+<td>Payload-encode Theora video into RTP packets (draft-01 RFC XXXX)</td>
+</tr>
+<tr>
+<td><p><span class="term"><a class="link" href="gst-plugins-good-plugins-rtpvorbisdepay.html" title="rtpvorbisdepay">rtpvorbisdepay</a></span></p></td>
+<td>Extracts Vorbis Audio from RTP packets (RFC 5215)</td>
+</tr>
+<tr>
+<td><p><span class="term"><a class="link" href="gst-plugins-good-plugins-rtpvorbispay.html" title="rtpvorbispay">rtpvorbispay</a></span></p></td>
+<td>Payload-encode Vorbis audio into RTP packets (RFC 5215)</td>
+</tr>
+<tr>
+<td><p><span class="term"><a class="link" href="gst-plugins-good-plugins-rtpvp8depay.html" title="rtpvp8depay">rtpvp8depay</a></span></p></td>
+<td>Extracts VP8 video from RTP packets)</td>
+</tr>
+<tr>
+<td><p><span class="term"><a class="link" href="gst-plugins-good-plugins-rtpvp8pay.html" title="rtpvp8pay">rtpvp8pay</a></span></p></td>
+<td>Puts VP8 video in RTP packets</td>
+</tr>
+<tr>
+<td><p><span class="term"><a class="link" href="gst-plugins-good-plugins-rtpvp9depay.html" title="rtpvp9depay">rtpvp9depay</a></span></p></td>
+<td>Extracts VP9 video from RTP packets)</td>
+</tr>
+<tr>
+<td><p><span class="term"><a class="link" href="gst-plugins-good-plugins-rtpvp9pay.html" title="rtpvp9pay">rtpvp9pay</a></span></p></td>
+<td>Puts VP9 video in RTP packets)</td>
+</tr>
+<tr>
+<td><p><span class="term"><a class="link" href="gst-plugins-good-plugins-rtpvrawdepay.html" title="rtpvrawdepay">rtpvrawdepay</a></span></p></td>
+<td>Extracts raw video from RTP packets (RFC 4175)</td>
+</tr>
+<tr>
+<td><p><span class="term"><a class="link" href="gst-plugins-good-plugins-rtpvrawpay.html" title="rtpvrawpay">rtpvrawpay</a></span></p></td>
+<td>Payload raw video as RTP packets (RFC 4175)</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.25</div>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<book xmlns="http://www.devhelp.net/book" title="GStreamer libav 1.0 Plugins Reference Manual" link="index.html" author="" name="gst-libav-plugins-1.0" version="2" language="c" online="http://gstreamer.freedesktop.org/data/doc/gstreamer/head/gst-ffmpeg-plugins/html/">
+  <chapters>
+    <sub name="gst-libav Base and Support classes" link="ch01.html">
+      <sub name="gstav" link="gst-libav-plugins-gstav.html"/>
+      <sub name="GstFFMpegAudDec" link="gst-libav-plugins-GstFFMpegAudDec.html"/>
+      <sub name="GstFFMpegAudEnc" link="gst-libav-plugins-GstFFMpegAudEnc.html"/>
+      <sub name="gstavcfg" link="gst-libav-plugins-gstavcfg.html"/>
+      <sub name="gstavcodecmap" link="gst-libav-plugins-gstavcodecmap.html"/>
+      <sub name="gstavprotocol" link="gst-libav-plugins-gstavprotocol.html"/>
+      <sub name="gstavutils" link="gst-libav-plugins-gstavutils.html"/>
+      <sub name="GstFFMpegVidDec" link="gst-libav-plugins-GstFFMpegVidDec.html"/>
+      <sub name="GstFFMpegVidEnc" link="gst-libav-plugins-GstFFMpegVidEnc.html"/>
+    </sub>
+    <sub name="gst-libav Plugins" link="ch02.html">
+      <sub name="libav" link="gst-libav-plugins-plugin-libav.html"/>
+    </sub>
+    <sub name="Object Hierarchy" link="ch03.html"/>
+  </chapters>
+  <functions>
+    <keyword type="function" name="gst_ffmpegdemux_register ()" link="gst-libav-plugins-gstav.html#gst-ffmpegdemux-register"/>
+    <keyword type="function" name="gst_ffmpegauddec_register ()" link="gst-libav-plugins-gstav.html#gst-ffmpegauddec-register"/>
+    <keyword type="function" name="gst_ffmpegviddec_register ()" link="gst-libav-plugins-gstav.html#gst-ffmpegviddec-register"/>
+    <keyword type="function" name="gst_ffmpegaudenc_register ()" link="gst-libav-plugins-gstav.html#gst-ffmpegaudenc-register"/>
+    <keyword type="function" name="gst_ffmpegvidenc_register ()" link="gst-libav-plugins-gstav.html#gst-ffmpegvidenc-register"/>
+    <keyword type="function" name="gst_ffmpegmux_register ()" link="gst-libav-plugins-gstav.html#gst-ffmpegmux-register"/>
+    <keyword type="function" name="gst_ffmpegscale_register ()" link="gst-libav-plugins-gstav.html#gst-ffmpegscale-register"/>
+    <keyword type="function" name="gst_ffmpegaudioresample_register ()" link="gst-libav-plugins-gstav.html#gst-ffmpegaudioresample-register"/>
+    <keyword type="function" name="gst_ffmpegdeinterlace_register ()" link="gst-libav-plugins-gstav.html#gst-ffmpegdeinterlace-register"/>
+    <keyword type="function" name="gst_ffmpeg_avcodec_open ()" link="gst-libav-plugins-gstav.html#gst-ffmpeg-avcodec-open"/>
+    <keyword type="function" name="gst_ffmpeg_avcodec_close ()" link="gst-libav-plugins-gstav.html#gst-ffmpeg-avcodec-close"/>
+    <keyword type="function" name="gst_ffmpeg_av_find_stream_info ()" link="gst-libav-plugins-gstav.html#gst-ffmpeg-av-find-stream-info"/>
+    <keyword type="macro" name="GST_CAT_DEFAULT" link="gst-libav-plugins-gstav.html#GST-CAT-DEFAULT:CAPS"/>
+    <keyword type="macro" name="GST_FFMPEG_URL_STREAMHEADER" link="gst-libav-plugins-gstav.html#GST-FFMPEG-URL-STREAMHEADER:CAPS"/>
+    <keyword type="function" name="gst_ffmpeg_cfg_init ()" link="gst-libav-plugins-gstavcfg.html#gst-ffmpeg-cfg-init"/>
+    <keyword type="function" name="gst_ffmpeg_cfg_install_property ()" link="gst-libav-plugins-gstavcfg.html#gst-ffmpeg-cfg-install-property"/>
+    <keyword type="function" name="gst_ffmpeg_cfg_set_property ()" link="gst-libav-plugins-gstavcfg.html#gst-ffmpeg-cfg-set-property"/>
+    <keyword type="function" name="gst_ffmpeg_cfg_get_property ()" link="gst-libav-plugins-gstavcfg.html#gst-ffmpeg-cfg-get-property"/>
+    <keyword type="function" name="gst_ffmpeg_cfg_fill_context ()" link="gst-libav-plugins-gstavcfg.html#gst-ffmpeg-cfg-fill-context"/>
+    <keyword type="function" name="gst_ffmpeg_cfg_set_defaults ()" link="gst-libav-plugins-gstavcfg.html#gst-ffmpeg-cfg-set-defaults"/>
+    <keyword type="function" name="gst_ffmpeg_cfg_finalize ()" link="gst-libav-plugins-gstavcfg.html#gst-ffmpeg-cfg-finalize"/>
+    <keyword type="function" name="gst_ffmpeg_codecid_is_image ()" link="gst-libav-plugins-gstavcodecmap.html#gst-ffmpeg-codecid-is-image"/>
+    <keyword type="function" name="gst_ffmpeg_codecid_to_caps ()" link="gst-libav-plugins-gstavcodecmap.html#gst-ffmpeg-codecid-to-caps"/>
+    <keyword type="function" name="gst_ffmpeg_codectype_to_audio_caps ()" link="gst-libav-plugins-gstavcodecmap.html#gst-ffmpeg-codectype-to-audio-caps"/>
+    <keyword type="function" name="gst_ffmpeg_codectype_to_video_caps ()" link="gst-libav-plugins-gstavcodecmap.html#gst-ffmpeg-codectype-to-video-caps"/>
+    <keyword type="function" name="gst_ffmpeg_caps_to_codecid ()" link="gst-libav-plugins-gstavcodecmap.html#gst-ffmpeg-caps-to-codecid"/>
+    <keyword type="function" name="gst_ffmpeg_caps_with_codecid ()" link="gst-libav-plugins-gstavcodecmap.html#gst-ffmpeg-caps-with-codecid"/>
+    <keyword type="function" name="gst_ffmpeg_caps_with_codectype ()" link="gst-libav-plugins-gstavcodecmap.html#gst-ffmpeg-caps-with-codectype"/>
+    <keyword type="function" name="gst_ffmpeg_videoinfo_to_context ()" link="gst-libav-plugins-gstavcodecmap.html#gst-ffmpeg-videoinfo-to-context"/>
+    <keyword type="function" name="gst_ffmpeg_audioinfo_to_context ()" link="gst-libav-plugins-gstavcodecmap.html#gst-ffmpeg-audioinfo-to-context"/>
+    <keyword type="function" name="gst_ffmpeg_pixfmt_to_videoformat ()" link="gst-libav-plugins-gstavcodecmap.html#gst-ffmpeg-pixfmt-to-videoformat"/>
+    <keyword type="function" name="gst_ffmpeg_videoformat_to_pixfmt ()" link="gst-libav-plugins-gstavcodecmap.html#gst-ffmpeg-videoformat-to-pixfmt"/>
+    <keyword type="function" name="gst_ffmpeg_smpfmt_to_audioformat ()" link="gst-libav-plugins-gstavcodecmap.html#gst-ffmpeg-smpfmt-to-audioformat"/>
+    <keyword type="function" name="gst_ffmpeg_formatid_to_caps ()" link="gst-libav-plugins-gstavcodecmap.html#gst-ffmpeg-formatid-to-caps"/>
+    <keyword type="function" name="gst_ffmpeg_formatid_get_codecids ()" link="gst-libav-plugins-gstavcodecmap.html#gst-ffmpeg-formatid-get-codecids"/>
+    <keyword type="function" name="gst_ffmpeg_channel_layout_to_gst ()" link="gst-libav-plugins-gstavcodecmap.html#gst-ffmpeg-channel-layout-to-gst"/>
+    <keyword type="enum" name="enum GstFFMpegCompliance" link="gst-libav-plugins-gstavcodecmap.html#GstFFMpegCompliance"/>
+    <keyword type="macro" name="FFMPEG_DEFAULT_COMPLIANCE" link="gst-libav-plugins-gstavcodecmap.html#FFMPEG-DEFAULT-COMPLIANCE:CAPS"/>
+    <keyword type="macro" name="GST_FFMPEG_PIPE_MUTEX_LOCK()" link="gst-libav-plugins-gstavprotocol.html#GST-FFMPEG-PIPE-MUTEX-LOCK:CAPS"/>
+    <keyword type="macro" name="GST_FFMPEG_PIPE_MUTEX_UNLOCK()" link="gst-libav-plugins-gstavprotocol.html#GST-FFMPEG-PIPE-MUTEX-UNLOCK:CAPS"/>
+    <keyword type="macro" name="GST_FFMPEG_PIPE_WAIT()" link="gst-libav-plugins-gstavprotocol.html#GST-FFMPEG-PIPE-WAIT:CAPS"/>
+    <keyword type="macro" name="GST_FFMPEG_PIPE_SIGNAL()" link="gst-libav-plugins-gstavprotocol.html#GST-FFMPEG-PIPE-SIGNAL:CAPS"/>
+    <keyword type="function" name="gst_ffmpeg_pipe_open ()" link="gst-libav-plugins-gstavprotocol.html#gst-ffmpeg-pipe-open"/>
+    <keyword type="function" name="gst_ffmpeg_pipe_close ()" link="gst-libav-plugins-gstavprotocol.html#gst-ffmpeg-pipe-close"/>
+    <keyword type="function" name="gst_ffmpegdata_open ()" link="gst-libav-plugins-gstavprotocol.html#gst-ffmpegdata-open"/>
+    <keyword type="function" name="gst_ffmpegdata_close ()" link="gst-libav-plugins-gstavprotocol.html#gst-ffmpegdata-close"/>
+    <keyword type="struct" name="struct GstFFMpegPipe" link="gst-libav-plugins-gstavprotocol.html#GstFFMpegPipe"/>
+    <keyword type="function" name="gst_ffmpeg_avpicture_get_size ()" link="gst-libav-plugins-gstavutils.html#gst-ffmpeg-avpicture-get-size"/>
+    <keyword type="function" name="gst_ffmpeg_avpicture_fill ()" link="gst-libav-plugins-gstavutils.html#gst-ffmpeg-avpicture-fill"/>
+    <keyword type="struct" name="struct GstFFMpegVidDec" link="gst-libav-plugins-GstFFMpegVidDec.html#GstFFMpegVidDec"/>
+    <keyword type="struct" name="struct GstFFMpegVidDecClass" link="gst-libav-plugins-GstFFMpegVidDec.html#GstFFMpegVidDecClass"/>
+    <keyword type="struct" name="struct GstFFMpegVidEnc" link="gst-libav-plugins-GstFFMpegVidEnc.html#GstFFMpegVidEnc"/>
+    <keyword type="struct" name="struct GstFFMpegVidEncClass" link="gst-libav-plugins-GstFFMpegVidEnc.html#GstFFMpegVidEncClass"/>
+    <keyword type="constant" name="GST_FFMPEG_VERY_STRICT" link="gst-libav-plugins-gstavcodecmap.html#GST-FFMPEG-VERY-STRICT:CAPS"/>
+    <keyword type="constant" name="GST_FFMPEG_STRICT" link="gst-libav-plugins-gstavcodecmap.html#GST-FFMPEG-STRICT:CAPS"/>
+    <keyword type="constant" name="GST_FFMPEG_NORMAL" link="gst-libav-plugins-gstavcodecmap.html#GST-FFMPEG-NORMAL:CAPS"/>
+    <keyword type="constant" name="GST_FFMPEG_UNOFFICIAL" link="gst-libav-plugins-gstavcodecmap.html#GST-FFMPEG-UNOFFICIAL:CAPS"/>
+    <keyword type="constant" name="GST_FFMPEG_EXPERIMENTAL" link="gst-libav-plugins-gstavcodecmap.html#GST-FFMPEG-EXPERIMENTAL:CAPS"/>
+  </functions>
+</book>

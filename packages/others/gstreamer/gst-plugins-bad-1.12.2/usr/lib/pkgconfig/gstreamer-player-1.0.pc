@@ -1,0 +1,12 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include/gstreamer-1.0
+
+Name: GStreamer Player
+Description: GStreamer Player convenience library
+Requires: gstreamer-1.0 gstreamer-video-1.0
+Version: 1.12.2
+Libs: -L${libdir} -lgstplayer-1.0
+Cflags: -I${includedir}
+

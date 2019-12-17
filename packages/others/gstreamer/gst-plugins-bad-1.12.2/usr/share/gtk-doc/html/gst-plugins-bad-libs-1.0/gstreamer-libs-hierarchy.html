@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Part II. Object Hierarchy: GStreamer Bad Plugins 1.0 Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="GStreamer Bad Plugins 1.0 Library Reference Manual">
+<link rel="up" href="index.html" title="GStreamer Bad Plugins 1.0 Library Reference Manual">
+<link rel="prev" href="gst-plugins-bad-libs-GstPhotography.html" title="GstPhotography">
+<link rel="next" href="api-index-full.html" title="Index">
+<meta name="generator" content="GTK-Doc V1.25 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts"></td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><img src="up-insensitive.png" width="16" height="16" border="0"></td>
+<td><a accesskey="p" href="gst-plugins-bad-libs-GstPhotography.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="api-index-full.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="part">
+<div class="titlepage"><div><div><h1 class="title">
+<a name="gstreamer-libs-hierarchy"></a>Part II. Object Hierarchy</h1></div></div></div>
+<pre class="screen">
+    <a href="/usr/share/gtk-doc/html/gobjectgobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+    <span class="lineart">├──</span> <a href="/usr/share/gtk-doc/html/gobjectgobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
+    <span class="lineart">│</span>   <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gstreamer-1.0GstObject.html#GstObject-struct">GstObject</a>
+    <span class="lineart">│</span>       <span class="lineart">├──</span> <a href="/usr/share/gtk-doc/html/gstreamer-1.0GstAllocator.html#GstAllocator-struct">GstAllocator</a>
+    <span class="lineart">│</span>       <span class="lineart">│</span>   <span class="lineart">╰──</span> <a class="link" href="gst-plugins-bad-libs-GstGlBaseMemory.html#GstGLBaseMemoryAllocator">GstGLBaseMemoryAllocator</a>
+    <span class="lineart">│</span>       <span class="lineart">│</span>       <span class="lineart">├──</span> <a class="link" href="gst-plugins-bad-libs-GstGLBuffer.html#GstGLBufferAllocator">GstGLBufferAllocator</a>
+    <span class="lineart">│</span>       <span class="lineart">│</span>       <span class="lineart">├──</span> <a class="link" href="gst-plugins-bad-libs-GstGLMemory.html#GstGLMemoryAllocator">GstGLMemoryAllocator</a>
+    <span class="lineart">│</span>       <span class="lineart">│</span>       <span class="lineart">│</span>   <span class="lineart">╰──</span> <a class="link" href="gst-plugins-bad-libs-GstGLMemoryPBO.html#GstGLMemoryPBOAllocator">GstGLMemoryPBOAllocator</a>
+    <span class="lineart">│</span>       <span class="lineart">│</span>       <span class="lineart">╰──</span> <a class="link" href="gst-plugins-bad-libs-GstGLRenderbuffer.html#GstGLRenderbufferAllocator">GstGLRenderbufferAllocator</a>
+    <span class="lineart">│</span>       <span class="lineart">├──</span> <a href="/usr/share/gtk-doc/html/gstreamer-1.0GstPad.html#GstPad-struct">GstPad</a>
+    <span class="lineart">│</span>       <span class="lineart">│</span>   <span class="lineart">╰──</span> <a class="link" href="GstAggregatorPad.html" title="GstAggregatorPad">GstAggregatorPad</a>
+    <span class="lineart">│</span>       <span class="lineart">│</span>       <span class="lineart">╰──</span> <a class="link" href="GstVideoAggregatorPad.html" title="GstVideoAggregatorPad">GstVideoAggregatorPad</a>
+    <span class="lineart">│</span>       <span class="lineart">├──</span> <a href="/usr/share/gtk-doc/html/gstreamer-1.0GstElement.html#GstElement-struct">GstElement</a>
+    <span class="lineart">│</span>       <span class="lineart">│</span>   <span class="lineart">├──</span> <a href="/usr/share/gtk-doc/html/gstreamer-1.0GstBin.html#GstBin-struct">GstBin</a>
+    <span class="lineart">│</span>       <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">╰──</span> <a class="link" href="gst-plugins-bad-libs-GstInsertbin.html#GstInsertBin">GstInsertBin</a>
+    <span class="lineart">│</span>       <span class="lineart">│</span>   <span class="lineart">├──</span> <a class="link" href="GstAggregator.html" title="GstAggregator">GstAggregator</a>
+    <span class="lineart">│</span>       <span class="lineart">│</span>   <span class="lineart">│</span>   <span class="lineart">╰──</span> <a class="link" href="GstVideoAggregator.html" title="GstVideoAggregator">GstVideoAggregator</a>
+    <span class="lineart">│</span>       <span class="lineart">│</span>   <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gstreamer-libs-1.0GstBaseTransform.html#GstBaseTransform-struct">GstBaseTransform</a>
+    <span class="lineart">│</span>       <span class="lineart">│</span>       <span class="lineart">╰──</span> <a class="link" href="GstGLBaseFilter.html" title="GstGLBaseFilter">GstGLBaseFilter</a>
+    <span class="lineart">│</span>       <span class="lineart">│</span>           <span class="lineart">╰──</span> <a class="link" href="GstGLFilter.html" title="GstGlFilter">GstGLFilter</a>
+    <span class="lineart">│</span>       <span class="lineart">├──</span> <a href="/usr/share/gtk-doc/html/gstreamer-1.0GstBufferPool.html#GstBufferPool-struct">GstBufferPool</a>
+    <span class="lineart">│</span>       <span class="lineart">│</span>   <span class="lineart">╰──</span> <a class="link" href="GstGLBufferPool.html" title="GstGlBufferPool">GstGLBufferPool</a>
+    <span class="lineart">│</span>       <span class="lineart">├──</span> <a class="link" href="GstGLColorConvert.html" title="GstGlColorConvert">GstGLColorConvert</a>
+    <span class="lineart">│</span>       <span class="lineart">├──</span> <a class="link" href="GstGLContext.html" title="GstGLContext">GstGLContext</a>
+    <span class="lineart">│</span>       <span class="lineart">├──</span> <a class="link" href="GstGLDisplay.html" title="GstGLDisplay">GstGLDisplay</a>
+    <span class="lineart">│</span>       <span class="lineart">├──</span> <a class="link" href="GstGLFramebuffer.html" title="GstGLFramebuffer">GstGLFramebuffer</a>
+    <span class="lineart">│</span>       <span class="lineart">├──</span> <a class="link" href="GstGLShader.html" title="GstGLShader">GstGLShader</a>
+    <span class="lineart">│</span>       <span class="lineart">├──</span> <a class="link" href="GstGLSLStage.html" title="GstGLSLStage">GstGLSLStage</a>
+    <span class="lineart">│</span>       <span class="lineart">├──</span> <a class="link" href="GstGLUpload.html" title="GstGLUpload">GstGLUpload</a>
+    <span class="lineart">│</span>       <span class="lineart">├──</span> <a class="link" href="GstGLViewConvert.html" title="GstGLViewConvert">GstGLViewConvert</a>
+    <span class="lineart">│</span>       <span class="lineart">├──</span> <a class="link" href="GstGLWindow.html" title="GstGLWindow">GstGLWindow</a>
+    <span class="lineart">│</span>       <span class="lineart">╰──</span> <a class="link" href="GstPlayer.html" title="GstPlayer">GstPlayer</a>
+    <span class="lineart">├──</span> <a class="link" href="GstPlayerMediaInfo.html#GstPlayerStreamInfo">GstPlayerStreamInfo</a>
+    <span class="lineart">│</span>   <span class="lineart">├──</span> <a class="link" href="GstPlayerMediaInfo.html#GstPlayerAudioInfo">GstPlayerAudioInfo</a>
+    <span class="lineart">│</span>   <span class="lineart">├──</span> <a class="link" href="GstPlayerMediaInfo.html#GstPlayerSubtitleInfo">GstPlayerSubtitleInfo</a>
+    <span class="lineart">│</span>   <span class="lineart">╰──</span> <a class="link" href="GstPlayerMediaInfo.html#GstPlayerVideoInfo">GstPlayerVideoInfo</a>
+    <span class="lineart">├──</span> <a class="link" href="GstPlayerMediaInfo.html" title="GstPlayerMediaInfo">GstPlayerMediaInfo</a>
+    <span class="lineart">╰──</span> <a class="link" href="GstPlayerVideoOverlayVideoRenderer.html" title="GstPlayerVideoOverlayVideoRenderer">GstPlayerVideoOverlayVideoRenderer</a>
+    <a href="/usr/local/share/gtk-doc/html/gobject/GTypeModule.html">GInterface</a>
+    <span class="lineart">├──</span> <a class="link" href="GstPlayer.html#GstPlayerSignalDispatcher">GstPlayerSignalDispatcher</a>
+    <span class="lineart">╰──</span> <a class="link" href="GstPlayer.html#GstPlayerVideoRenderer">GstPlayerVideoRenderer</a>
+    <a href="/usr/local/share/gtk-doc/html/gobject/gobject-Boxed-Types.html">GBoxed</a>
+    <span class="lineart">├──</span> <a class="link" href="gst-plugins-bad-libs-Base-MPEG-TS-sections.html#GstMpegtsSection">GstMpegtsSection</a>
+    <span class="lineart">├──</span> <a class="link" href="gst-plugins-bad-libs-Base-MPEG-TS-descriptors.html#GstMpegtsDescriptor">GstMpegtsDescriptor</a>
+    <span class="lineart">├──</span> <a class="link" href="gst-plugins-bad-libs-GstGlBaseMemory.html#GstGLAllocationParams">GstGLAllocationParams</a>
+    <span class="lineart">├──</span> <a class="link" href="gst-plugins-bad-libs-GstGLBuffer.html#GstGLBufferAllocationParams">GstGLBufferAllocationParams</a>
+    <span class="lineart">├──</span> <a class="link" href="gst-plugins-bad-libs-GstGLMemory.html#GstGLVideoAllocationParams">GstGLVideoAllocationParams</a>
+    <span class="lineart">╰──</span> <a class="link" href="GstPlayerVisualization.html" title="GstPlayerVisualization">GstPlayerVisualization</a>
+    <a href="/usr/local/share/gtk-doc/html/gobject/gobject-Enumeration-and-Flag-Types.html">GEnum</a>
+    <span class="lineart">├──</span> <a class="link" href="gst-plugins-bad-libs-Base-MPEG-TS-sections.html#GstMpegtsSectionType" title="enum GstMpegtsSectionType">GstMpegtsSectionType</a>
+    <span class="lineart">├──</span> <a class="link" href="gst-plugins-bad-libs-Base-MPEG-TS-sections.html#GstMpegtsSectionTableID" title="enum GstMpegtsSectionTableID">GstMpegtsSectionTableID</a>
+    <span class="lineart">├──</span> <a class="link" href="gst-plugins-bad-libs-DVB-variants-of-MPEG-TS-descriptors.html#GstMpegtsCableOuterFECScheme" title="enum GstMpegtsCableOuterFECScheme">GstMpegtsCableOuterFECScheme</a>
+    <span class="lineart">├──</span> <a class="link" href="gst-plugins-bad-libs-DVB-variants-of-MPEG-TS-descriptors.html#GstMpegtsModulationType" title="enum GstMpegtsModulationType">GstMpegtsModulationType</a>
+    <span class="lineart">├──</span> <a class="link" href="gst-plugins-bad-libs-DVB-variants-of-MPEG-TS-descriptors.html#GstMpegtsSatellitePolarizationType" title="enum GstMpegtsSatellitePolarizationType">GstMpegtsSatellitePolarizationType</a>
+    <span class="lineart">├──</span> <a class="link" href="gst-plugins-bad-libs-DVB-variants-of-MPEG-TS-descriptors.html#GstMpegtsSatelliteRolloff" title="enum GstMpegtsSatelliteRolloff">GstMpegtsSatelliteRolloff</a>
+    <span class="lineart">├──</span> <a class="link" href="gst-plugins-bad-libs-DVB-variants-of-MPEG-TS-descriptors.html#GstMpegtsDVBCodeRate" title="enum GstMpegtsDVBCodeRate">GstMpegtsDVBCodeRate</a>
+    <span class="lineart">├──</span> <a class="link" href="gst-plugins-bad-libs-Base-MPEG-TS-descriptors.html#GstMpegtsDescriptorType" title="enum GstMpegtsDescriptorType">GstMpegtsDescriptorType</a>
+    <span class="lineart">├──</span> <a class="link" href="gst-plugins-bad-libs-Base-MPEG-TS-descriptors.html#GstMpegtsIso639AudioType" title="enum GstMpegtsIso639AudioType">GstMpegtsIso639AudioType</a>
+    <span class="lineart">├──</span> <a class="link" href="gst-plugins-bad-libs-DVB-variants-of-MPEG-TS-sections.html#GstMpegtsRunningStatus" title="enum GstMpegtsRunningStatus">GstMpegtsRunningStatus</a>
+    <span class="lineart">├──</span> <a class="link" href="gst-plugins-bad-libs-DVB-variants-of-MPEG-TS-descriptors.html#GstMpegtsDVBServiceType" title="enum GstMpegtsDVBServiceType">GstMpegtsDVBServiceType</a>
+    <span class="lineart">├──</span> <a class="link" href="gst-plugins-bad-libs-Base-MPEG-TS-sections.html#GstMpegtsStreamType" title="enum GstMpegtsStreamType">GstMpegtsStreamType</a>
+    <span class="lineart">├──</span> <a class="link" href="GstPlayer.html#GstPlayerColorBalanceType" title="enum GstPlayerColorBalanceType">GstPlayerColorBalanceType</a>
+    <span class="lineart">├──</span> <a class="link" href="GstPlayer.html#GstPlayerError" title="enum GstPlayerError">GstPlayerError</a>
+    <span class="lineart">├──</span> <a class="link" href="GstPlayer.html#GstPlayerState" title="enum GstPlayerState">GstPlayerState</a>
+    <span class="lineart">╰──</span> <a class="link" href="GstGLViewConvert.html#GstGLStereoDownmix" title="enum GstGLStereoDownmix">GstGLStereoDownmix</a>
+</pre>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.25</div>
+</body>
+</html>

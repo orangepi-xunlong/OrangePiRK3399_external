@@ -1,0 +1,2241 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>libav: GStreamer libav 1.0 Plugins Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="GStreamer libav 1.0 Plugins Reference Manual">
+<link rel="up" href="ch02.html" title="gst-libav Plugins">
+<link rel="prev" href="ch02.html" title="gst-libav Plugins">
+<link rel="next" href="ch03.html" title="Object Hierarchy">
+<meta name="generator" content="GTK-Doc V1.25 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts"></td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch02.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="ch02.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="ch03.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="gst-libav-plugins-plugin-libav"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle">libav</span></h2>
+<p>libav — <a name="plugin-libav"></a>All libav codecs and formats (local snapshot)</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="id-1.3.2.3"></a><h2>Plugin Information</h2>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term">filename</span></p></td>
+<td>libgstlibav.so</td>
+</tr>
+<tr>
+<td><p><span class="term">version</span></p></td>
+<td>1.12.2</td>
+</tr>
+<tr>
+<td><p><span class="term">run-time license</span></p></td>
+<td>LGPL</td>
+</tr>
+<tr>
+<td><p><span class="term">package</span></p></td>
+<td>libav</td>
+</tr>
+<tr>
+<td><p><span class="term">origin</span></p></td>
+<td>http://www.libav.org</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="id-1.3.2.4"></a><h2>Elements</h2>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term">avdec_4xm</span></p></td>
+<td>libav 4xm decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_8bps</span></p></td>
+<td>libav 8bps decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_8svx_exp</span></p></td>
+<td>libav 8svx_exp decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_8svx_fib</span></p></td>
+<td>libav 8svx_fib decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_aac</span></p></td>
+<td>libav aac decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_aac_fixed</span></p></td>
+<td>libav aac_fixed decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_aac_latm</span></p></td>
+<td>libav aac_latm decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_aasc</span></p></td>
+<td>libav aasc decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_ac3</span></p></td>
+<td>libav ac3 decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_ac3_fixed</span></p></td>
+<td>libav ac3_fixed decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_adpcm_4xm</span></p></td>
+<td>libav adpcm_4xm decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_adpcm_adx</span></p></td>
+<td>libav adpcm_adx decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_adpcm_afc</span></p></td>
+<td>libav adpcm_afc decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_adpcm_aica</span></p></td>
+<td>libav adpcm_aica decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_adpcm_ct</span></p></td>
+<td>libav adpcm_ct decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_adpcm_dtk</span></p></td>
+<td>libav adpcm_dtk decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_adpcm_ea</span></p></td>
+<td>libav adpcm_ea decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_adpcm_ea_maxis_xa</span></p></td>
+<td>libav adpcm_ea_maxis_xa decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_adpcm_ea_r1</span></p></td>
+<td>libav adpcm_ea_r1 decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_adpcm_ea_r2</span></p></td>
+<td>libav adpcm_ea_r2 decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_adpcm_ea_r3</span></p></td>
+<td>libav adpcm_ea_r3 decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_adpcm_ea_xas</span></p></td>
+<td>libav adpcm_ea_xas decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_adpcm_ima_amv</span></p></td>
+<td>libav adpcm_ima_amv decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_adpcm_ima_apc</span></p></td>
+<td>libav adpcm_ima_apc decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_adpcm_ima_dat4</span></p></td>
+<td>libav adpcm_ima_dat4 decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_adpcm_ima_dk3</span></p></td>
+<td>libav adpcm_ima_dk3 decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_adpcm_ima_dk4</span></p></td>
+<td>libav adpcm_ima_dk4 decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_adpcm_ima_ea_eacs</span></p></td>
+<td>libav adpcm_ima_ea_eacs decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_adpcm_ima_ea_sead</span></p></td>
+<td>libav adpcm_ima_ea_sead decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_adpcm_ima_iss</span></p></td>
+<td>libav adpcm_ima_iss decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_adpcm_ima_oki</span></p></td>
+<td>libav adpcm_ima_oki decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_adpcm_ima_qt</span></p></td>
+<td>libav adpcm_ima_qt decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_adpcm_ima_rad</span></p></td>
+<td>libav adpcm_ima_rad decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_adpcm_ima_smjpeg</span></p></td>
+<td>libav adpcm_ima_smjpeg decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_adpcm_ima_wav</span></p></td>
+<td>libav adpcm_ima_wav decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_adpcm_ima_ws</span></p></td>
+<td>libav adpcm_ima_ws decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_adpcm_ms</span></p></td>
+<td>libav adpcm_ms decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_adpcm_mtaf</span></p></td>
+<td>libav adpcm_mtaf decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_adpcm_psx</span></p></td>
+<td>libav adpcm_psx decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_adpcm_sbpro_2</span></p></td>
+<td>libav adpcm_sbpro_2 decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_adpcm_sbpro_3</span></p></td>
+<td>libav adpcm_sbpro_3 decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_adpcm_sbpro_4</span></p></td>
+<td>libav adpcm_sbpro_4 decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_adpcm_swf</span></p></td>
+<td>libav adpcm_swf decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_adpcm_thp</span></p></td>
+<td>libav adpcm_thp decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_adpcm_thp_le</span></p></td>
+<td>libav adpcm_thp_le decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_adpcm_vima</span></p></td>
+<td>libav adpcm_vima decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_adpcm_xa</span></p></td>
+<td>libav adpcm_xa decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_adpcm_yamaha</span></p></td>
+<td>libav adpcm_yamaha decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_aic</span></p></td>
+<td>libav aic decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_alac</span></p></td>
+<td>libav alac decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_alias_pix</span></p></td>
+<td>libav alias_pix decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_als</span></p></td>
+<td>libav als decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_amrnb</span></p></td>
+<td>libav amrnb decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_amrwb</span></p></td>
+<td>libav amrwb decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_amv</span></p></td>
+<td>libav amv decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_anm</span></p></td>
+<td>libav anm decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_ansi</span></p></td>
+<td>libav ansi decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_ape</span></p></td>
+<td>libav ape decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_apng</span></p></td>
+<td>libav apng decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_asv1</span></p></td>
+<td>libav asv1 decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_asv2</span></p></td>
+<td>libav asv2 decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_atrac1</span></p></td>
+<td>libav atrac1 decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_atrac3</span></p></td>
+<td>libav atrac3 decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_atrac3al</span></p></td>
+<td>libav atrac3al decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_atrac3plus</span></p></td>
+<td>libav atrac3plus decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_atrac3plusal</span></p></td>
+<td>libav atrac3plusal decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_aura</span></p></td>
+<td>libav aura decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_aura2</span></p></td>
+<td>libav aura2 decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_avrn</span></p></td>
+<td>libav avrn decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_avrp</span></p></td>
+<td>libav avrp decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_avs</span></p></td>
+<td>libav avs decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_avui</span></p></td>
+<td>libav avui decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_bethsoftvid</span></p></td>
+<td>libav bethsoftvid decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_bfi</span></p></td>
+<td>libav bfi decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_binkaudio_dct</span></p></td>
+<td>libav binkaudio_dct decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_binkaudio_rdft</span></p></td>
+<td>libav binkaudio_rdft decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_binkvideo</span></p></td>
+<td>libav binkvideo decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_bintext</span></p></td>
+<td>libav bintext decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_bmp</span></p></td>
+<td>libav bmp decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_bmv_audio</span></p></td>
+<td>libav bmv_audio decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_bmv_video</span></p></td>
+<td>libav bmv_video decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_brender_pix</span></p></td>
+<td>libav brender_pix decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_c93</span></p></td>
+<td>libav c93 decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_camstudio</span></p></td>
+<td>libav camstudio decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_camtasia</span></p></td>
+<td>libav camtasia decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_cavs</span></p></td>
+<td>libav cavs decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_cdgraphics</span></p></td>
+<td>libav cdgraphics decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_cdxl</span></p></td>
+<td>libav cdxl decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_cfhd</span></p></td>
+<td>libav cfhd decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_cinepak</span></p></td>
+<td>libav cinepak decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_clearvideo</span></p></td>
+<td>libav clearvideo decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_cljr</span></p></td>
+<td>libav cljr decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_cllc</span></p></td>
+<td>libav cllc decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_comfortnoise</span></p></td>
+<td>libav comfortnoise decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_cook</span></p></td>
+<td>libav cook decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_cpia</span></p></td>
+<td>libav cpia decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_cyuv</span></p></td>
+<td>libav cyuv decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_dca</span></p></td>
+<td>libav dca decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_dds</span></p></td>
+<td>libav dds decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_dfa</span></p></td>
+<td>libav dfa decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_dirac</span></p></td>
+<td>libav dirac decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_dnxhd</span></p></td>
+<td>libav dnxhd decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_dpx</span></p></td>
+<td>libav dpx decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_dsd_lsbf</span></p></td>
+<td>libav dsd_lsbf decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_dsd_lsbf_planar</span></p></td>
+<td>libav dsd_lsbf_planar decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_dsd_msbf</span></p></td>
+<td>libav dsd_msbf decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_dsd_msbf_planar</span></p></td>
+<td>libav dsd_msbf_planar decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_dsicinaudio</span></p></td>
+<td>libav dsicinaudio decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_dsicinvideo</span></p></td>
+<td>libav dsicinvideo decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_dss_sp</span></p></td>
+<td>libav dss_sp decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_dst</span></p></td>
+<td>libav dst decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_dvaudio</span></p></td>
+<td>libav dvaudio decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_dvvideo</span></p></td>
+<td>libav dvvideo decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_dxa</span></p></td>
+<td>libav dxa decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_dxtory</span></p></td>
+<td>libav dxtory decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_dxv</span></p></td>
+<td>libav dxv decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_eac3</span></p></td>
+<td>libav eac3 decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_eacmv</span></p></td>
+<td>libav eacmv decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_eamad</span></p></td>
+<td>libav eamad decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_eatgq</span></p></td>
+<td>libav eatgq decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_eatgv</span></p></td>
+<td>libav eatgv decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_eatqi</span></p></td>
+<td>libav eatqi decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_escape124</span></p></td>
+<td>libav escape124 decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_escape130</span></p></td>
+<td>libav escape130 decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_evrc</span></p></td>
+<td>libav evrc decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_exr</span></p></td>
+<td>libav exr decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_ffv1</span></p></td>
+<td>libav ffv1 decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_ffvhuff</span></p></td>
+<td>libav ffvhuff decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_fic</span></p></td>
+<td>libav fic decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_flac</span></p></td>
+<td>libav flac decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_flashsv</span></p></td>
+<td>libav flashsv decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_flashsv2</span></p></td>
+<td>libav flashsv2 decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_flic</span></p></td>
+<td>libav flic decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_flv</span></p></td>
+<td>libav flv decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_fmvc</span></p></td>
+<td>libav fmvc decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_fraps</span></p></td>
+<td>libav fraps decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_frwu</span></p></td>
+<td>libav frwu decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_g2m</span></p></td>
+<td>libav g2m decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_g722</span></p></td>
+<td>libav g722 decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_g723_1</span></p></td>
+<td>libav g723_1 decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_g726</span></p></td>
+<td>libav g726 decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_g726le</span></p></td>
+<td>libav g726le decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_g729</span></p></td>
+<td>libav g729 decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_gsm</span></p></td>
+<td>libav gsm decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_gsm_ms</span></p></td>
+<td>libav gsm_ms decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_h261</span></p></td>
+<td>libav h261 decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_h263</span></p></td>
+<td>libav h263 decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_h263i</span></p></td>
+<td>libav h263i decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_h263p</span></p></td>
+<td>libav h263p decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_h264</span></p></td>
+<td>libav h264 decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_h265</span></p></td>
+<td>libav hevc decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_hap</span></p></td>
+<td>libav hap decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_hnm4video</span></p></td>
+<td>libav hnm4video decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_hq_hqa</span></p></td>
+<td>libav hq_hqa decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_hqx</span></p></td>
+<td>libav hqx decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_huffyuv</span></p></td>
+<td>libav huffyuv decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_iac</span></p></td>
+<td>libav iac decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_idcinvideo</span></p></td>
+<td>libav idcinvideo decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_idf</span></p></td>
+<td>libav idf decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_iff</span></p></td>
+<td>libav iff decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_imc</span></p></td>
+<td>libav imc decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_indeo2</span></p></td>
+<td>libav indeo2 decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_indeo3</span></p></td>
+<td>libav indeo3 decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_indeo4</span></p></td>
+<td>libav indeo4 decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_indeo5</span></p></td>
+<td>libav indeo5 decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_interplay_dpcm</span></p></td>
+<td>libav interplay_dpcm decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_interplayacm</span></p></td>
+<td>libav interplayacm decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_interplayvideo</span></p></td>
+<td>libav interplayvideo decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_jpeg2000</span></p></td>
+<td>libav jpeg2000 decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_jpegls</span></p></td>
+<td>libav jpegls decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_jv</span></p></td>
+<td>libav jv decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_kgv1</span></p></td>
+<td>libav kgv1 decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_kmvc</span></p></td>
+<td>libav kmvc decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_lagarith</span></p></td>
+<td>libav lagarith decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_loco</span></p></td>
+<td>libav loco decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_m101</span></p></td>
+<td>libav m101 decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_mace3</span></p></td>
+<td>libav mace3 decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_mace6</span></p></td>
+<td>libav mace6 decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_magicyuv</span></p></td>
+<td>libav magicyuv decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_mdec</span></p></td>
+<td>libav mdec decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_metasound</span></p></td>
+<td>libav metasound decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_mimic</span></p></td>
+<td>libav mimic decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_mjpeg</span></p></td>
+<td>libav mjpeg decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_mjpegb</span></p></td>
+<td>libav mjpegb decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_mlp</span></p></td>
+<td>libav mlp decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_mmvideo</span></p></td>
+<td>libav mmvideo decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_motionpixels</span></p></td>
+<td>libav motionpixels decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_mp1float</span></p></td>
+<td>libav mp1float decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_mp2float</span></p></td>
+<td>libav mp2float decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_mp3</span></p></td>
+<td>libav mp3 decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_mp3adu</span></p></td>
+<td>libav mp3adu decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_mp3adufloat</span></p></td>
+<td>libav mp3adufloat decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_mp3float</span></p></td>
+<td>libav mp3float decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_mp3on4</span></p></td>
+<td>libav mp3on4 decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_mp3on4float</span></p></td>
+<td>libav mp3on4float decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_mpc7</span></p></td>
+<td>libav mpc7 decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_mpc8</span></p></td>
+<td>libav mpc8 decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_mpeg2video</span></p></td>
+<td>libav mpeg2video decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_mpeg4</span></p></td>
+<td>libav mpeg4 decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_mpegvideo</span></p></td>
+<td>libav mpegvideo decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_msa1</span></p></td>
+<td>libav msa1 decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_msmpeg4</span></p></td>
+<td>libav msmpeg4 decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_msmpeg4v1</span></p></td>
+<td>libav msmpeg4v1 decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_msmpeg4v2</span></p></td>
+<td>libav msmpeg4v2 decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_msrle</span></p></td>
+<td>libav msrle decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_mss1</span></p></td>
+<td>libav mss1 decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_mss2</span></p></td>
+<td>libav mss2 decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_msvideo1</span></p></td>
+<td>libav msvideo1 decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_mszh</span></p></td>
+<td>libav mszh decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_mts2</span></p></td>
+<td>libav mts2 decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_mvc1</span></p></td>
+<td>libav mvc1 decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_mvc2</span></p></td>
+<td>libav mvc2 decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_mxpeg</span></p></td>
+<td>libav mxpeg decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_nellymoser</span></p></td>
+<td>libav nellymoser decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_nuv</span></p></td>
+<td>libav nuv decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_on2avc</span></p></td>
+<td>libav on2avc decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_opus</span></p></td>
+<td>libav opus decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_paf_audio</span></p></td>
+<td>libav paf_audio decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_paf_video</span></p></td>
+<td>libav paf_video decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_pam</span></p></td>
+<td>libav pam decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_pbm</span></p></td>
+<td>libav pbm decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_pcm_lxf</span></p></td>
+<td>libav pcm_lxf decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_pcx</span></p></td>
+<td>libav pcx decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_pgm</span></p></td>
+<td>libav pgm decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_pgmyuv</span></p></td>
+<td>libav pgmyuv decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_pictor</span></p></td>
+<td>libav pictor decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_pixlet</span></p></td>
+<td>libav pixlet decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_png</span></p></td>
+<td>libav png decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_ppm</span></p></td>
+<td>libav ppm decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_prores</span></p></td>
+<td>libav prores decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_prores_lgpl</span></p></td>
+<td>libav prores_lgpl decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_psd</span></p></td>
+<td>libav psd decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_ptx</span></p></td>
+<td>libav ptx decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_qcelp</span></p></td>
+<td>libav qcelp decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_qdm2</span></p></td>
+<td>libav qdm2 decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_qdmc</span></p></td>
+<td>libav qdmc decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_qdraw</span></p></td>
+<td>libav qdraw decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_qpeg</span></p></td>
+<td>libav qpeg decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_qtrle</span></p></td>
+<td>libav qtrle decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_r10k</span></p></td>
+<td>libav r10k decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_ralf</span></p></td>
+<td>libav ralf decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_real_144</span></p></td>
+<td>libav real_144 decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_real_288</span></p></td>
+<td>libav real_288 decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_rl2</span></p></td>
+<td>libav rl2 decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_roq_dpcm</span></p></td>
+<td>libav roq_dpcm decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_roqvideo</span></p></td>
+<td>libav roqvideo decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_rpza</span></p></td>
+<td>libav rpza decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_rscc</span></p></td>
+<td>libav rscc decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_rv10</span></p></td>
+<td>libav rv10 decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_rv20</span></p></td>
+<td>libav rv20 decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_rv30</span></p></td>
+<td>libav rv30 decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_rv40</span></p></td>
+<td>libav rv40 decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_s302m</span></p></td>
+<td>libav s302m decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_sanm</span></p></td>
+<td>libav sanm decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_scpr</span></p></td>
+<td>libav scpr decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_screenpresso</span></p></td>
+<td>libav screenpresso decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_sdx2_dpcm</span></p></td>
+<td>libav sdx2_dpcm decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_sgi</span></p></td>
+<td>libav sgi decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_sgirle</span></p></td>
+<td>libav sgirle decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_sheervideo</span></p></td>
+<td>libav sheervideo decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_shorten</span></p></td>
+<td>libav shorten decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_sipr</span></p></td>
+<td>libav sipr decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_smackaud</span></p></td>
+<td>libav smackaud decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_smackvid</span></p></td>
+<td>libav smackvid decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_smc</span></p></td>
+<td>libav smc decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_smvjpeg</span></p></td>
+<td>libav smvjpeg decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_snow</span></p></td>
+<td>libav snow decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_sol_dpcm</span></p></td>
+<td>libav sol_dpcm decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_sonic</span></p></td>
+<td>libav sonic decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_sp5x</span></p></td>
+<td>libav sp5x decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_speedhq</span></p></td>
+<td>libav speedhq decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_sunrast</span></p></td>
+<td>libav sunrast decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_svq1</span></p></td>
+<td>libav svq1 decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_svq3</span></p></td>
+<td>libav svq3 decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_tak</span></p></td>
+<td>libav tak decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_targa</span></p></td>
+<td>libav targa decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_targa_y216</span></p></td>
+<td>libav targa_y216 decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_tdsc</span></p></td>
+<td>libav tdsc decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_thp</span></p></td>
+<td>libav thp decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_tiertexseqvideo</span></p></td>
+<td>libav tiertexseqvideo decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_tiff</span></p></td>
+<td>libav tiff decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_tmv</span></p></td>
+<td>libav tmv decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_truehd</span></p></td>
+<td>libav truehd decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_truemotion1</span></p></td>
+<td>libav truemotion1 decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_truemotion2</span></p></td>
+<td>libav truemotion2 decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_truemotion2rt</span></p></td>
+<td>libav truemotion2rt decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_truespeech</span></p></td>
+<td>libav truespeech decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_tscc2</span></p></td>
+<td>libav tscc2 decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_tta</span></p></td>
+<td>libav tta decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_twinvq</span></p></td>
+<td>libav twinvq decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_txd</span></p></td>
+<td>libav txd decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_ultimotion</span></p></td>
+<td>libav ultimotion decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_utvideo</span></p></td>
+<td>libav utvideo decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_vb</span></p></td>
+<td>libav vb decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_vble</span></p></td>
+<td>libav vble decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_vc1</span></p></td>
+<td>libav vc1 decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_vc1image</span></p></td>
+<td>libav vc1image decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_vcr1</span></p></td>
+<td>libav vcr1 decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_vmdaudio</span></p></td>
+<td>libav vmdaudio decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_vmdvideo</span></p></td>
+<td>libav vmdvideo decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_vmnc</span></p></td>
+<td>libav vmnc decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_vp3</span></p></td>
+<td>libav vp3 decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_vp5</span></p></td>
+<td>libav vp5 decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_vp6</span></p></td>
+<td>libav vp6 decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_vp6a</span></p></td>
+<td>libav vp6a decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_vp6f</span></p></td>
+<td>libav vp6f decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_vp7</span></p></td>
+<td>libav vp7 decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_vp8</span></p></td>
+<td>libav vp8 decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_vp9</span></p></td>
+<td>libav vp9 decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_vqavideo</span></p></td>
+<td>libav vqavideo decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_wavesynth</span></p></td>
+<td>libav wavesynth decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_webp</span></p></td>
+<td>libav webp decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_wmalossless</span></p></td>
+<td>libav wmalossless decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_wmapro</span></p></td>
+<td>libav wmapro decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_wmav1</span></p></td>
+<td>libav wmav1 decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_wmav2</span></p></td>
+<td>libav wmav2 decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_wmavoice</span></p></td>
+<td>libav wmavoice decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_wmv1</span></p></td>
+<td>libav wmv1 decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_wmv2</span></p></td>
+<td>libav wmv2 decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_wmv3</span></p></td>
+<td>libav wmv3 decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_wmv3image</span></p></td>
+<td>libav wmv3image decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_wnv1</span></p></td>
+<td>libav wnv1 decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_ws_snd1</span></p></td>
+<td>libav ws_snd1 decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_xan_dpcm</span></p></td>
+<td>libav xan_dpcm decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_xan_wc3</span></p></td>
+<td>libav xan_wc3 decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_xan_wc4</span></p></td>
+<td>libav xan_wc4 decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_xbin</span></p></td>
+<td>libav xbin decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_xbm</span></p></td>
+<td>libav xbm decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_xface</span></p></td>
+<td>libav xface decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_xl</span></p></td>
+<td>libav xl decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_xma1</span></p></td>
+<td>libav xma1 decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_xma2</span></p></td>
+<td>libav xma2 decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_xpm</span></p></td>
+<td>libav xpm decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_xwd</span></p></td>
+<td>libav xwd decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_ylc</span></p></td>
+<td>libav ylc decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_yop</span></p></td>
+<td>libav yop decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_zerocodec</span></p></td>
+<td>libav zerocodec decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdec_zmbv</span></p></td>
+<td>libav zmbv decoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avdeinterlace</span></p></td>
+<td>Deinterlace video</td>
+</tr>
+<tr>
+<td><p><span class="term">avdemux_4xm</span></p></td>
+<td>libav 4X Technologies demuxer</td>
+</tr>
+<tr>
+<td><p><span class="term">avdemux_aiff</span></p></td>
+<td>libav Audio IFF demuxer</td>
+</tr>
+<tr>
+<td><p><span class="term">avdemux_ape</span></p></td>
+<td>libav Monkey's Audio demuxer</td>
+</tr>
+<tr>
+<td><p><span class="term">avdemux_avs</span></p></td>
+<td>libav AVS demuxer</td>
+</tr>
+<tr>
+<td><p><span class="term">avdemux_daud</span></p></td>
+<td>libav D-Cinema audio demuxer</td>
+</tr>
+<tr>
+<td><p><span class="term">avdemux_ea</span></p></td>
+<td>libav Electronic Arts Multimedia demuxer</td>
+</tr>
+<tr>
+<td><p><span class="term">avdemux_ffm</span></p></td>
+<td>libav FFM (FFserver live feed) demuxer</td>
+</tr>
+<tr>
+<td><p><span class="term">avdemux_film_cpk</span></p></td>
+<td>libav Sega FILM / CPK demuxer</td>
+</tr>
+<tr>
+<td><p><span class="term">avdemux_gxf</span></p></td>
+<td>libav GXF (General eXchange Format) demuxer</td>
+</tr>
+<tr>
+<td><p><span class="term">avdemux_idcin</span></p></td>
+<td>libav id Cinematic demuxer</td>
+</tr>
+<tr>
+<td><p><span class="term">avdemux_ipmovie</span></p></td>
+<td>libav Interplay MVE demuxer</td>
+</tr>
+<tr>
+<td><p><span class="term">avdemux_ivf</span></p></td>
+<td>libav On2 IVF demuxer</td>
+</tr>
+<tr>
+<td><p><span class="term">avdemux_mm</span></p></td>
+<td>libav American Laser Games MM demuxer</td>
+</tr>
+<tr>
+<td><p><span class="term">avdemux_mmf</span></p></td>
+<td>libav Yamaha SMAF demuxer</td>
+</tr>
+<tr>
+<td><p><span class="term">avdemux_mpc</span></p></td>
+<td>libav Musepack demuxer</td>
+</tr>
+<tr>
+<td><p><span class="term">avdemux_mpc8</span></p></td>
+<td>libav Musepack SV8 demuxer</td>
+</tr>
+<tr>
+<td><p><span class="term">avdemux_mxf</span></p></td>
+<td>libav MXF (Material eXchange Format) demuxer</td>
+</tr>
+<tr>
+<td><p><span class="term">avdemux_nsv</span></p></td>
+<td>libav Nullsoft Streaming Video demuxer</td>
+</tr>
+<tr>
+<td><p><span class="term">avdemux_nut</span></p></td>
+<td>libav NUT demuxer</td>
+</tr>
+<tr>
+<td><p><span class="term">avdemux_nuv</span></p></td>
+<td>libav NuppelVideo demuxer</td>
+</tr>
+<tr>
+<td><p><span class="term">avdemux_psxstr</span></p></td>
+<td>libav Sony Playstation STR demuxer</td>
+</tr>
+<tr>
+<td><p><span class="term">avdemux_pva</span></p></td>
+<td>libav TechnoTrend PVA demuxer</td>
+</tr>
+<tr>
+<td><p><span class="term">avdemux_smk</span></p></td>
+<td>libav Smacker demuxer</td>
+</tr>
+<tr>
+<td><p><span class="term">avdemux_sol</span></p></td>
+<td>libav Sierra SOL demuxer</td>
+</tr>
+<tr>
+<td><p><span class="term">avdemux_tta</span></p></td>
+<td>libav TTA (True Audio) demuxer</td>
+</tr>
+<tr>
+<td><p><span class="term">avdemux_vmd</span></p></td>
+<td>libav Sierra VMD demuxer</td>
+</tr>
+<tr>
+<td><p><span class="term">avdemux_voc</span></p></td>
+<td>libav Creative Voice demuxer</td>
+</tr>
+<tr>
+<td><p><span class="term">avdemux_wc3movie</span></p></td>
+<td>libav Wing Commander III movie demuxer</td>
+</tr>
+<tr>
+<td><p><span class="term">avdemux_wsaud</span></p></td>
+<td>libav Westwood Studios audio demuxer</td>
+</tr>
+<tr>
+<td><p><span class="term">avdemux_wsvqa</span></p></td>
+<td>libav Westwood Studios VQA demuxer</td>
+</tr>
+<tr>
+<td><p><span class="term">avdemux_yuv4mpegpipe</span></p></td>
+<td>libav YUV4MPEG pipe demuxer</td>
+</tr>
+<tr>
+<td><p><span class="term">avenc_a64multi</span></p></td>
+<td>libav a64multi encoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avenc_a64multi5</span></p></td>
+<td>libav a64multi5 encoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avenc_aac</span></p></td>
+<td>libav aac encoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avenc_ac3</span></p></td>
+<td>libav ac3 encoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avenc_ac3_fixed</span></p></td>
+<td>libav ac3_fixed encoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avenc_adpcm_adx</span></p></td>
+<td>libav adpcm_adx encoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avenc_adpcm_ima_qt</span></p></td>
+<td>libav adpcm_ima_qt encoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avenc_adpcm_ima_wav</span></p></td>
+<td>libav adpcm_ima_wav encoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avenc_adpcm_ms</span></p></td>
+<td>libav adpcm_ms encoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avenc_adpcm_swf</span></p></td>
+<td>libav adpcm_swf encoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avenc_adpcm_yamaha</span></p></td>
+<td>libav adpcm_yamaha encoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avenc_alac</span></p></td>
+<td>libav alac encoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avenc_alias_pix</span></p></td>
+<td>libav alias_pix encoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avenc_amv</span></p></td>
+<td>libav amv encoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avenc_apng</span></p></td>
+<td>libav apng encoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avenc_asv1</span></p></td>
+<td>libav asv1 encoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avenc_asv2</span></p></td>
+<td>libav asv2 encoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avenc_avrp</span></p></td>
+<td>libav avrp encoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avenc_avui</span></p></td>
+<td>libav avui encoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avenc_bmp</span></p></td>
+<td>libav bmp encoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avenc_cinepak</span></p></td>
+<td>libav cinepak encoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avenc_cljr</span></p></td>
+<td>libav cljr encoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avenc_comfortnoise</span></p></td>
+<td>libav comfortnoise encoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avenc_dca</span></p></td>
+<td>libav dca encoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avenc_dnxhd</span></p></td>
+<td>libav dnxhd encoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avenc_dpx</span></p></td>
+<td>libav dpx encoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avenc_dvvideo</span></p></td>
+<td>libav dvvideo encoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avenc_eac3</span></p></td>
+<td>libav eac3 encoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avenc_ffv1</span></p></td>
+<td>libav ffv1 encoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avenc_ffvhuff</span></p></td>
+<td>libav ffvhuff encoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avenc_flashsv</span></p></td>
+<td>libav flashsv encoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avenc_flashsv2</span></p></td>
+<td>libav flashsv2 encoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avenc_flv</span></p></td>
+<td>libav flv encoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avenc_g722</span></p></td>
+<td>libav g722 encoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avenc_g723_1</span></p></td>
+<td>libav g723_1 encoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avenc_g726</span></p></td>
+<td>libav g726 encoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avenc_h261</span></p></td>
+<td>libav h261 encoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avenc_h263</span></p></td>
+<td>libav h263 encoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avenc_h263p</span></p></td>
+<td>libav h263p encoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avenc_huffyuv</span></p></td>
+<td>libav huffyuv encoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avenc_jpeg2000</span></p></td>
+<td>libav jpeg2000 encoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avenc_jpegls</span></p></td>
+<td>libav jpegls encoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avenc_ljpeg</span></p></td>
+<td>libav ljpeg encoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avenc_mjpeg</span></p></td>
+<td>libav mjpeg encoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avenc_mlp</span></p></td>
+<td>libav mlp encoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avenc_mp2</span></p></td>
+<td>libav mp2 encoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avenc_mp2fixed</span></p></td>
+<td>libav mp2fixed encoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avenc_mpeg1video</span></p></td>
+<td>libav mpeg1video encoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avenc_mpeg2video</span></p></td>
+<td>libav mpeg2video encoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avenc_mpeg4</span></p></td>
+<td>libav mpeg4 encoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avenc_msmpeg4</span></p></td>
+<td>libav msmpeg4 encoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avenc_msmpeg4v2</span></p></td>
+<td>libav msmpeg4v2 encoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avenc_msvideo1</span></p></td>
+<td>libav msvideo1 encoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avenc_nellymoser</span></p></td>
+<td>libav nellymoser encoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avenc_opus</span></p></td>
+<td>libav opus encoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avenc_pam</span></p></td>
+<td>libav pam encoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avenc_pbm</span></p></td>
+<td>libav pbm encoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avenc_pcx</span></p></td>
+<td>libav pcx encoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avenc_pgm</span></p></td>
+<td>libav pgm encoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avenc_pgmyuv</span></p></td>
+<td>libav pgmyuv encoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avenc_png</span></p></td>
+<td>libav png encoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avenc_ppm</span></p></td>
+<td>libav ppm encoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avenc_prores</span></p></td>
+<td>libav prores encoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avenc_prores_aw</span></p></td>
+<td>libav prores_aw encoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avenc_prores_ks</span></p></td>
+<td>libav prores_ks encoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avenc_qtrle</span></p></td>
+<td>libav qtrle encoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avenc_r10k</span></p></td>
+<td>libav r10k encoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avenc_real_144</span></p></td>
+<td>libav real_144 encoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avenc_roq_dpcm</span></p></td>
+<td>libav roq_dpcm encoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avenc_roqvideo</span></p></td>
+<td>libav roqvideo encoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avenc_rv10</span></p></td>
+<td>libav rv10 encoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avenc_rv20</span></p></td>
+<td>libav rv20 encoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avenc_s302m</span></p></td>
+<td>libav s302m encoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avenc_sgi</span></p></td>
+<td>libav sgi encoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avenc_snow</span></p></td>
+<td>libav snow encoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avenc_sonic</span></p></td>
+<td>libav sonic encoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avenc_sonicls</span></p></td>
+<td>libav sonicls encoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avenc_sunrast</span></p></td>
+<td>libav sunrast encoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avenc_svq1</span></p></td>
+<td>libav svq1 encoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avenc_targa</span></p></td>
+<td>libav targa encoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avenc_tiff</span></p></td>
+<td>libav tiff encoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avenc_truehd</span></p></td>
+<td>libav truehd encoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avenc_tta</span></p></td>
+<td>libav tta encoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avenc_utvideo</span></p></td>
+<td>libav utvideo encoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avenc_vc2</span></p></td>
+<td>libav vc2 encoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avenc_wavpack</span></p></td>
+<td>libav wavpack encoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avenc_wmav1</span></p></td>
+<td>libav wmav1 encoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avenc_wmav2</span></p></td>
+<td>libav wmav2 encoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avenc_wmv1</span></p></td>
+<td>libav wmv1 encoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avenc_wmv2</span></p></td>
+<td>libav wmv2 encoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avenc_xbm</span></p></td>
+<td>libav xbm encoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avenc_xface</span></p></td>
+<td>libav xface encoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avenc_xwd</span></p></td>
+<td>libav xwd encoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avenc_zmbv</span></p></td>
+<td>libav zmbv encoder</td>
+</tr>
+<tr>
+<td><p><span class="term">avmux_3g2</span></p></td>
+<td>libav 3GP2 (3GPP2 file format) muxer</td>
+</tr>
+<tr>
+<td><p><span class="term">avmux_3gp</span></p></td>
+<td>libav 3GP (3GPP file format) muxer (not recommended, use gppmux instead)</td>
+</tr>
+<tr>
+<td><p><span class="term">avmux_a64</span></p></td>
+<td>libav a64 - video for Commodore 64 muxer</td>
+</tr>
+<tr>
+<td><p><span class="term">avmux_adts</span></p></td>
+<td>libav ADTS AAC (Advanced Audio Coding) muxer (not recommended, use aacparse instead)</td>
+</tr>
+<tr>
+<td><p><span class="term">avmux_adx</span></p></td>
+<td>libav CRI ADX muxer</td>
+</tr>
+<tr>
+<td><p><span class="term">avmux_aiff</span></p></td>
+<td>libav Audio IFF muxer (not recommended, use aiffmux instead)</td>
+</tr>
+<tr>
+<td><p><span class="term">avmux_amr</span></p></td>
+<td>libav 3GPP AMR muxer</td>
+</tr>
+<tr>
+<td><p><span class="term">avmux_apng</span></p></td>
+<td>libav Animated Portable Network Graphics muxer</td>
+</tr>
+<tr>
+<td><p><span class="term">avmux_asf</span></p></td>
+<td>libav ASF (Advanced / Active Streaming Format) muxer (not recommended, use asfmux instead)</td>
+</tr>
+<tr>
+<td><p><span class="term">avmux_asf_stream</span></p></td>
+<td>libav ASF (Advanced / Active Streaming Format) muxer (not recommended, use asfmux instead)</td>
+</tr>
+<tr>
+<td><p><span class="term">avmux_ast</span></p></td>
+<td>libav AST (Audio Stream) muxer</td>
+</tr>
+<tr>
+<td><p><span class="term">avmux_au</span></p></td>
+<td>libav Sun AU muxer</td>
+</tr>
+<tr>
+<td><p><span class="term">avmux_avi</span></p></td>
+<td>libav AVI (Audio Video Interleaved) muxer (not recommended, use avimux instead)</td>
+</tr>
+<tr>
+<td><p><span class="term">avmux_avm2</span></p></td>
+<td>libav SWF (ShockWave Flash) (AVM2) muxer</td>
+</tr>
+<tr>
+<td><p><span class="term">avmux_bit</span></p></td>
+<td>libav G.729 BIT file format muxer</td>
+</tr>
+<tr>
+<td><p><span class="term">avmux_caf</span></p></td>
+<td>libav Apple CAF (Core Audio Format) muxer</td>
+</tr>
+<tr>
+<td><p><span class="term">avmux_dash</span></p></td>
+<td>libav DASH Muxer muxer</td>
+</tr>
+<tr>
+<td><p><span class="term">avmux_daud</span></p></td>
+<td>libav D-Cinema audio muxer</td>
+</tr>
+<tr>
+<td><p><span class="term">avmux_dv</span></p></td>
+<td>libav DV (Digital Video) muxer</td>
+</tr>
+<tr>
+<td><p><span class="term">avmux_dvd</span></p></td>
+<td>libav MPEG-2 PS (DVD VOB) muxer</td>
+</tr>
+<tr>
+<td><p><span class="term">avmux_f4v</span></p></td>
+<td>libav F4V Adobe Flash Video muxer</td>
+</tr>
+<tr>
+<td><p><span class="term">avmux_ffm</span></p></td>
+<td>libav FFM (FFserver live feed) muxer</td>
+</tr>
+<tr>
+<td><p><span class="term">avmux_filmstrip</span></p></td>
+<td>libav Adobe Filmstrip muxer</td>
+</tr>
+<tr>
+<td><p><span class="term">avmux_flv</span></p></td>
+<td>libav FLV (Flash Video) muxer (not recommended, use flvmux instead)</td>
+</tr>
+<tr>
+<td><p><span class="term">avmux_gxf</span></p></td>
+<td>libav GXF (General eXchange Format) muxer</td>
+</tr>
+<tr>
+<td><p><span class="term">avmux_hash</span></p></td>
+<td>libav Hash testing muxer</td>
+</tr>
+<tr>
+<td><p><span class="term">avmux_hds</span></p></td>
+<td>libav HDS Muxer muxer</td>
+</tr>
+<tr>
+<td><p><span class="term">avmux_hls</span></p></td>
+<td>libav Apple HTTP Live Streaming muxer</td>
+</tr>
+<tr>
+<td><p><span class="term">avmux_ico</span></p></td>
+<td>libav Microsoft Windows ICO muxer</td>
+</tr>
+<tr>
+<td><p><span class="term">avmux_ilbc</span></p></td>
+<td>libav iLBC storage muxer</td>
+</tr>
+<tr>
+<td><p><span class="term">avmux_ipod</span></p></td>
+<td>libav iPod H.264 MP4 (MPEG-4 Part 14) muxer</td>
+</tr>
+<tr>
+<td><p><span class="term">avmux_ircam</span></p></td>
+<td>libav Berkeley/IRCAM/CARL Sound Format muxer</td>
+</tr>
+<tr>
+<td><p><span class="term">avmux_ismv</span></p></td>
+<td>libav ISMV/ISMA (Smooth Streaming) muxer</td>
+</tr>
+<tr>
+<td><p><span class="term">avmux_ivf</span></p></td>
+<td>libav On2 IVF muxer</td>
+</tr>
+<tr>
+<td><p><span class="term">avmux_latm</span></p></td>
+<td>libav LOAS/LATM muxer</td>
+</tr>
+<tr>
+<td><p><span class="term">avmux_matroska</span></p></td>
+<td>libav Matroska muxer (not recommended, use matroskamux instead)</td>
+</tr>
+<tr>
+<td><p><span class="term">avmux_md5</span></p></td>
+<td>libav MD5 testing muxer</td>
+</tr>
+<tr>
+<td><p><span class="term">avmux_mkvtimestamp_v2</span></p></td>
+<td>libav extract pts as timecode v2 format, as defined by mkvtoolnix muxer</td>
+</tr>
+<tr>
+<td><p><span class="term">avmux_mmf</span></p></td>
+<td>libav Yamaha SMAF muxer</td>
+</tr>
+<tr>
+<td><p><span class="term">avmux_mov</span></p></td>
+<td>libav QuickTime / MOV muxer (not recommended, use qtmux instead)</td>
+</tr>
+<tr>
+<td><p><span class="term">avmux_mp2</span></p></td>
+<td>libav MP2 (MPEG audio layer 2) formatter (not recommended, use id3v2mux instead)</td>
+</tr>
+<tr>
+<td><p><span class="term">avmux_mp3</span></p></td>
+<td>libav MP3 (MPEG audio layer 3) formatter (not recommended, use id3v2mux instead)</td>
+</tr>
+<tr>
+<td><p><span class="term">avmux_mp4</span></p></td>
+<td>libav MP4 (MPEG-4 Part 14) muxer (not recommended, use mp4mux instead)</td>
+</tr>
+<tr>
+<td><p><span class="term">avmux_mpeg</span></p></td>
+<td>libav MPEG-1 Systems / MPEG program stream muxer</td>
+</tr>
+<tr>
+<td><p><span class="term">avmux_mpegts</span></p></td>
+<td>libav MPEG-TS (MPEG-2 Transport Stream) muxer (not recommended, use mpegtsmux instead)</td>
+</tr>
+<tr>
+<td><p><span class="term">avmux_mpjpeg</span></p></td>
+<td>libav MIME multipart JPEG muxer (not recommended, use multipartmux instead)</td>
+</tr>
+<tr>
+<td><p><span class="term">avmux_mxf</span></p></td>
+<td>libav MXF (Material eXchange Format) muxer (not recommended, use mxfmux instead)</td>
+</tr>
+<tr>
+<td><p><span class="term">avmux_mxf_d10</span></p></td>
+<td>libav MXF (Material eXchange Format) D-10 Mapping muxer</td>
+</tr>
+<tr>
+<td><p><span class="term">avmux_mxf_opatom</span></p></td>
+<td>libav MXF (Material eXchange Format) Operational Pattern Atom muxer</td>
+</tr>
+<tr>
+<td><p><span class="term">avmux_nut</span></p></td>
+<td>libav NUT muxer</td>
+</tr>
+<tr>
+<td><p><span class="term">avmux_oga</span></p></td>
+<td>libav Ogg Audio muxer</td>
+</tr>
+<tr>
+<td><p><span class="term">avmux_ogg</span></p></td>
+<td>libav Ogg muxer (not recommended, use oggmux instead)</td>
+</tr>
+<tr>
+<td><p><span class="term">avmux_ogv</span></p></td>
+<td>libav Ogg Video muxer</td>
+</tr>
+<tr>
+<td><p><span class="term">avmux_oma</span></p></td>
+<td>libav Sony OpenMG audio muxer</td>
+</tr>
+<tr>
+<td><p><span class="term">avmux_opus</span></p></td>
+<td>libav Ogg Opus muxer</td>
+</tr>
+<tr>
+<td><p><span class="term">avmux_psp</span></p></td>
+<td>libav PSP MP4 (MPEG-4 Part 14) muxer</td>
+</tr>
+<tr>
+<td><p><span class="term">avmux_rm</span></p></td>
+<td>libav RealMedia muxer</td>
+</tr>
+<tr>
+<td><p><span class="term">avmux_rso</span></p></td>
+<td>libav Lego Mindstorms RSO muxer</td>
+</tr>
+<tr>
+<td><p><span class="term">avmux_singlejpeg</span></p></td>
+<td>libav JPEG single image muxer</td>
+</tr>
+<tr>
+<td><p><span class="term">avmux_smjpeg</span></p></td>
+<td>libav Loki SDL MJPEG muxer</td>
+</tr>
+<tr>
+<td><p><span class="term">avmux_smoothstreaming</span></p></td>
+<td>libav Smooth Streaming Muxer muxer</td>
+</tr>
+<tr>
+<td><p><span class="term">avmux_sox</span></p></td>
+<td>libav SoX native muxer</td>
+</tr>
+<tr>
+<td><p><span class="term">avmux_spdif</span></p></td>
+<td>libav IEC 61937 (used on S/PDIF - IEC958) muxer</td>
+</tr>
+<tr>
+<td><p><span class="term">avmux_spx</span></p></td>
+<td>libav Ogg Speex muxer</td>
+</tr>
+<tr>
+<td><p><span class="term">avmux_svcd</span></p></td>
+<td>libav MPEG-2 PS (SVCD) muxer</td>
+</tr>
+<tr>
+<td><p><span class="term">avmux_swf</span></p></td>
+<td>libav SWF (ShockWave Flash) muxer</td>
+</tr>
+<tr>
+<td><p><span class="term">avmux_tta</span></p></td>
+<td>libav TTA (True Audio) muxer</td>
+</tr>
+<tr>
+<td><p><span class="term">avmux_uncodedframecrc</span></p></td>
+<td>libav uncoded framecrc testing muxer</td>
+</tr>
+<tr>
+<td><p><span class="term">avmux_vc1test</span></p></td>
+<td>libav VC-1 test bitstream muxer</td>
+</tr>
+<tr>
+<td><p><span class="term">avmux_vcd</span></p></td>
+<td>libav MPEG-1 Systems / MPEG program stream (VCD) muxer</td>
+</tr>
+<tr>
+<td><p><span class="term">avmux_vob</span></p></td>
+<td>libav MPEG-2 PS (VOB) muxer</td>
+</tr>
+<tr>
+<td><p><span class="term">avmux_voc</span></p></td>
+<td>libav Creative Voice muxer</td>
+</tr>
+<tr>
+<td><p><span class="term">avmux_w64</span></p></td>
+<td>libav Sony Wave64 muxer</td>
+</tr>
+<tr>
+<td><p><span class="term">avmux_wav</span></p></td>
+<td>libav WAV / WAVE (Waveform Audio) muxer (not recommended, use wavenc instead)</td>
+</tr>
+<tr>
+<td><p><span class="term">avmux_webp</span></p></td>
+<td>libav WebP muxer</td>
+</tr>
+<tr>
+<td><p><span class="term">avmux_wtv</span></p></td>
+<td>libav Windows Television (WTV) muxer</td>
+</tr>
+<tr>
+<td><p><span class="term">avmux_yuv4mpegpipe</span></p></td>
+<td>libav YUV4MPEG pipe muxer (not recommended, use y4menc instead)</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.25</div>
+</body>
+</html>

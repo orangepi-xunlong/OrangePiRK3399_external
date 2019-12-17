@@ -1,0 +1,239 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>gdkpixbufdec: GStreamer Good Plugins 1.0 Plugins Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="GStreamer Good Plugins 1.0 Plugins Reference Manual">
+<link rel="up" href="ch01.html" title="gst-plugins-good Elements">
+<link rel="prev" href="gst-plugins-good-plugins-gamma.html" title="gamma">
+<link rel="next" href="gst-plugins-good-plugins-gdkpixbufoverlay.html" title="gdkpixbufoverlay">
+<meta name="generator" content="GTK-Doc V1.25 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#gst-plugins-good-plugins-gdkpixbufdec.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#gst-plugins-good-plugins-gdkpixbufdec.object-hierarchy" class="shortcut">Object Hierarchy</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch01.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="gst-plugins-good-plugins-gamma.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="gst-plugins-good-plugins-gdkpixbufoverlay.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="gst-plugins-good-plugins-gdkpixbufdec"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="gst-plugins-good-plugins-gdkpixbufdec.top_of_page"></a>gdkpixbufdec</span></h2>
+<p>gdkpixbufdec</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<a name="GstGdkPixbufDec"></a><div class="refsect1">
+<a name="gst-plugins-good-plugins-gdkpixbufdec.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody><tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="gst-plugins-good-plugins-gdkpixbufdec.html#GstGdkPixbufDec-struct" title="struct GstGdkPixbufDec">GstGdkPixbufDec</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-good-plugins-gdkpixbufdec.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="/usr/share/gtk-doc/html/gobjectgobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+    <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gobjectgobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
+        <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gstreamer-1.0GstObject.html#GstObject-struct">GstObject</a>
+            <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gstreamer-1.0GstElement.html#GstElement-struct">GstElement</a>
+                <span class="lineart">╰──</span> GstGdkPixbufDec
+</pre>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-good-plugins-gdkpixbufdec.description"></a><h2>Description</h2>
+<div class="refsynopsisdiv">
+<h2>Synopsis</h2>
+<div class="refsect2">
+<a name="id-1.2.65.6.2.1"></a><h3>Element Information</h3>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term">plugin</span></p></td>
+<td>
+            <a class="link" href="gst-plugins-good-plugins-plugin-gdkpixbuf.html#plugin-gdkpixbuf">gdkpixbuf</a>
+          </td>
+</tr>
+<tr>
+<td><p><span class="term">author</span></p></td>
+<td>David A. Schleef &lt;ds@schleef.org&gt;, Renato Filho &lt;renato.filho@indt.org.br&gt;</td>
+</tr>
+<tr>
+<td><p><span class="term">class</span></p></td>
+<td>Codec/Decoder/Image</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="id-1.2.65.6.2.2"></a><h3>Element Pads</h3>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term">name</span></p></td>
+<td>sink</td>
+</tr>
+<tr>
+<td><p><span class="term">direction</span></p></td>
+<td>sink</td>
+</tr>
+<tr>
+<td><p><span class="term">presence</span></p></td>
+<td>always</td>
+</tr>
+<tr>
+<td><p><span class="term">details</span></p></td>
+<td>image/png</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> image/gif</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> image/x-icon</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> application/x-navi-animation</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> image/x-cmu-raster</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> image/x-sun-raster</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> image/x-pixmap</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> image/tiff</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> image/x-portable-anymap</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> image/x-portable-bitmap</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> image/x-portable-graymap</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> image/x-portable-pixmap</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> image/bmp</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> image/x-bmp</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> image/x-MS-bmp</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> image/vnd.wap.wbmp</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> image/x-bitmap</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> image/x-tga</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> image/x-pcx</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> image/svg</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> image/svg+xml</td>
+</tr>
+</tbody>
+</table></div>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term">name</span></p></td>
+<td>src</td>
+</tr>
+<tr>
+<td><p><span class="term">direction</span></p></td>
+<td>source</td>
+</tr>
+<tr>
+<td><p><span class="term">presence</span></p></td>
+<td>always</td>
+</tr>
+<tr>
+<td><p><span class="term">details</span></p></td>
+<td>video/x-raw, format=(string)RGB, width=(int)[ 1, 2147483647 ], height=(int)[ 1, 2147483647 ], framerate=(fraction)[ 0/1, 2147483647/1 ]</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, format=(string)RGBA, width=(int)[ 1, 2147483647 ], height=(int)[ 1, 2147483647 ], framerate=(fraction)[ 0/1, 2147483647/1 ]</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-good-plugins-gdkpixbufdec.functions_details"></a><h2>Functions</h2>
+<p></p>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-good-plugins-gdkpixbufdec.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GstGdkPixbufDec-struct"></a><h3>struct GstGdkPixbufDec</h3>
+<pre class="programlisting">struct GstGdkPixbufDec;</pre>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.25</div>
+</body>
+</html>

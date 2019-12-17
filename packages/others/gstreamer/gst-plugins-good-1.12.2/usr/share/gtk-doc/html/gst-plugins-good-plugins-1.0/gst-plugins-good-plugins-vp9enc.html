@@ -1,0 +1,810 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>vp9enc: GStreamer Good Plugins 1.0 Plugins Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="GStreamer Good Plugins 1.0 Plugins Reference Manual">
+<link rel="up" href="ch01.html" title="gst-plugins-good Elements">
+<link rel="prev" href="gst-plugins-good-plugins-vp9dec.html" title="vp9dec">
+<link rel="next" href="gst-plugins-good-plugins-warptv.html" title="warptv">
+<meta name="generator" content="GTK-Doc V1.25 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#gst-plugins-good-plugins-vp9enc.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#gst-plugins-good-plugins-vp9enc.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_interfaces">  <span class="dim">|</span> 
+                  <a href="#gst-plugins-good-plugins-vp9enc.implemented-interfaces" class="shortcut">Implemented Interfaces</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#gst-plugins-good-plugins-vp9enc.properties" class="shortcut">Properties</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch01.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="gst-plugins-good-plugins-vp9dec.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="gst-plugins-good-plugins-warptv.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="gst-plugins-good-plugins-vp9enc"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="gst-plugins-good-plugins-vp9enc.top_of_page"></a>vp9enc</span></h2>
+<p>vp9enc</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="gst-plugins-good-plugins-vp9enc.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-good-plugins-vp9enc.html#GstVP9Enc--arnr-maxframes" title="The “arnr-maxframes” property">arnr-maxframes</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-good-plugins-vp9enc.html#GstVP9Enc--arnr-strength" title="The “arnr-strength” property">arnr-strength</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-good-plugins-vp9enc.html#GstVP9Enc--arnr-type" title="The “arnr-type” property">arnr-type</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-good-plugins-vp9enc.html#GstVP9Enc--auto-alt-ref" title="The “auto-alt-ref” property">auto-alt-ref</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-good-plugins-vp9enc.html#GstVP9Enc--buffer-initial-size" title="The “buffer-initial-size” property">buffer-initial-size</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-good-plugins-vp9enc.html#GstVP9Enc--buffer-optimal-size" title="The “buffer-optimal-size” property">buffer-optimal-size</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-good-plugins-vp9enc.html#GstVP9Enc--buffer-size" title="The “buffer-size” property">buffer-size</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-good-plugins-vp9enc.html#GstVP9Enc--cpu-used" title="The “cpu-used” property">cpu-used</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-good-plugins-vp9enc.html#GstVP9Enc--cq-level" title="The “cq-level” property">cq-level</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint64"><span class="type">gint64</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-good-plugins-vp9enc.html#GstVP9Enc--deadline" title="The “deadline” property">deadline</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-good-plugins-vp9enc.html#GstVP9Enc--dropframe-threshold" title="The “dropframe-threshold” property">dropframe-threshold</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><span class="type">GstVP9EncEndUsage</span></td>
+<td class="property_name"><a class="link" href="gst-plugins-good-plugins-vp9enc.html#GstVP9Enc--end-usage" title="The “end-usage” property">end-usage</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><span class="type">GstVP9EncErFlags</span></td>
+<td class="property_name"><a class="link" href="gst-plugins-good-plugins-vp9enc.html#GstVP9Enc--error-resilient" title="The “error-resilient” property">error-resilient</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><span class="type">GstVP9EncScalingMode</span></td>
+<td class="property_name"><a class="link" href="gst-plugins-good-plugins-vp9enc.html#GstVP9Enc--horizontal-scaling-mode" title="The “horizontal-scaling-mode” property">horizontal-scaling-mode</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-good-plugins-vp9enc.html#GstVP9Enc--keyframe-max-dist" title="The “keyframe-max-dist” property">keyframe-max-dist</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><span class="type">GstVP9EncKfMode</span></td>
+<td class="property_name"><a class="link" href="gst-plugins-good-plugins-vp9enc.html#GstVP9Enc--keyframe-mode" title="The “keyframe-mode” property">keyframe-mode</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-good-plugins-vp9enc.html#GstVP9Enc--lag-in-frames" title="The “lag-in-frames” property">lag-in-frames</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-good-plugins-vp9enc.html#GstVP9Enc--max-intra-bitrate" title="The “max-intra-bitrate” property">max-intra-bitrate</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-good-plugins-vp9enc.html#GstVP9Enc--max-quantizer" title="The “max-quantizer” property">max-quantizer</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-good-plugins-vp9enc.html#GstVP9Enc--min-quantizer" title="The “min-quantizer” property">min-quantizer</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
+<td class="property_name"><a class="link" href="gst-plugins-good-plugins-vp9enc.html#GstVP9Enc--multipass-cache-file" title="The “multipass-cache-file” property">multipass-cache-file</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><span class="type">GstVP9EncMultipassMode</span></td>
+<td class="property_name"><a class="link" href="gst-plugins-good-plugins-vp9enc.html#GstVP9Enc--multipass-mode" title="The “multipass-mode” property">multipass-mode</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-good-plugins-vp9enc.html#GstVP9Enc--noise-sensitivity" title="The “noise-sensitivity” property">noise-sensitivity</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-good-plugins-vp9enc.html#GstVP9Enc--overshoot" title="The “overshoot” property">overshoot</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-good-plugins-vp9enc.html#GstVP9Enc--resize-allowed" title="The “resize-allowed” property">resize-allowed</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-good-plugins-vp9enc.html#GstVP9Enc--resize-down-threshold" title="The “resize-down-threshold” property">resize-down-threshold</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-good-plugins-vp9enc.html#GstVP9Enc--resize-up-threshold" title="The “resize-up-threshold” property">resize-up-threshold</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-good-plugins-vp9enc.html#GstVP9Enc--sharpness" title="The “sharpness” property">sharpness</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-good-plugins-vp9enc.html#GstVP9Enc--static-threshold" title="The “static-threshold” property">static-threshold</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-good-plugins-vp9enc.html#GstVP9Enc--target-bitrate" title="The “target-bitrate” property">target-bitrate</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="/usr/share/gtk-doc/html/gobjectgobject-Value-arrays.html#GValueArray"><span class="type">GValueArray</span></a> *</td>
+<td class="property_name"><a class="link" href="gst-plugins-good-plugins-vp9enc.html#GstVP9Enc--temporal-scalability-layer-id" title="The “temporal-scalability-layer-id” property">temporal-scalability-layer-id</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-good-plugins-vp9enc.html#GstVP9Enc--temporal-scalability-number-layers" title="The “temporal-scalability-number-layers” property">temporal-scalability-number-layers</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-good-plugins-vp9enc.html#GstVP9Enc--temporal-scalability-periodicity" title="The “temporal-scalability-periodicity” property">temporal-scalability-periodicity</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="/usr/share/gtk-doc/html/gobjectgobject-Value-arrays.html#GValueArray"><span class="type">GValueArray</span></a> *</td>
+<td class="property_name"><a class="link" href="gst-plugins-good-plugins-vp9enc.html#GstVP9Enc--temporal-scalability-rate-decimator" title="The “temporal-scalability-rate-decimator” property">temporal-scalability-rate-decimator</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="/usr/share/gtk-doc/html/gobjectgobject-Value-arrays.html#GValueArray"><span class="type">GValueArray</span></a> *</td>
+<td class="property_name"><a class="link" href="gst-plugins-good-plugins-vp9enc.html#GstVP9Enc--temporal-scalability-target-bitrate" title="The “temporal-scalability-target-bitrate” property">temporal-scalability-target-bitrate</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-good-plugins-vp9enc.html#GstVP9Enc--threads" title="The “threads” property">threads</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><span class="type">GstFraction</span></td>
+<td class="property_name"><a class="link" href="gst-plugins-good-plugins-vp9enc.html#GstVP9Enc--timebase" title="The “timebase” property">timebase</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><span class="type">GstVP9EncTokenPartitions</span></td>
+<td class="property_name"><a class="link" href="gst-plugins-good-plugins-vp9enc.html#GstVP9Enc--token-partitions" title="The “token-partitions” property">token-partitions</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><span class="type">GstVP9EncTuning</span></td>
+<td class="property_name"><a class="link" href="gst-plugins-good-plugins-vp9enc.html#GstVP9Enc--tuning" title="The “tuning” property">tuning</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-good-plugins-vp9enc.html#GstVP9Enc--twopass-vbr-bias" title="The “twopass-vbr-bias” property">twopass-vbr-bias</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-good-plugins-vp9enc.html#GstVP9Enc--twopass-vbr-maxsection" title="The “twopass-vbr-maxsection” property">twopass-vbr-maxsection</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-good-plugins-vp9enc.html#GstVP9Enc--twopass-vbr-minsection" title="The “twopass-vbr-minsection” property">twopass-vbr-minsection</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-good-plugins-vp9enc.html#GstVP9Enc--undershoot" title="The “undershoot” property">undershoot</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><span class="type">GstVP9EncScalingMode</span></td>
+<td class="property_name"><a class="link" href="gst-plugins-good-plugins-vp9enc.html#GstVP9Enc--vertical-scaling-mode" title="The “vertical-scaling-mode” property">vertical-scaling-mode</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<a name="GstVP9Enc"></a><div class="refsect1">
+<a name="gst-plugins-good-plugins-vp9enc.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody><tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="gst-plugins-good-plugins-vp9enc.html#GstVP9Enc-struct" title="struct GstVP9Enc">GstVP9Enc</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-good-plugins-vp9enc.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="/usr/share/gtk-doc/html/gobjectgobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+    <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gobjectgobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
+        <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gstreamer-1.0GstObject.html#GstObject-struct">GstObject</a>
+            <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gstreamer-1.0GstElement.html#GstElement-struct">GstElement</a>
+                <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gst-plugins-base-libs-1.0gst-plugins-base-libs-GstVideoEncoder.html#GstVideoEncoder">GstVideoEncoder</a>
+                    <span class="lineart">╰──</span> GstVPXEnc
+                        <span class="lineart">╰──</span> GstVP9Enc
+</pre>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-good-plugins-vp9enc.implemented-interfaces"></a><h2>Implemented Interfaces</h2>
+<p>
+GstVP9Enc implements
+ <a href="/usr/share/gtk-doc/html/gstreamer-1.0GstPreset.html#GstPreset-struct">GstPreset</a> and  <a href="/usr/share/gtk-doc/html/gstreamer-1.0GstTagSetter.html#GstTagSetter-struct">GstTagSetter</a>.</p>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-good-plugins-vp9enc.description"></a><h2>Description</h2>
+<p>This element encodes raw video into a VP9 stream.</p>
+<a class="ulink" href="http://www.webmproject.org" target="_top">VP9</a> is a royalty-free
+<p>video codec maintained by <a class="ulink" href="http://www.google.com/" target="_top">Google
+</a>. It's the successor of On2 VP3, which was the base of the
+Theora video codec.</p>
+<p>To control the quality of the encoding, the <span class="type">“target-bitrate”</span>,
+<span class="type">“min-quantizer”</span>, <span class="type">“max-quantizer”</span> or <span class="type">“cq-level”</span>
+properties can be used. Which one is used depends on the mode selected by
+the <span class="type">“end-usage”</span> property.
+See <a class="ulink" href="http://www.webmproject.org/docs/encoder-parameters/" target="_top">Encoder Parameters</a>
+for explanation, examples for useful encoding parameters and more details
+on the encoding parameters.</p>
+<div class="refsect2">
+<a name="id-1.2.260.8.6"></a><h3>Example pipeline</h3>
+<div class="informalexample">
+  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td class="listing_lines" align="right"><pre>1</pre></td>
+        <td class="listing_code"><pre class="programlisting">gst<span class="gtkdoc opt">-</span>launch<span class="gtkdoc opt">-</span><span class="number">1.0</span> <span class="gtkdoc opt">-</span>v videotestsrc num<span class="gtkdoc opt">-</span>buffers<span class="gtkdoc opt">=</span><span class="number">1000</span> <span class="gtkdoc opt">!</span> vp9enc <span class="gtkdoc opt">!</span> webmmux <span class="gtkdoc opt">!</span> filesink location<span class="gtkdoc opt">=</span>videotestsrc<span class="gtkdoc opt">.</span>webm</pre></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+ This example pipeline will encode a test video source to VP9 muxed in an
+WebM container.
+</div>
+<div class="refsynopsisdiv">
+<h2>Synopsis</h2>
+<div class="refsect2">
+<a name="id-1.2.260.8.7.1"></a><h3>Element Information</h3>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term">plugin</span></p></td>
+<td>
+            <a class="link" href="gst-plugins-good-plugins-plugin-vpx.html#plugin-vpx">vpx</a>
+          </td>
+</tr>
+<tr>
+<td><p><span class="term">author</span></p></td>
+<td>David Schleef &lt;ds@entropywave.com&gt;, Sebastian Dröge &lt;sebastian.droege@collabora.co.uk&gt;</td>
+</tr>
+<tr>
+<td><p><span class="term">class</span></p></td>
+<td>Codec/Encoder/Video</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="id-1.2.260.8.7.2"></a><h3>Element Pads</h3>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term">name</span></p></td>
+<td>sink</td>
+</tr>
+<tr>
+<td><p><span class="term">direction</span></p></td>
+<td>sink</td>
+</tr>
+<tr>
+<td><p><span class="term">presence</span></p></td>
+<td>always</td>
+</tr>
+<tr>
+<td><p><span class="term">details</span></p></td>
+<td>video/x-raw, format=(string){ I420, YV12 }, width=(int)[ 1, 2147483647 ], height=(int)[ 1, 2147483647 ], framerate=(fraction)[ 0/1, 2147483647/1 ]</td>
+</tr>
+</tbody>
+</table></div>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term">name</span></p></td>
+<td>src</td>
+</tr>
+<tr>
+<td><p><span class="term">direction</span></p></td>
+<td>source</td>
+</tr>
+<tr>
+<td><p><span class="term">presence</span></p></td>
+<td>always</td>
+</tr>
+<tr>
+<td><p><span class="term">details</span></p></td>
+<td>video/x-vp9, profile=(string){ 0, 1, 2, 3 }</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-good-plugins-vp9enc.functions_details"></a><h2>Functions</h2>
+<p></p>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-good-plugins-vp9enc.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GstVP9Enc-struct"></a><h3>struct GstVP9Enc</h3>
+<pre class="programlisting">struct GstVP9Enc;</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-good-plugins-vp9enc.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="GstVP9Enc--arnr-maxframes"></a><h3>The <code class="literal">“arnr-maxframes”</code> property</h3>
+<pre class="programlisting">  “arnr-maxframes”           <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a></pre>
+<p>AltRef maximum number of frames.</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: [0,15]</p>
+<p>Default value: 0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstVP9Enc--arnr-strength"></a><h3>The <code class="literal">“arnr-strength”</code> property</h3>
+<pre class="programlisting">  “arnr-strength”            <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a></pre>
+<p>AltRef strength.</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: [0,6]</p>
+<p>Default value: 3</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstVP9Enc--arnr-type"></a><h3>The <code class="literal">“arnr-type”</code> property</h3>
+<pre class="programlisting">  “arnr-type”                <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a></pre>
+<p>AltRef type.</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: [1,3]</p>
+<p>Default value: 3</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstVP9Enc--auto-alt-ref"></a><h3>The <code class="literal">“auto-alt-ref”</code> property</h3>
+<pre class="programlisting">  “auto-alt-ref”             <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>Automatically generate AltRef frames.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: FALSE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstVP9Enc--buffer-initial-size"></a><h3>The <code class="literal">“buffer-initial-size”</code> property</h3>
+<pre class="programlisting">  “buffer-initial-size”      <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a></pre>
+<p>Initial client buffer size (ms).</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: &gt;= 0</p>
+<p>Default value: 4000</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstVP9Enc--buffer-optimal-size"></a><h3>The <code class="literal">“buffer-optimal-size”</code> property</h3>
+<pre class="programlisting">  “buffer-optimal-size”      <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a></pre>
+<p>Optimal client buffer size (ms).</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: &gt;= 0</p>
+<p>Default value: 5000</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstVP9Enc--buffer-size"></a><h3>The <code class="literal">“buffer-size”</code> property</h3>
+<pre class="programlisting">  “buffer-size”              <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a></pre>
+<p>Client buffer size (ms).</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: &gt;= 0</p>
+<p>Default value: 6000</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstVP9Enc--cpu-used"></a><h3>The <code class="literal">“cpu-used”</code> property</h3>
+<pre class="programlisting">  “cpu-used”                 <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a></pre>
+<p>CPU used.</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: [-16,16]</p>
+<p>Default value: 0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstVP9Enc--cq-level"></a><h3>The <code class="literal">“cq-level”</code> property</h3>
+<pre class="programlisting">  “cq-level”                 <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a></pre>
+<p>Constrained quality level.</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: [0,63]</p>
+<p>Default value: 10</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstVP9Enc--deadline"></a><h3>The <code class="literal">“deadline”</code> property</h3>
+<pre class="programlisting">  “deadline”                 <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint64"><span class="type">gint64</span></a></pre>
+<p>Deadline per frame (usec, 0=disabled).</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: &gt;= 0</p>
+<p>Default value: 0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstVP9Enc--dropframe-threshold"></a><h3>The <code class="literal">“dropframe-threshold”</code> property</h3>
+<pre class="programlisting">  “dropframe-threshold”      <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a></pre>
+<p>Temporal resampling threshold (buf %).</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: [0,100]</p>
+<p>Default value: 0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstVP9Enc--end-usage"></a><h3>The <code class="literal">“end-usage”</code> property</h3>
+<pre class="programlisting">  “end-usage”                <span class="type">GstVP9EncEndUsage</span></pre>
+<p>Rate control mode.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: Variable Bit Rate (VBR) mode</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstVP9Enc--error-resilient"></a><h3>The <code class="literal">“error-resilient”</code> property</h3>
+<pre class="programlisting">  “error-resilient”          <span class="type">GstVP9EncErFlags</span></pre>
+<p>Error resilience flags.</p>
+<p>Flags: Read / Write</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstVP9Enc--horizontal-scaling-mode"></a><h3>The <code class="literal">“horizontal-scaling-mode”</code> property</h3>
+<pre class="programlisting">  “horizontal-scaling-mode”  <span class="type">GstVP9EncScalingMode</span></pre>
+<p>Horizontal scaling mode.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: Normal</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstVP9Enc--keyframe-max-dist"></a><h3>The <code class="literal">“keyframe-max-dist”</code> property</h3>
+<pre class="programlisting">  “keyframe-max-dist”        <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a></pre>
+<p>Maximum distance between keyframes (number of frames).</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: &gt;= 0</p>
+<p>Default value: 128</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstVP9Enc--keyframe-mode"></a><h3>The <code class="literal">“keyframe-mode”</code> property</h3>
+<pre class="programlisting">  “keyframe-mode”            <span class="type">GstVP9EncKfMode</span></pre>
+<p>Keyframe placement.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: Determine optimal placement automatically</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstVP9Enc--lag-in-frames"></a><h3>The <code class="literal">“lag-in-frames”</code> property</h3>
+<pre class="programlisting">  “lag-in-frames”            <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a></pre>
+<p>Maximum number of frames to lag.</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: [0,25]</p>
+<p>Default value: 0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstVP9Enc--max-intra-bitrate"></a><h3>The <code class="literal">“max-intra-bitrate”</code> property</h3>
+<pre class="programlisting">  “max-intra-bitrate”        <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a></pre>
+<p>Maximum Intra frame bitrate.</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: &gt;= 0</p>
+<p>Default value: 0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstVP9Enc--max-quantizer"></a><h3>The <code class="literal">“max-quantizer”</code> property</h3>
+<pre class="programlisting">  “max-quantizer”            <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a></pre>
+<p>Maximum Quantizer (worst).</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: [0,63]</p>
+<p>Default value: 63</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstVP9Enc--min-quantizer"></a><h3>The <code class="literal">“min-quantizer”</code> property</h3>
+<pre class="programlisting">  “min-quantizer”            <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a></pre>
+<p>Minimum Quantizer (best).</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: [0,63]</p>
+<p>Default value: 4</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstVP9Enc--multipass-cache-file"></a><h3>The <code class="literal">“multipass-cache-file”</code> property</h3>
+<pre class="programlisting">  “multipass-cache-file”     <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
+<p>Multipass cache file. If stream caps reinited, multiple files will be created: file, file.1, file.2, ... and so on.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: "multipass.cache"</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstVP9Enc--multipass-mode"></a><h3>The <code class="literal">“multipass-mode”</code> property</h3>
+<pre class="programlisting">  “multipass-mode”           <span class="type">GstVP9EncMultipassMode</span></pre>
+<p>Multipass encode mode.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: One pass encoding (default)</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstVP9Enc--noise-sensitivity"></a><h3>The <code class="literal">“noise-sensitivity”</code> property</h3>
+<pre class="programlisting">  “noise-sensitivity”        <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a></pre>
+<p>Noise sensisivity (frames to blur).</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: [0,6]</p>
+<p>Default value: 0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstVP9Enc--overshoot"></a><h3>The <code class="literal">“overshoot”</code> property</h3>
+<pre class="programlisting">  “overshoot”                <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a></pre>
+<p>Datarate overshoot (max) target (%).</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: [0,1000]</p>
+<p>Default value: 100</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstVP9Enc--resize-allowed"></a><h3>The <code class="literal">“resize-allowed”</code> property</h3>
+<pre class="programlisting">  “resize-allowed”           <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>Allow spatial resampling.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: FALSE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstVP9Enc--resize-down-threshold"></a><h3>The <code class="literal">“resize-down-threshold”</code> property</h3>
+<pre class="programlisting">  “resize-down-threshold”    <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a></pre>
+<p>Downscale threshold (buf %).</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: [0,100]</p>
+<p>Default value: 60</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstVP9Enc--resize-up-threshold"></a><h3>The <code class="literal">“resize-up-threshold”</code> property</h3>
+<pre class="programlisting">  “resize-up-threshold”      <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a></pre>
+<p>Upscale threshold (buf %).</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: [0,100]</p>
+<p>Default value: 30</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstVP9Enc--sharpness"></a><h3>The <code class="literal">“sharpness”</code> property</h3>
+<pre class="programlisting">  “sharpness”                <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a></pre>
+<p>Filter sharpness.</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: [0,7]</p>
+<p>Default value: 0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstVP9Enc--static-threshold"></a><h3>The <code class="literal">“static-threshold”</code> property</h3>
+<pre class="programlisting">  “static-threshold”         <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a></pre>
+<p>Motion detection threshold.</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: &gt;= 0</p>
+<p>Default value: 0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstVP9Enc--target-bitrate"></a><h3>The <code class="literal">“target-bitrate”</code> property</h3>
+<pre class="programlisting">  “target-bitrate”           <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a></pre>
+<p>Target bitrate (in bits/sec).</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: &gt;= 0</p>
+<p>Default value: 256000</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstVP9Enc--temporal-scalability-layer-id"></a><h3>The <code class="literal">“temporal-scalability-layer-id”</code> property</h3>
+<pre class="programlisting">  “temporal-scalability-layer-id” <a href="/usr/share/gtk-doc/html/gobjectgobject-Value-arrays.html#GValueArray"><span class="type">GValueArray</span></a> *</pre>
+<p>Sequence defining coding layer membership.</p>
+<p>Flags: Read / Write</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstVP9Enc--temporal-scalability-number-layers"></a><h3>The <code class="literal">“temporal-scalability-number-layers”</code> property</h3>
+<pre class="programlisting">  “temporal-scalability-number-layers” <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a></pre>
+<p>Number of coding layers to use.</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: [1,5]</p>
+<p>Default value: 1</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstVP9Enc--temporal-scalability-periodicity"></a><h3>The <code class="literal">“temporal-scalability-periodicity”</code> property</h3>
+<pre class="programlisting">  “temporal-scalability-periodicity” <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a></pre>
+<p>Length of sequence that defines layer membership periodicity.</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: [0,16]</p>
+<p>Default value: 0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstVP9Enc--temporal-scalability-rate-decimator"></a><h3>The <code class="literal">“temporal-scalability-rate-decimator”</code> property</h3>
+<pre class="programlisting">  “temporal-scalability-rate-decimator” <a href="/usr/share/gtk-doc/html/gobjectgobject-Value-arrays.html#GValueArray"><span class="type">GValueArray</span></a> *</pre>
+<p>Rate decimation factors for each layer.</p>
+<p>Flags: Read / Write</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstVP9Enc--temporal-scalability-target-bitrate"></a><h3>The <code class="literal">“temporal-scalability-target-bitrate”</code> property</h3>
+<pre class="programlisting">  “temporal-scalability-target-bitrate” <a href="/usr/share/gtk-doc/html/gobjectgobject-Value-arrays.html#GValueArray"><span class="type">GValueArray</span></a> *</pre>
+<p>Target bitrates for coding layers (one per layer, decreasing).</p>
+<p>Flags: Read / Write</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstVP9Enc--threads"></a><h3>The <code class="literal">“threads”</code> property</h3>
+<pre class="programlisting">  “threads”                  <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a></pre>
+<p>Number of threads to use.</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: [0,64]</p>
+<p>Default value: 0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstVP9Enc--timebase"></a><h3>The <code class="literal">“timebase”</code> property</h3>
+<pre class="programlisting">  “timebase”                 <span class="type">GstFraction</span></pre>
+<p>Fraction of one second that is the shortest interframe time - normally left as zero which will default to the framerate.</p>
+<p>Flags: Read / Write</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstVP9Enc--token-partitions"></a><h3>The <code class="literal">“token-partitions”</code> property</h3>
+<pre class="programlisting">  “token-partitions”         <span class="type">GstVP9EncTokenPartitions</span></pre>
+<p>Number of token partitions.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: One token partition</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstVP9Enc--tuning"></a><h3>The <code class="literal">“tuning”</code> property</h3>
+<pre class="programlisting">  “tuning”                   <span class="type">GstVP9EncTuning</span></pre>
+<p>Tuning.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: Tune for PSNR</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstVP9Enc--twopass-vbr-bias"></a><h3>The <code class="literal">“twopass-vbr-bias”</code> property</h3>
+<pre class="programlisting">  “twopass-vbr-bias”         <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a></pre>
+<p>CBR/VBR bias (0=CBR, 100=VBR).</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: [0,100]</p>
+<p>Default value: 50</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstVP9Enc--twopass-vbr-maxsection"></a><h3>The <code class="literal">“twopass-vbr-maxsection”</code> property</h3>
+<pre class="programlisting">  “twopass-vbr-maxsection”   <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a></pre>
+<p>GOP maximum bitrate (% target).</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: &gt;= 0</p>
+<p>Default value: 0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstVP9Enc--twopass-vbr-minsection"></a><h3>The <code class="literal">“twopass-vbr-minsection”</code> property</h3>
+<pre class="programlisting">  “twopass-vbr-minsection”   <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a></pre>
+<p>GOP minimum bitrate (% target).</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: &gt;= 0</p>
+<p>Default value: 0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstVP9Enc--undershoot"></a><h3>The <code class="literal">“undershoot”</code> property</h3>
+<pre class="programlisting">  “undershoot”               <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a></pre>
+<p>Datarate undershoot (min) target (%).</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: [0,1000]</p>
+<p>Default value: 100</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstVP9Enc--vertical-scaling-mode"></a><h3>The <code class="literal">“vertical-scaling-mode”</code> property</h3>
+<pre class="programlisting">  “vertical-scaling-mode”    <span class="type">GstVP9EncScalingMode</span></pre>
+<p>Vertical scaling mode.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: Normal</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-good-plugins-vp9enc.see-also"></a><h2>See Also</h2>
+<p>vp9dec, webmmux, oggmux</p>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.25</div>
+</body>
+</html>

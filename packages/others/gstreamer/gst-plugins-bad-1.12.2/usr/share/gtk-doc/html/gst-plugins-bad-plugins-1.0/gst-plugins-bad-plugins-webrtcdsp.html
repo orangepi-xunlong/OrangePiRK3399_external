@@ -1,0 +1,463 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>webrtcdsp: GStreamer Bad Plugins 1.0 Plugins Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="GStreamer Bad Plugins 1.0 Plugins Reference Manual">
+<link rel="up" href="ch01.html" title="gst-plugins-bad Elements">
+<link rel="prev" href="gst-plugins-bad-plugins-wavescope.html" title="wavescope">
+<link rel="next" href="gst-plugins-bad-plugins-webrtcechoprobe.html" title="webrtcechoprobe">
+<meta name="generator" content="GTK-Doc V1.25 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#gst-plugins-bad-plugins-webrtcdsp.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#gst-plugins-bad-plugins-webrtcdsp.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#gst-plugins-bad-plugins-webrtcdsp.properties" class="shortcut">Properties</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch01.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="gst-plugins-bad-plugins-wavescope.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="gst-plugins-bad-plugins-webrtcechoprobe.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="gst-plugins-bad-plugins-webrtcdsp"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="gst-plugins-bad-plugins-webrtcdsp.top_of_page"></a>webrtcdsp</span></h2>
+<p>webrtcdsp — Audio Filter using WebRTC Audio Processing library</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="gst-plugins-bad-plugins-webrtcdsp.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-webrtcdsp.html#GstWebrtcDsp--echo-cancel" title="The “echo-cancel” property">echo-cancel</a></td>
+<td class="property_flags">Read / Write / Construct</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-webrtcdsp.html#GstWebrtcDsp--experimental-agc" title="The “experimental-agc” property">experimental-agc</a></td>
+<td class="property_flags">Read / Write / Construct</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-webrtcdsp.html#GstWebrtcDsp--extended-filter" title="The “extended-filter” property">extended-filter</a></td>
+<td class="property_flags">Read / Write / Construct</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-webrtcdsp.html#GstWebrtcDsp--gain-control" title="The “gain-control” property">gain-control</a></td>
+<td class="property_flags">Read / Write / Construct</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-webrtcdsp.html#GstWebrtcDsp--high-pass-filter" title="The “high-pass-filter” property">high-pass-filter</a></td>
+<td class="property_flags">Read / Write / Construct</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-webrtcdsp.html#GstWebrtcDsp--noise-suppression" title="The “noise-suppression” property">noise-suppression</a></td>
+<td class="property_flags">Read / Write / Construct</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-webrtcdsp.html#GstWebrtcDsp--probe" title="The “probe” property">probe</a></td>
+<td class="property_flags">Read / Write / Construct</td>
+</tr>
+<tr>
+<td class="property_type"><span class="type">GstWebrtcEchoSuppressionLevel</span></td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-webrtcdsp.html#GstWebrtcDsp--echo-suppression-level" title="The “echo-suppression-level” property">echo-suppression-level</a></td>
+<td class="property_flags">Read / Write / Construct</td>
+</tr>
+<tr>
+<td class="property_type"><span class="type">GstWebrtcNoiseSuppressionLevel</span></td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-webrtcdsp.html#GstWebrtcDsp--noise-suppression-level" title="The “noise-suppression-level” property">noise-suppression-level</a></td>
+<td class="property_flags">Read / Write / Construct</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-webrtcdsp.html#GstWebrtcDsp--delay-agnostic" title="The “delay-agnostic” property">delay-agnostic</a></td>
+<td class="property_flags">Read / Write / Construct</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-webrtcdsp.html#GstWebrtcDsp--compression-gain-db" title="The “compression-gain-db” property">compression-gain-db</a></td>
+<td class="property_flags">Read / Write / Construct</td>
+</tr>
+<tr>
+<td class="property_type"><span class="type">GstWebrtcGainControlMode</span></td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-webrtcdsp.html#GstWebrtcDsp--gain-control-mode" title="The “gain-control-mode” property">gain-control-mode</a></td>
+<td class="property_flags">Read / Write / Construct</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-webrtcdsp.html#GstWebrtcDsp--limiter" title="The “limiter” property">limiter</a></td>
+<td class="property_flags">Read / Write / Construct</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-webrtcdsp.html#GstWebrtcDsp--startup-min-volume" title="The “startup-min-volume” property">startup-min-volume</a></td>
+<td class="property_flags">Read / Write / Construct</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-webrtcdsp.html#GstWebrtcDsp--target-level-dbfs" title="The “target-level-dbfs” property">target-level-dbfs</a></td>
+<td class="property_flags">Read / Write / Construct</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-webrtcdsp.html#GstWebrtcDsp--voice-detection" title="The “voice-detection” property">voice-detection</a></td>
+<td class="property_flags">Read / Write / Construct</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-webrtcdsp.html#GstWebrtcDsp--voice-detection-frame-size-ms" title="The “voice-detection-frame-size-ms” property">voice-detection-frame-size-ms</a></td>
+<td class="property_flags">Read / Write / Construct</td>
+</tr>
+<tr>
+<td class="property_type"><span class="type">GstWebrtcVoiceDetectionLikelihood</span></td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-webrtcdsp.html#GstWebrtcDsp--voice-detection-likelihood" title="The “voice-detection-likelihood” property">voice-detection-likelihood</a></td>
+<td class="property_flags">Read / Write / Construct</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<a name="GstWebrtcDsp"></a><div class="refsect1">
+<a name="gst-plugins-bad-plugins-webrtcdsp.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody><tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="gst-plugins-bad-plugins-webrtcdsp.html#GstWebrtcDsp-struct" title="GstWebrtcDsp">GstWebrtcDsp</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-bad-plugins-webrtcdsp.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="/usr/share/gtk-doc/html/gobjectgobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+    <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gobjectgobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
+        <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gstreamer-1.0GstObject.html#GstObject-struct">GstObject</a>
+            <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gstreamer-1.0GstElement.html#GstElement-struct">GstElement</a>
+                <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gstreamer-libs-1.0GstBaseTransform.html#GstBaseTransform-struct">GstBaseTransform</a>
+                    <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gst-plugins-base-libs-1.0GstAudioFilter.html#GstAudioFilter-struct">GstAudioFilter</a>
+                        <span class="lineart">╰──</span> GstWebrtcDsp
+</pre>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-bad-plugins-webrtcdsp.description"></a><h2>Description</h2>
+<p>A voice enhancement filter based on WebRTC Audio Processing library. This
+library provides a whide variety of enhancement algorithms. This element
+tries to enable as much as possible. The currently enabled enhancements are
+High Pass Filter, Echo Canceller, Noise Suppression, Automatic Gain Control,
+and some extended filters.</p>
+<p>While webrtcdsp element can be used alone, there is an exception for the
+echo canceller. The audio canceller need to be aware of the far end streams
+that are played to loud speakers. For this, you must place a webrtcechoprobe
+element at that far end. Note that the sample rate must match between
+webrtcdsp and the webrtechoprobe. Though, the number of channels can differ.
+The probe is found by the DSP element using it's object name. By default,
+webrtcdsp looks for webrtcechoprobe0, which means it just work if you have
+a single probe and DSP.</p>
+<p>The probe can only be used within the same top level GstPipeline.
+Additonally, to simplify the code, the probe element must be created
+before the DSP sink pad is activated. It does not need to be in any
+particular state and does not even need to be added to the pipeline yet.</p>
+<div class="refsect2">
+<a name="id-1.2.134.7.5"></a><h3>Example launch line</h3>
+<p>As a conveniance, the echo canceller can be tested using an echo loop. In
+this configuration, one would expect a single echo to be heard.</p>
+<div class="informalexample">
+  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td class="listing_lines" align="right"><pre>1</pre></td>
+        <td class="listing_code"><pre class="programlisting">gst<span class="gtkdoc opt">-</span>launch<span class="gtkdoc opt">-</span><span class="number">1.0</span> pulsesrc <span class="gtkdoc opt">!</span> webrtcdsp <span class="gtkdoc opt">!</span> webrtcechoprobe <span class="gtkdoc opt">!</span> pulsesink</pre></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p></p>
+<p>In real environment, you'll place the probe before the playback, but only
+process the far end streams. The DSP should be placed as close as possible
+to the audio capture. The following pipeline is astracted and does not
+represent a real pipeline.</p>
+<div class="informalexample">
+  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td class="listing_lines" align="right"><pre>1
+2</pre></td>
+        <td class="listing_code"><pre class="programlisting">gst<span class="gtkdoc opt">-</span>launch<span class="gtkdoc opt">-</span><span class="number">1.0</span> far<span class="gtkdoc opt">-</span>end<span class="gtkdoc opt">-</span>src <span class="gtkdoc opt">!</span> audio<span class="gtkdoc opt">/</span>x<span class="gtkdoc opt">-</span>raw<span class="gtkdoc opt">,</span>rate<span class="gtkdoc opt">=</span><span class="number">48000</span> <span class="gtkdoc opt">!</span> webrtcechoprobe <span class="gtkdoc opt">!</span> pulsesink \
+               pulsesrc <span class="gtkdoc opt">!</span> audio<span class="gtkdoc opt">/</span>x<span class="gtkdoc opt">-</span>raw<span class="gtkdoc opt">,</span>rate<span class="gtkdoc opt">=</span><span class="number">48000</span> <span class="gtkdoc opt">!</span> webrtcdsp <span class="gtkdoc opt">!</span> far<span class="gtkdoc opt">-</span>end<span class="gtkdoc opt">-</span>sink</pre></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p></p>
+</div>
+<div class="refsynopsisdiv">
+<h2>Synopsis</h2>
+<div class="refsect2">
+<a name="id-1.2.134.7.6.1"></a><h3>Element Information</h3>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term">plugin</span></p></td>
+<td>
+            <a class="link" href="gst-plugins-bad-plugins-plugin-webrtcdsp.html#plugin-webrtcdsp">webrtcdsp</a>
+          </td>
+</tr>
+<tr>
+<td><p><span class="term">author</span></p></td>
+<td>Nicolas Dufresne &lt;nicolas.dufresne@collabora.com&gt;</td>
+</tr>
+<tr>
+<td><p><span class="term">class</span></p></td>
+<td>Generic/Audio</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="id-1.2.134.7.6.2"></a><h3>Element Pads</h3>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term">name</span></p></td>
+<td>sink</td>
+</tr>
+<tr>
+<td><p><span class="term">direction</span></p></td>
+<td>sink</td>
+</tr>
+<tr>
+<td><p><span class="term">presence</span></p></td>
+<td>always</td>
+</tr>
+<tr>
+<td><p><span class="term">details</span></p></td>
+<td>audio/x-raw, format=(string)S16LE, layout=(string)interleaved, rate=(int){ 48000, 32000, 16000, 8000 }, channels=(int)[ 1, 2147483647 ]</td>
+</tr>
+</tbody>
+</table></div>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term">name</span></p></td>
+<td>src</td>
+</tr>
+<tr>
+<td><p><span class="term">direction</span></p></td>
+<td>source</td>
+</tr>
+<tr>
+<td><p><span class="term">presence</span></p></td>
+<td>always</td>
+</tr>
+<tr>
+<td><p><span class="term">details</span></p></td>
+<td>audio/x-raw, format=(string)S16LE, layout=(string)interleaved, rate=(int){ 48000, 32000, 16000, 8000 }, channels=(int)[ 1, 2147483647 ]</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-bad-plugins-webrtcdsp.functions_details"></a><h2>Functions</h2>
+<p></p>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-bad-plugins-webrtcdsp.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GstWebrtcDsp-struct"></a><h3>GstWebrtcDsp</h3>
+<pre class="programlisting">typedef struct _GstWebrtcDsp GstWebrtcDsp;</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-bad-plugins-webrtcdsp.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="GstWebrtcDsp--echo-cancel"></a><h3>The <code class="literal">“echo-cancel”</code> property</h3>
+<pre class="programlisting">  “echo-cancel”              <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>Enable or disable echo canceller.</p>
+<p>Flags: Read / Write / Construct</p>
+<p>Default value: TRUE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstWebrtcDsp--experimental-agc"></a><h3>The <code class="literal">“experimental-agc”</code> property</h3>
+<pre class="programlisting">  “experimental-agc”         <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>Enable or disable experimental automatic gain control.</p>
+<p>Flags: Read / Write / Construct</p>
+<p>Default value: FALSE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstWebrtcDsp--extended-filter"></a><h3>The <code class="literal">“extended-filter”</code> property</h3>
+<pre class="programlisting">  “extended-filter”          <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>Enable or disable the extended filter.</p>
+<p>Flags: Read / Write / Construct</p>
+<p>Default value: TRUE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstWebrtcDsp--gain-control"></a><h3>The <code class="literal">“gain-control”</code> property</h3>
+<pre class="programlisting">  “gain-control”             <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>Enable or disable automatic digital gain control.</p>
+<p>Flags: Read / Write / Construct</p>
+<p>Default value: TRUE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstWebrtcDsp--high-pass-filter"></a><h3>The <code class="literal">“high-pass-filter”</code> property</h3>
+<pre class="programlisting">  “high-pass-filter”         <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>Enable or disable high pass filtering.</p>
+<p>Flags: Read / Write / Construct</p>
+<p>Default value: TRUE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstWebrtcDsp--noise-suppression"></a><h3>The <code class="literal">“noise-suppression”</code> property</h3>
+<pre class="programlisting">  “noise-suppression”        <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>Enable or disable noise suppression.</p>
+<p>Flags: Read / Write / Construct</p>
+<p>Default value: TRUE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstWebrtcDsp--probe"></a><h3>The <code class="literal">“probe”</code> property</h3>
+<pre class="programlisting">  “probe”                    <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
+<p>The name of the webrtcechoprobe element that record the audio being played through loud speakers. Must be set before PAUSED state.</p>
+<p>Flags: Read / Write / Construct</p>
+<p>Default value: "webrtcechoprobe0"</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstWebrtcDsp--echo-suppression-level"></a><h3>The <code class="literal">“echo-suppression-level”</code> property</h3>
+<pre class="programlisting">  “echo-suppression-level”   <span class="type">GstWebrtcEchoSuppressionLevel</span></pre>
+<p>Controls the aggressiveness of the suppressor. A higher level trades off double-talk performance for increased echo suppression.</p>
+<p>Flags: Read / Write / Construct</p>
+<p>Default value: Moderate Suppression</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstWebrtcDsp--noise-suppression-level"></a><h3>The <code class="literal">“noise-suppression-level”</code> property</h3>
+<pre class="programlisting">  “noise-suppression-level”  <span class="type">GstWebrtcNoiseSuppressionLevel</span></pre>
+<p>Controls the aggressiveness of the suppression. Increasing the level will reduce the noise level at the expense of a higher speech distortion.</p>
+<p>Flags: Read / Write / Construct</p>
+<p>Default value: Moderate Suppression</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstWebrtcDsp--delay-agnostic"></a><h3>The <code class="literal">“delay-agnostic”</code> property</h3>
+<pre class="programlisting">  “delay-agnostic”           <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>Enable or disable the delay agnostic mode.</p>
+<p>Flags: Read / Write / Construct</p>
+<p>Default value: FALSE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstWebrtcDsp--compression-gain-db"></a><h3>The <code class="literal">“compression-gain-db”</code> property</h3>
+<pre class="programlisting">  “compression-gain-db”      <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a></pre>
+<p>Sets the maximum |gain| the digital compression stage may apply, in dB.</p>
+<p>Flags: Read / Write / Construct</p>
+<p>Allowed values: [0,90]</p>
+<p>Default value: 9</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstWebrtcDsp--gain-control-mode"></a><h3>The <code class="literal">“gain-control-mode”</code> property</h3>
+<pre class="programlisting">  “gain-control-mode”        <span class="type">GstWebrtcGainControlMode</span></pre>
+<p>Controls the mode of the compression stage.</p>
+<p>Flags: Read / Write / Construct</p>
+<p>Default value: Adaptive Digital</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstWebrtcDsp--limiter"></a><h3>The <code class="literal">“limiter”</code> property</h3>
+<pre class="programlisting">  “limiter”                  <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>When enabled, the compression stage will hard limit the signal to the target level. Otherwise, the signal will be compressed but not limited above the target level.</p>
+<p>Flags: Read / Write / Construct</p>
+<p>Default value: TRUE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstWebrtcDsp--startup-min-volume"></a><h3>The <code class="literal">“startup-min-volume”</code> property</h3>
+<pre class="programlisting">  “startup-min-volume”       <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a></pre>
+<p>At startup the experimental AGC moves the microphone volume up to |startup_min_volume| if the current microphone volume is set too low. No effect if experimental-agc isn't enabled.</p>
+<p>Flags: Read / Write / Construct</p>
+<p>Allowed values: [12,255]</p>
+<p>Default value: 12</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstWebrtcDsp--target-level-dbfs"></a><h3>The <code class="literal">“target-level-dbfs”</code> property</h3>
+<pre class="programlisting">  “target-level-dbfs”        <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a></pre>
+<p>Sets the target peak |level| (or envelope) of the gain control in dBFS (decibels from digital full-scale).</p>
+<p>Flags: Read / Write / Construct</p>
+<p>Allowed values: [0,31]</p>
+<p>Default value: 3</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstWebrtcDsp--voice-detection"></a><h3>The <code class="literal">“voice-detection”</code> property</h3>
+<pre class="programlisting">  “voice-detection”          <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>Enable or disable the voice activity detector.</p>
+<p>Flags: Read / Write / Construct</p>
+<p>Default value: FALSE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstWebrtcDsp--voice-detection-frame-size-ms"></a><h3>The <code class="literal">“voice-detection-frame-size-ms”</code> property</h3>
+<pre class="programlisting">  “voice-detection-frame-size-ms” <a href="/usr/share/gtk-doc/html/glibglib-Basic-Types.html#gint"><span class="type">gint</span></a></pre>
+<p>Sets the |size| of the frames in ms on which the VAD will operate. Larger frames will improve detection accuracy, but reduce the frequency of updates.</p>
+<p>Flags: Read / Write / Construct</p>
+<p>Allowed values: [10,30]</p>
+<p>Default value: 10</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstWebrtcDsp--voice-detection-likelihood"></a><h3>The <code class="literal">“voice-detection-likelihood”</code> property</h3>
+<pre class="programlisting">  “voice-detection-likelihood” <span class="type">GstWebrtcVoiceDetectionLikelihood</span></pre>
+<p>Specifies the likelihood that a frame will be declared to contain voice.</p>
+<p>Flags: Read / Write / Construct</p>
+<p>Default value: Low Likelihood</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.25</div>
+</body>
+</html>
