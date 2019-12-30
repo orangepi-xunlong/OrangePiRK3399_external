@@ -6,16 +6,15 @@ export DISPLAY=:0.0
 
 echo "Start MIPI CSI Camera Preview!"
 
-echo 1 > /sys/module/video_rkisp1/parameters/rkisp1_debug
+#echo 1 > /sys/module/video_rkisp1/parameters/rkisp1_debug
 
-su orangepi -c " \
-	gst-launch-1.0 rkisp device=/dev/video1 io-mode=1 analyzer=1 enable-3a=1 path-iqf=/etc/cam_iq.xml \
-	        ! video/x-raw,format=NV12,width=1280,height=720, framerate=30/1 ! videoconvert ! autovideosink \
-	" &
+gst-launch-1.0 rkisp device=/dev/video1 io-mode=1 analyzer=1 enable-3a=1 path-iqf=/etc/cam_iq.xml \
+   ! video/x-raw,format=NV12,width=1280,height=720, framerate=30/1 ! videoconvert ! autovideosink &
+
 
 sleep 1
 
-su orangepi -c " \
-	gst-launch-1.0 rkisp device=/dev/video6 io-mode=1 analyzer=1 enable-3a=1 path-iqf=/etc/cam_iq.xml \
-	        ! video/x-raw,format=NV12,width=1280,height=720, framerate=30/1 ! videoconvert ! autovideosink \
-	"
+
+gst-launch-1.0 rkisp device=/dev/video6 io-mode=1 analyzer=1 enable-3a=1 path-iqf=/etc/cam_iq.xml \
+    ! video/x-raw,format=NV12,width=1280,height=720, framerate=30/1 ! videoconvert ! autovideosink 
+
