@@ -6,6 +6,10 @@ if [ "$(id -u)" != "0" ]; then
    exit 0
 fi
 
+root_uuid=$(sed -e 's/^.*root=//' -e 's/ .*$//' < /proc/cmdline)
+root_partition=$(blkid | tr -d '":' | grep "${root_uuid}" | awk '{print $1}')
+root_partition_device="${root_partition::-2}"
+emmc=$(ls -d -1 /dev/mmcblk* | grep -w 'mmcblk[0-9]' | grep -v "$root_partition_device");
 
 echo ""
 date
@@ -16,8 +20,7 @@ setterm -default
 echo ""
 
 odir="/tmp/_extdir"
-bootdir="/boot"
-emmc="/dev/mmcblk1"
+bootdir="/usr/local/lib/install_to_emmc"
 
 
 [ ! -f $bootdir/boot.img ] && echo "boot image not found!" && exit
@@ -30,7 +33,15 @@ if [ ! -b ${emmc}boot0 ]; then
     exit 1
 fi
 
-#umount ${emmc}* > /dev/null 2>&1
+# umount device
+for n in ${emmc}*; do
+	if [[ ${emmc} != "$n" ]]; then
+		if mount|grep -q "$n"; then
+			umount -l "$n" >/dev/null 2>&1
+		fi
+	fi
+done
+
 
 
 #----------------------------------------------------------
@@ -57,10 +68,7 @@ LOADER1_START=64
 
 [ ! -d ${bootdir} ] && exit
 
-echo "Erasing EMMC ..."
-dd if=/dev/zero of=${emmc} bs=1M count=100 > /dev/null 2>&1
-sync
-sleep 1
+
 
 echo "Formating partition, please wait ..."
 parted -s $emmc mklabel gpt
@@ -146,11 +154,3 @@ setterm -default
 echo ""
 
 exit 0
-
-
-
-
-
-
-
-
