@@ -1,0 +1,8 @@
+#!/bin/bash
+
+. /etc/os-release
+BOARDNAME="OrangePi 4"
+KERNELID=$(uname -r)
+
+toilet -f standard  -F metal ${BOARDNAME}
+echo -e "Welcome to \e[0;91m${NAME} \x1B[0m$(if [[ $ID=ubuntu ]]; then echo ${UBUNTU_CODENAME^}; fi) with \e[0;91mLinux $KERNELID\x1B[0m\n"
